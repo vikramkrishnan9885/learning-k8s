@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cpu-demo
+  namespace: cpu-example # Associate resource with namespace, esp. whenever you are restricting resources
+spec:
+  containers: # At a bare minimum you have (NI+RCA) name, image, plus resource, command, args
+  - name: cpu-demo-ctr
+    image: vish/stress
+    resources:
+      limits:
+        cpu: "1"
+      requests:
+        cpu: "0.5"
+    args:
+    - -cpus
+    - "2" # The args section of the configuration file provides arguments for the Container when it starts. The -cpus "2" argument tells the Container to attempt to use 2 CPUs.

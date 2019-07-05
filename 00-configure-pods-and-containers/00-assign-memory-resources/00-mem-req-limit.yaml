@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: memory-demo
+  namespace: mem-example # Associate resource with namespace, esp. whenever you are restricting resources
+spec:
+  containers: # At a bare minimum you have (NI+RCA) name, image, plus resource, command, args
+  - name: memory-demo-ctr
+    image: polinux/stress
+    resources:
+      limits:
+        memory: "200Mi"
+      requests:
+        memory: "100Mi"
+    command: ["stress"]
+    args: ["--vm","1","--vm-bytes","150M","--vm-hang","1"] # Provides arguments for the Container when it starts. "--vm-bytes" ,"150M" tells the Container to attempt to allocate 150MiB of memory

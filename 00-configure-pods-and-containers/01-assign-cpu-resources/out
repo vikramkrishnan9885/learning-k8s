@@ -1,0 +1,272 @@
+[2019-07-05 10:57:09] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-05 10:57:09] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-05 10:57:59] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-05 10:58:39] 🚜  Pulling images ...
+[2019-07-05 10:59:10] 🚀  Launching Kubernetes ... 
+[2019-07-05 11:00:44] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-05 11:00:44] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-05 11:00:45] NAME                                   SERVICE                      AVAILABLE   AGE
+[2019-07-05 11:00:45] v1.                                    Local                        True        74s
+[2019-07-05 11:00:45] v1.apps                                Local                        True        74s
+[2019-07-05 11:00:45] v1.authentication.k8s.io               Local                        True        74s
+[2019-07-05 11:00:45] v1.authorization.k8s.io                Local                        True        74s
+[2019-07-05 11:00:45] v1.autoscaling                         Local                        True        74s
+[2019-07-05 11:00:45] v1.batch                               Local                        True        74s
+[2019-07-05 11:00:45] v1.coordination.k8s.io                 Local                        True        74s
+[2019-07-05 11:00:45] v1.networking.k8s.io                   Local                        True        74s
+[2019-07-05 11:00:45] v1.rbac.authorization.k8s.io           Local                        True        74s
+[2019-07-05 11:00:45] v1.scheduling.k8s.io                   Local                        True        74s
+[2019-07-05 11:00:45] v1.storage.k8s.io                      Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.admissionregistration.k8s.io   Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.apiextensions.k8s.io           Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.apps                           Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.authentication.k8s.io          Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.authorization.k8s.io           Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.batch                          Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.certificates.k8s.io            Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.coordination.k8s.io            Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.events.k8s.io                  Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.extensions                     Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.metrics.k8s.io                 kube-system/metrics-server   True        60s
+[2019-07-05 11:00:45] v1beta1.networking.k8s.io              Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.node.k8s.io                    Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.policy                         Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.rbac.authorization.k8s.io      Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.scheduling.k8s.io              Local                        True        74s
+[2019-07-05 11:00:45] v1beta1.storage.k8s.io                 Local                        True        74s
+[2019-07-05 11:00:45] v1beta2.apps                           Local                        True        74s
+[2019-07-05 11:00:45] v2beta1.autoscaling                    Local                        True        74s
+[2019-07-05 11:00:45] v2beta2.autoscaling                    Local                        True        74s
+[2019-07-05 11:00:45] namespace/cpu-example created
+[2019-07-05 11:00:46] pod/cpu-demo created
+[2019-07-05 11:00:46] NAMESPACE     NAME                                        READY   STATUS              RESTARTS   AGE
+[2019-07-05 11:00:46] cpu-example   cpu-demo                                    0/1     ContainerCreating   0          0s
+[2019-07-05 11:00:46] kube-system   coredns-5c98db65d4-mph4j                    1/1     Running             0          65s
+[2019-07-05 11:00:46] kube-system   coredns-5c98db65d4-zb9jn                    1/1     Running             0          65s
+[2019-07-05 11:00:46] kube-system   default-http-backend-59f7ff8999-gc46c       1/1     Running             0          61s
+[2019-07-05 11:00:46] kube-system   etcd-minikube                               1/1     Running             0          9s
+[2019-07-05 11:00:46] kube-system   heapster-h2p7p                              1/1     Running             0          62s
+[2019-07-05 11:00:46] kube-system   influxdb-grafana-wc6n9                      0/2     ContainerCreating   0          62s
+[2019-07-05 11:00:46] kube-system   kube-apiserver-minikube                     1/1     Running             0          3s
+[2019-07-05 11:00:46] kube-system   kube-controller-manager-minikube            1/1     Running             0          17s
+[2019-07-05 11:00:46] kube-system   kube-proxy-d6zxr                            1/1     Running             0          64s
+[2019-07-05 11:00:46] kube-system   kube-scheduler-minikube                     1/1     Running             0          5s
+[2019-07-05 11:00:46] kube-system   kubernetes-dashboard-7b8ddcb5d6-rc925       1/1     Running             2          62s
+[2019-07-05 11:00:46] kube-system   metrics-server-84bb785897-7z48d             1/1     Running             0          61s
+[2019-07-05 11:00:46] kube-system   nginx-ingress-controller-7b465d9cf8-57mqw   0/1     ContainerCreating   0          60s
+[2019-07-05 11:00:46] kube-system   storage-provisioner                         1/1     Running             0          60s
+[2019-07-05 11:00:46] apiVersion: v1
+[2019-07-05 11:00:46] kind: Pod
+[2019-07-05 11:00:46] metadata:
+[2019-07-05 11:00:46]   annotations:
+[2019-07-05 11:00:46]     kubectl.kubernetes.io/last-applied-configuration: |
+[2019-07-05 11:00:46]       {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"cpu-demo","namespace":"cpu-example"},"spec":{"containers":[{"args":["-cpus","2"],"image":"vish/stress","name":"cpu-demo-ctr","resources":{"limits":{"cpu":"1"},"requests":{"cpu":"0.5"}}}]}}
+[2019-07-05 11:00:46]   creationTimestamp: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46]   name: cpu-demo
+[2019-07-05 11:00:46]   namespace: cpu-example
+[2019-07-05 11:00:46]   resourceVersion: "637"
+[2019-07-05 11:00:46]   selfLink: /api/v1/namespaces/cpu-example/pods/cpu-demo
+[2019-07-05 11:00:46]   uid: 629b4d5d-5514-44ba-a6c5-9ef05e1b03f1
+[2019-07-05 11:00:46] spec:
+[2019-07-05 11:00:46]   containers:
+[2019-07-05 11:00:46]   - args:
+[2019-07-05 11:00:46]     - -cpus
+[2019-07-05 11:00:46]     - "2"
+[2019-07-05 11:00:46]     image: vish/stress
+[2019-07-05 11:00:46]     imagePullPolicy: Always
+[2019-07-05 11:00:46]     name: cpu-demo-ctr
+[2019-07-05 11:00:46]     resources:
+[2019-07-05 11:00:46]       limits:
+[2019-07-05 11:00:46]         cpu: "1"
+[2019-07-05 11:00:46]       requests:
+[2019-07-05 11:00:46]         cpu: 500m
+[2019-07-05 11:00:46]     terminationMessagePath: /dev/termination-log
+[2019-07-05 11:00:46]     terminationMessagePolicy: File
+[2019-07-05 11:00:46]     volumeMounts:
+[2019-07-05 11:00:46]     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+[2019-07-05 11:00:46]       name: default-token-dc6ln
+[2019-07-05 11:00:46]       readOnly: true
+[2019-07-05 11:00:46]   dnsPolicy: ClusterFirst
+[2019-07-05 11:00:46]   enableServiceLinks: true
+[2019-07-05 11:00:46]   nodeName: minikube
+[2019-07-05 11:00:46]   priority: 0
+[2019-07-05 11:00:46]   restartPolicy: Always
+[2019-07-05 11:00:46]   schedulerName: default-scheduler
+[2019-07-05 11:00:46]   securityContext: {}
+[2019-07-05 11:00:46]   serviceAccount: default
+[2019-07-05 11:00:46]   serviceAccountName: default
+[2019-07-05 11:00:46]   terminationGracePeriodSeconds: 30
+[2019-07-05 11:00:46]   tolerations:
+[2019-07-05 11:00:46]   - effect: NoExecute
+[2019-07-05 11:00:46]     key: node.kubernetes.io/not-ready
+[2019-07-05 11:00:46]     operator: Exists
+[2019-07-05 11:00:46]     tolerationSeconds: 300
+[2019-07-05 11:00:46]   - effect: NoExecute
+[2019-07-05 11:00:46]     key: node.kubernetes.io/unreachable
+[2019-07-05 11:00:46]     operator: Exists
+[2019-07-05 11:00:46]     tolerationSeconds: 300
+[2019-07-05 11:00:46]   volumes:
+[2019-07-05 11:00:46]   - name: default-token-dc6ln
+[2019-07-05 11:00:46]     secret:
+[2019-07-05 11:00:46]       defaultMode: 420
+[2019-07-05 11:00:46]       secretName: default-token-dc6ln
+[2019-07-05 11:00:46] status:
+[2019-07-05 11:00:46]   conditions:
+[2019-07-05 11:00:46]   - lastProbeTime: null
+[2019-07-05 11:00:46]     lastTransitionTime: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46]     status: "True"
+[2019-07-05 11:00:46]     type: Initialized
+[2019-07-05 11:00:46]   - lastProbeTime: null
+[2019-07-05 11:00:46]     lastTransitionTime: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46]     message: 'containers with unready status: [cpu-demo-ctr]'
+[2019-07-05 11:00:46]     reason: ContainersNotReady
+[2019-07-05 11:00:46]     status: "False"
+[2019-07-05 11:00:46]     type: Ready
+[2019-07-05 11:00:46]   - lastProbeTime: null
+[2019-07-05 11:00:46]     lastTransitionTime: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46]     message: 'containers with unready status: [cpu-demo-ctr]'
+[2019-07-05 11:00:46]     reason: ContainersNotReady
+[2019-07-05 11:00:46]     status: "False"
+[2019-07-05 11:00:46]     type: ContainersReady
+[2019-07-05 11:00:46]   - lastProbeTime: null
+[2019-07-05 11:00:46]     lastTransitionTime: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46]     status: "True"
+[2019-07-05 11:00:46]     type: PodScheduled
+[2019-07-05 11:00:46]   containerStatuses:
+[2019-07-05 11:00:46]   - image: vish/stress
+[2019-07-05 11:00:46]     imageID: ""
+[2019-07-05 11:00:46]     lastState: {}
+[2019-07-05 11:00:46]     name: cpu-demo-ctr
+[2019-07-05 11:00:46]     ready: false
+[2019-07-05 11:00:46]     restartCount: 0
+[2019-07-05 11:00:46]     state:
+[2019-07-05 11:00:46]       waiting:
+[2019-07-05 11:00:46]         reason: ContainerCreating
+[2019-07-05 11:00:46]   hostIP: 10.0.2.15
+[2019-07-05 11:00:46]   phase: Pending
+[2019-07-05 11:00:46]   qosClass: Burstable
+[2019-07-05 11:00:46]   startTime: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46] pod/cpu-demo-2 created
+[2019-07-05 11:00:46] apiVersion: v1
+[2019-07-05 11:00:46] kind: Pod
+[2019-07-05 11:00:46] metadata:
+[2019-07-05 11:00:46]   annotations:
+[2019-07-05 11:00:46]     kubectl.kubernetes.io/last-applied-configuration: |
+[2019-07-05 11:00:46]       {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"cpu-demo-2","namespace":"cpu-example"},"spec":{"containers":[{"args":["--vm","1","--vm-bytes","250M","--vm-hang","1"],"command":["stress"],"image":"polinux/stress","name":"cpu-demo-2-ctr","resources":{"limits":{"cpu":"100Mi"},"requests":{"cpu":"50Mi"}}}]}}
+[2019-07-05 11:00:46]   creationTimestamp: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46]   name: cpu-demo-2
+[2019-07-05 11:00:46]   namespace: cpu-example
+[2019-07-05 11:00:46]   resourceVersion: "641"
+[2019-07-05 11:00:46]   selfLink: /api/v1/namespaces/cpu-example/pods/cpu-demo-2
+[2019-07-05 11:00:46]   uid: 84cd6eca-b66b-4717-9aff-c5adbbf837ae
+[2019-07-05 11:00:46] spec:
+[2019-07-05 11:00:46]   containers:
+[2019-07-05 11:00:46]   - args:
+[2019-07-05 11:00:46]     - --vm
+[2019-07-05 11:00:46]     - "1"
+[2019-07-05 11:00:46]     - --vm-bytes
+[2019-07-05 11:00:46]     - 250M
+[2019-07-05 11:00:46]     - --vm-hang
+[2019-07-05 11:00:46]     - "1"
+[2019-07-05 11:00:46]     command:
+[2019-07-05 11:00:46]     - stress
+[2019-07-05 11:00:46]     image: polinux/stress
+[2019-07-05 11:00:46]     imagePullPolicy: Always
+[2019-07-05 11:00:46]     name: cpu-demo-2-ctr
+[2019-07-05 11:00:46]     resources:
+[2019-07-05 11:00:46]       limits:
+[2019-07-05 11:00:46]         cpu: 100Mi
+[2019-07-05 11:00:46]       requests:
+[2019-07-05 11:00:46]         cpu: 50Mi
+[2019-07-05 11:00:46]     terminationMessagePath: /dev/termination-log
+[2019-07-05 11:00:46]     terminationMessagePolicy: File
+[2019-07-05 11:00:46]     volumeMounts:
+[2019-07-05 11:00:46]     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+[2019-07-05 11:00:46]       name: default-token-dc6ln
+[2019-07-05 11:00:46]       readOnly: true
+[2019-07-05 11:00:46]   dnsPolicy: ClusterFirst
+[2019-07-05 11:00:46]   enableServiceLinks: true
+[2019-07-05 11:00:46]   priority: 0
+[2019-07-05 11:00:46]   restartPolicy: Always
+[2019-07-05 11:00:46]   schedulerName: default-scheduler
+[2019-07-05 11:00:46]   securityContext: {}
+[2019-07-05 11:00:46]   serviceAccount: default
+[2019-07-05 11:00:46]   serviceAccountName: default
+[2019-07-05 11:00:46]   terminationGracePeriodSeconds: 30
+[2019-07-05 11:00:46]   tolerations:
+[2019-07-05 11:00:46]   - effect: NoExecute
+[2019-07-05 11:00:46]     key: node.kubernetes.io/not-ready
+[2019-07-05 11:00:46]     operator: Exists
+[2019-07-05 11:00:46]     tolerationSeconds: 300
+[2019-07-05 11:00:46]   - effect: NoExecute
+[2019-07-05 11:00:46]     key: node.kubernetes.io/unreachable
+[2019-07-05 11:00:46]     operator: Exists
+[2019-07-05 11:00:46]     tolerationSeconds: 300
+[2019-07-05 11:00:46]   volumes:
+[2019-07-05 11:00:46]   - name: default-token-dc6ln
+[2019-07-05 11:00:46]     secret:
+[2019-07-05 11:00:46]       defaultMode: 420
+[2019-07-05 11:00:46]       secretName: default-token-dc6ln
+[2019-07-05 11:00:46] status:
+[2019-07-05 11:00:46]   conditions:
+[2019-07-05 11:00:46]   - lastProbeTime: null
+[2019-07-05 11:00:46]     lastTransitionTime: "2019-07-05T05:30:46Z"
+[2019-07-05 11:00:46]     message: '0/1 nodes are available: 1 Insufficient cpu.'
+[2019-07-05 11:00:46]     reason: Unschedulable
+[2019-07-05 11:00:46]     status: "False"
+[2019-07-05 11:00:46]     type: PodScheduled
+[2019-07-05 11:00:46]   phase: Pending
+[2019-07-05 11:00:46]   qosClass: Burstable
+[2019-07-05 11:00:46] Name:         cpu-demo-2
+[2019-07-05 11:00:46] Namespace:    cpu-example
+[2019-07-05 11:00:46] Priority:     0
+[2019-07-05 11:00:46] Node:         <none>
+[2019-07-05 11:00:46] Labels:       <none>
+[2019-07-05 11:00:46] Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-05 11:00:46]                 {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"cpu-demo-2","namespace":"cpu-example"},"spec":{"containers":[{"args":...
+[2019-07-05 11:00:46] Status:       Pending
+[2019-07-05 11:00:46] IP:           
+[2019-07-05 11:00:46] Containers:
+[2019-07-05 11:00:46]   cpu-demo-2-ctr:
+[2019-07-05 11:00:46]     Image:      polinux/stress
+[2019-07-05 11:00:46]     Port:       <none>
+[2019-07-05 11:00:46]     Host Port:  <none>
+[2019-07-05 11:00:46]     Command:
+[2019-07-05 11:00:46]       stress
+[2019-07-05 11:00:46]     Args:
+[2019-07-05 11:00:46]       --vm
+[2019-07-05 11:00:46]       1
+[2019-07-05 11:00:46]       --vm-bytes
+[2019-07-05 11:00:46]       250M
+[2019-07-05 11:00:46]       --vm-hang
+[2019-07-05 11:00:46]       1
+[2019-07-05 11:00:46]     Limits:
+[2019-07-05 11:00:46]       cpu:  100Mi
+[2019-07-05 11:00:46]     Requests:
+[2019-07-05 11:00:46]       cpu:        50Mi
+[2019-07-05 11:00:46]     Environment:  <none>
+[2019-07-05 11:00:46]     Mounts:
+[2019-07-05 11:00:46]       /var/run/secrets/kubernetes.io/serviceaccount from default-token-dc6ln (ro)
+[2019-07-05 11:00:46] Conditions:
+[2019-07-05 11:00:46]   Type           Status
+[2019-07-05 11:00:46]   PodScheduled   False 
+[2019-07-05 11:00:46] Volumes:
+[2019-07-05 11:00:46]   default-token-dc6ln:
+[2019-07-05 11:00:46]     Type:        Secret (a volume populated by a Secret)
+[2019-07-05 11:00:46]     SecretName:  default-token-dc6ln
+[2019-07-05 11:00:46]     Optional:    false
+[2019-07-05 11:00:46] QoS Class:       Burstable
+[2019-07-05 11:00:46] Node-Selectors:  <none>
+[2019-07-05 11:00:46] Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+[2019-07-05 11:00:46]                  node.kubernetes.io/unreachable:NoExecute for 300s
+[2019-07-05 11:00:46] Events:
+[2019-07-05 11:00:46]   Type     Reason            Age   From               Message
+[2019-07-05 11:00:46]   ----     ------            ----  ----               -------
+[2019-07-05 11:00:46]   Warning  FailedScheduling  0s    default-scheduler  0/1 nodes are available: 1 Insufficient cpu.
+[2019-07-05 11:00:46] pod "cpu-demo" deleted
+[2019-07-05 11:00:49] pod "cpu-demo-2" deleted
+[2019-07-05 11:00:49] namespace "cpu-example" deleted
+[2019-07-05 11:00:55] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-05 11:01:08] 🛑  "minikube" stopped.
+[2019-07-05 11:01:08] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-05 11:01:09] 💔  The "minikube" cluster has been deleted.
