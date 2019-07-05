@@ -1,0 +1,20 @@
+[2019-07-05 22:36:39] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-05 22:36:39] 💡  Tip: Use 'minikube start -p <name>' to create a new cluster, or 'minikube delete' to delete this one.
+[2019-07-05 22:36:39] 🏃  Re-using the currently running virtualbox VM for "minikube" ...
+[2019-07-05 22:36:39] ⌛  Waiting for SSH access ...
+[2019-07-05 22:36:42] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-05 22:36:54] 🔄  Relaunching Kubernetes v1.15.0 using kubeadm ... 
+[2019-07-05 22:36:57] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-05 22:36:57] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-05 22:36:57] NAME       STATUS   ROLES    AGE     VERSION
+[2019-07-05 22:36:57] minikube   Ready    master   9m34s   v1.15.0
+[2019-07-05 22:36:57] node/minikube labeled
+[2019-07-05 22:36:57] NAME       STATUS   ROLES    AGE     VERSION   LABELS
+[2019-07-05 22:36:57] minikube   Ready    master   9m34s   v1.15.0   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=minikube,kubernetes.io/os=linux,labelType=myLabel,node-role.kubernetes.io/master=
+[2019-07-05 22:36:57] pod/nginx created
+[2019-07-05 22:37:57] NAME    READY   STATUS              RESTARTS   AGE   IP       NODE       NOMINATED NODE   READINESS GATES
+[2019-07-05 22:37:57] nginx   0/1     ContainerCreating   0          60s   <none>   minikube   <none>           <none>
+[2019-07-05 22:37:58] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-05 22:38:11] 🛑  "minikube" stopped.
+[2019-07-05 22:38:11] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-05 22:38:12] 💔  The "minikube" cluster has been deleted.
