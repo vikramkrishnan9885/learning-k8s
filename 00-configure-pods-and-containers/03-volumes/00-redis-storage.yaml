@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis # Since we are not doing resource allocation, we don't need a namespace
+spec: # Note spec contains containers and volumes
+  containers:
+  - name: redis-example
+    image: redis
+    volumeMounts: # volumeMounts link the containers to volumes
+    - name: redis-storage
+      mountPath: /data/redis
+  volumes:
+  - name: redis-storage
+    emptyDir: {}

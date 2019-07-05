@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata: # Names and labels should always be there is metadata
+  name: task-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath: # Never do this in production, Use StorageClasses or PesistentDisk or EBS instead
+    path: "/mnt/data"

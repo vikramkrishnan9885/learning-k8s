@@ -1,0 +1,37 @@
+[2019-07-05 15:46:11] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-05 15:46:11] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-05 15:47:10] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-05 15:47:56] 🚜  Pulling images ...
+[2019-07-05 15:48:22] 🚀  Launching Kubernetes ... 
+[2019-07-05 15:50:16] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-05 15:50:16] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-05 15:50:16] pod/redis created
+[2019-07-05 15:55:17] NAME    READY   STATUS    RESTARTS   AGE
+[2019-07-05 15:55:17] redis   1/1     Running   0          5m1s
+[2019-07-05 15:55:17] test-file
+[2019-07-05 15:55:18] usage: sudo -h | -K | -k | -V
+[2019-07-05 15:55:18] usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+[2019-07-05 15:55:18] usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+[2019-07-05 15:55:18]             [command]
+[2019-07-05 15:55:18] usage: sudo [-AbEHknPS] [-C num] [-g group] [-h host] [-p prompt] [-T timeout]
+[2019-07-05 15:55:18]             [-u user] [VAR=value] [-i|-s] [<command>]
+[2019-07-05 15:55:18] usage: sudo -e [-AknS] [-C num] [-g group] [-h host] [-p prompt] [-T timeout]
+[2019-07-05 15:55:18]             [-u user] file ...
+[2019-07-05 15:55:18] bash: /mnt/data/index.html: No such file or directory
+[2019-07-05 15:55:18] persistentvolume/task-pv-volume created
+[2019-07-05 15:55:18] NAME             CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS    CLAIM   STORAGECLASS   REASON   AGE
+[2019-07-05 15:55:18] task-pv-volume   1Gi        RWO            Retain           Pending           manual                  0s
+[2019-07-05 15:55:18] persistentvolumeclaim/task-pv-claim created
+[2019-07-05 15:55:19] NAME             CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                   STORAGECLASS   REASON   AGE
+[2019-07-05 15:55:19] task-pv-volume   1Gi        RWO            Retain           Bound    default/task-pv-claim   manual                  1s
+[2019-07-05 15:55:19] NAME            STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+[2019-07-05 15:55:19] task-pv-claim   Bound    task-pv-volume   1Gi        RWO            manual         0s
+[2019-07-05 15:55:19] pod/task-pv-pod created
+[2019-07-05 16:00:19] NAME          READY   STATUS    RESTARTS   AGE
+[2019-07-05 16:00:19] task-pv-pod   1/1     Running   0          5m
+[2019-07-05 16:00:19] pod "redis" deleted
+[2019-07-05 16:00:22] pod "task-pv-pod" deleted
+[2019-07-05 16:00:24] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-05 16:00:37] 🛑  "minikube" stopped.
+[2019-07-05 16:00:38] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-05 16:00:38] 💔  The "minikube" cluster has been deleted.
