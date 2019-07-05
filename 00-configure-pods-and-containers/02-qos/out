@@ -1,0 +1,275 @@
+[2019-07-05 12:06:43] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-05 12:06:43] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-05 12:07:42] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-05 12:08:17] 🚜  Pulling images ...
+[2019-07-05 12:08:40] 🚀  Launching Kubernetes ... 
+[2019-07-05 12:10:24] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-05 12:10:24] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-05 12:10:24] namespace/qos-example created
+[2019-07-05 12:10:25] pod/guaranteed-qos-demo created
+[2019-07-05 12:10:25] apiVersion: v1
+[2019-07-05 12:10:25] kind: Pod
+[2019-07-05 12:10:25] metadata:
+[2019-07-05 12:10:25]   annotations:
+[2019-07-05 12:10:25]     kubectl.kubernetes.io/last-applied-configuration: |
+[2019-07-05 12:10:25]       {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"guaranteed-qos-demo","namespace":"qos-example"},"spec":{"containers":[{"image":"nginx","name":"guaranteed-qos-demo-ctr","resources":{"limits":{"cpu":"700m","memory":"200Mi"},"requests":{"cpu":"700m","memory":"200Mi"}}}]}}
+[2019-07-05 12:10:25]   creationTimestamp: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]   name: guaranteed-qos-demo
+[2019-07-05 12:10:25]   namespace: qos-example
+[2019-07-05 12:10:25]   resourceVersion: "675"
+[2019-07-05 12:10:25]   selfLink: /api/v1/namespaces/qos-example/pods/guaranteed-qos-demo
+[2019-07-05 12:10:25]   uid: 0916867a-4c64-4a8c-b276-306e2460d06f
+[2019-07-05 12:10:25] spec:
+[2019-07-05 12:10:25]   containers:
+[2019-07-05 12:10:25]   - image: nginx
+[2019-07-05 12:10:25]     imagePullPolicy: Always
+[2019-07-05 12:10:25]     name: guaranteed-qos-demo-ctr
+[2019-07-05 12:10:25]     resources:
+[2019-07-05 12:10:25]       limits:
+[2019-07-05 12:10:25]         cpu: 700m
+[2019-07-05 12:10:25]         memory: 200Mi
+[2019-07-05 12:10:25]       requests:
+[2019-07-05 12:10:25]         cpu: 700m
+[2019-07-05 12:10:25]         memory: 200Mi
+[2019-07-05 12:10:25]     terminationMessagePath: /dev/termination-log
+[2019-07-05 12:10:25]     terminationMessagePolicy: File
+[2019-07-05 12:10:25]     volumeMounts:
+[2019-07-05 12:10:25]     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+[2019-07-05 12:10:25]       name: default-token-rtmtp
+[2019-07-05 12:10:25]       readOnly: true
+[2019-07-05 12:10:25]   dnsPolicy: ClusterFirst
+[2019-07-05 12:10:25]   enableServiceLinks: true
+[2019-07-05 12:10:25]   nodeName: minikube
+[2019-07-05 12:10:25]   priority: 0
+[2019-07-05 12:10:25]   restartPolicy: Always
+[2019-07-05 12:10:25]   schedulerName: default-scheduler
+[2019-07-05 12:10:25]   securityContext: {}
+[2019-07-05 12:10:25]   serviceAccount: default
+[2019-07-05 12:10:25]   serviceAccountName: default
+[2019-07-05 12:10:25]   terminationGracePeriodSeconds: 30
+[2019-07-05 12:10:25]   tolerations:
+[2019-07-05 12:10:25]   - effect: NoExecute
+[2019-07-05 12:10:25]     key: node.kubernetes.io/not-ready
+[2019-07-05 12:10:25]     operator: Exists
+[2019-07-05 12:10:25]     tolerationSeconds: 300
+[2019-07-05 12:10:25]   - effect: NoExecute
+[2019-07-05 12:10:25]     key: node.kubernetes.io/unreachable
+[2019-07-05 12:10:25]     operator: Exists
+[2019-07-05 12:10:25]     tolerationSeconds: 300
+[2019-07-05 12:10:25]   volumes:
+[2019-07-05 12:10:25]   - name: default-token-rtmtp
+[2019-07-05 12:10:25]     secret:
+[2019-07-05 12:10:25]       defaultMode: 420
+[2019-07-05 12:10:25]       secretName: default-token-rtmtp
+[2019-07-05 12:10:25] status:
+[2019-07-05 12:10:25]   conditions:
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     status: "True"
+[2019-07-05 12:10:25]     type: Initialized
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     message: 'containers with unready status: [guaranteed-qos-demo-ctr]'
+[2019-07-05 12:10:25]     reason: ContainersNotReady
+[2019-07-05 12:10:25]     status: "False"
+[2019-07-05 12:10:25]     type: Ready
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     message: 'containers with unready status: [guaranteed-qos-demo-ctr]'
+[2019-07-05 12:10:25]     reason: ContainersNotReady
+[2019-07-05 12:10:25]     status: "False"
+[2019-07-05 12:10:25]     type: ContainersReady
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     status: "True"
+[2019-07-05 12:10:25]     type: PodScheduled
+[2019-07-05 12:10:25]   containerStatuses:
+[2019-07-05 12:10:25]   - image: nginx
+[2019-07-05 12:10:25]     imageID: ""
+[2019-07-05 12:10:25]     lastState: {}
+[2019-07-05 12:10:25]     name: guaranteed-qos-demo-ctr
+[2019-07-05 12:10:25]     ready: false
+[2019-07-05 12:10:25]     restartCount: 0
+[2019-07-05 12:10:25]     state:
+[2019-07-05 12:10:25]       waiting:
+[2019-07-05 12:10:25]         reason: ContainerCreating
+[2019-07-05 12:10:25]   hostIP: 10.0.2.15
+[2019-07-05 12:10:25]   phase: Pending
+[2019-07-05 12:10:25]   qosClass: Guaranteed
+[2019-07-05 12:10:25]   startTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25] pod/burstable-qos-demo created
+[2019-07-05 12:10:25] apiVersion: v1
+[2019-07-05 12:10:25] kind: Pod
+[2019-07-05 12:10:25] metadata:
+[2019-07-05 12:10:25]   annotations:
+[2019-07-05 12:10:25]     kubectl.kubernetes.io/last-applied-configuration: |
+[2019-07-05 12:10:25]       {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"burstable-qos-demo","namespace":"qos-example"},"spec":{"containers":[{"image":"nginx","name":"burstable-qos-demo-ctr","resources":{"limits":{"memory":"200Mi"},"requests":{"memory":"100Mi"}}}]}}
+[2019-07-05 12:10:25]   creationTimestamp: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]   name: burstable-qos-demo
+[2019-07-05 12:10:25]   namespace: qos-example
+[2019-07-05 12:10:25]   resourceVersion: "679"
+[2019-07-05 12:10:25]   selfLink: /api/v1/namespaces/qos-example/pods/burstable-qos-demo
+[2019-07-05 12:10:25]   uid: 781ede6a-ae18-4db3-9e30-10854cf5df4a
+[2019-07-05 12:10:25] spec:
+[2019-07-05 12:10:25]   containers:
+[2019-07-05 12:10:25]   - image: nginx
+[2019-07-05 12:10:25]     imagePullPolicy: Always
+[2019-07-05 12:10:25]     name: burstable-qos-demo-ctr
+[2019-07-05 12:10:25]     resources:
+[2019-07-05 12:10:25]       limits:
+[2019-07-05 12:10:25]         memory: 200Mi
+[2019-07-05 12:10:25]       requests:
+[2019-07-05 12:10:25]         memory: 100Mi
+[2019-07-05 12:10:25]     terminationMessagePath: /dev/termination-log
+[2019-07-05 12:10:25]     terminationMessagePolicy: File
+[2019-07-05 12:10:25]     volumeMounts:
+[2019-07-05 12:10:25]     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+[2019-07-05 12:10:25]       name: default-token-rtmtp
+[2019-07-05 12:10:25]       readOnly: true
+[2019-07-05 12:10:25]   dnsPolicy: ClusterFirst
+[2019-07-05 12:10:25]   enableServiceLinks: true
+[2019-07-05 12:10:25]   nodeName: minikube
+[2019-07-05 12:10:25]   priority: 0
+[2019-07-05 12:10:25]   restartPolicy: Always
+[2019-07-05 12:10:25]   schedulerName: default-scheduler
+[2019-07-05 12:10:25]   securityContext: {}
+[2019-07-05 12:10:25]   serviceAccount: default
+[2019-07-05 12:10:25]   serviceAccountName: default
+[2019-07-05 12:10:25]   terminationGracePeriodSeconds: 30
+[2019-07-05 12:10:25]   tolerations:
+[2019-07-05 12:10:25]   - effect: NoExecute
+[2019-07-05 12:10:25]     key: node.kubernetes.io/not-ready
+[2019-07-05 12:10:25]     operator: Exists
+[2019-07-05 12:10:25]     tolerationSeconds: 300
+[2019-07-05 12:10:25]   - effect: NoExecute
+[2019-07-05 12:10:25]     key: node.kubernetes.io/unreachable
+[2019-07-05 12:10:25]     operator: Exists
+[2019-07-05 12:10:25]     tolerationSeconds: 300
+[2019-07-05 12:10:25]   volumes:
+[2019-07-05 12:10:25]   - name: default-token-rtmtp
+[2019-07-05 12:10:25]     secret:
+[2019-07-05 12:10:25]       defaultMode: 420
+[2019-07-05 12:10:25]       secretName: default-token-rtmtp
+[2019-07-05 12:10:25] status:
+[2019-07-05 12:10:25]   conditions:
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     status: "True"
+[2019-07-05 12:10:25]     type: Initialized
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     message: 'containers with unready status: [burstable-qos-demo-ctr]'
+[2019-07-05 12:10:25]     reason: ContainersNotReady
+[2019-07-05 12:10:25]     status: "False"
+[2019-07-05 12:10:25]     type: Ready
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     message: 'containers with unready status: [burstable-qos-demo-ctr]'
+[2019-07-05 12:10:25]     reason: ContainersNotReady
+[2019-07-05 12:10:25]     status: "False"
+[2019-07-05 12:10:25]     type: ContainersReady
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     status: "True"
+[2019-07-05 12:10:25]     type: PodScheduled
+[2019-07-05 12:10:25]   containerStatuses:
+[2019-07-05 12:10:25]   - image: nginx
+[2019-07-05 12:10:25]     imageID: ""
+[2019-07-05 12:10:25]     lastState: {}
+[2019-07-05 12:10:25]     name: burstable-qos-demo-ctr
+[2019-07-05 12:10:25]     ready: false
+[2019-07-05 12:10:25]     restartCount: 0
+[2019-07-05 12:10:25]     state:
+[2019-07-05 12:10:25]       waiting:
+[2019-07-05 12:10:25]         reason: ContainerCreating
+[2019-07-05 12:10:25]   hostIP: 10.0.2.15
+[2019-07-05 12:10:25]   phase: Pending
+[2019-07-05 12:10:25]   qosClass: Burstable
+[2019-07-05 12:10:25]   startTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25] pod/best-effort-qos-demo created
+[2019-07-05 12:10:25] apiVersion: v1
+[2019-07-05 12:10:25] kind: Pod
+[2019-07-05 12:10:25] metadata:
+[2019-07-05 12:10:25]   annotations:
+[2019-07-05 12:10:25]     kubectl.kubernetes.io/last-applied-configuration: |
+[2019-07-05 12:10:25]       {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"best-effort-qos-demo","namespace":"qos-example"},"spec":{"containers":[{"image":"nginx","name":"best-effort-qos-demo-ctr"}]}}
+[2019-07-05 12:10:25]   creationTimestamp: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]   name: best-effort-qos-demo
+[2019-07-05 12:10:25]   namespace: qos-example
+[2019-07-05 12:10:25]   resourceVersion: "684"
+[2019-07-05 12:10:25]   selfLink: /api/v1/namespaces/qos-example/pods/best-effort-qos-demo
+[2019-07-05 12:10:25]   uid: b452ef41-4f14-4c1e-93c1-b58791d81337
+[2019-07-05 12:10:25] spec:
+[2019-07-05 12:10:25]   containers:
+[2019-07-05 12:10:25]   - image: nginx
+[2019-07-05 12:10:25]     imagePullPolicy: Always
+[2019-07-05 12:10:25]     name: best-effort-qos-demo-ctr
+[2019-07-05 12:10:25]     resources: {}
+[2019-07-05 12:10:25]     terminationMessagePath: /dev/termination-log
+[2019-07-05 12:10:25]     terminationMessagePolicy: File
+[2019-07-05 12:10:25]     volumeMounts:
+[2019-07-05 12:10:25]     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+[2019-07-05 12:10:25]       name: default-token-rtmtp
+[2019-07-05 12:10:25]       readOnly: true
+[2019-07-05 12:10:25]   dnsPolicy: ClusterFirst
+[2019-07-05 12:10:25]   enableServiceLinks: true
+[2019-07-05 12:10:25]   nodeName: minikube
+[2019-07-05 12:10:25]   priority: 0
+[2019-07-05 12:10:25]   restartPolicy: Always
+[2019-07-05 12:10:25]   schedulerName: default-scheduler
+[2019-07-05 12:10:25]   securityContext: {}
+[2019-07-05 12:10:25]   serviceAccount: default
+[2019-07-05 12:10:25]   serviceAccountName: default
+[2019-07-05 12:10:25]   terminationGracePeriodSeconds: 30
+[2019-07-05 12:10:25]   tolerations:
+[2019-07-05 12:10:25]   - effect: NoExecute
+[2019-07-05 12:10:25]     key: node.kubernetes.io/not-ready
+[2019-07-05 12:10:25]     operator: Exists
+[2019-07-05 12:10:25]     tolerationSeconds: 300
+[2019-07-05 12:10:25]   - effect: NoExecute
+[2019-07-05 12:10:25]     key: node.kubernetes.io/unreachable
+[2019-07-05 12:10:25]     operator: Exists
+[2019-07-05 12:10:25]     tolerationSeconds: 300
+[2019-07-05 12:10:25]   volumes:
+[2019-07-05 12:10:25]   - name: default-token-rtmtp
+[2019-07-05 12:10:25]     secret:
+[2019-07-05 12:10:25]       defaultMode: 420
+[2019-07-05 12:10:25]       secretName: default-token-rtmtp
+[2019-07-05 12:10:25] status:
+[2019-07-05 12:10:25]   conditions:
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     status: "True"
+[2019-07-05 12:10:25]     type: Initialized
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     message: 'containers with unready status: [best-effort-qos-demo-ctr]'
+[2019-07-05 12:10:25]     reason: ContainersNotReady
+[2019-07-05 12:10:25]     status: "False"
+[2019-07-05 12:10:25]     type: Ready
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     message: 'containers with unready status: [best-effort-qos-demo-ctr]'
+[2019-07-05 12:10:25]     reason: ContainersNotReady
+[2019-07-05 12:10:25]     status: "False"
+[2019-07-05 12:10:25]     type: ContainersReady
+[2019-07-05 12:10:25]   - lastProbeTime: null
+[2019-07-05 12:10:25]     lastTransitionTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25]     status: "True"
+[2019-07-05 12:10:25]     type: PodScheduled
+[2019-07-05 12:10:25]   containerStatuses:
+[2019-07-05 12:10:25]   - image: nginx
+[2019-07-05 12:10:25]     imageID: ""
+[2019-07-05 12:10:25]     lastState: {}
+[2019-07-05 12:10:25]     name: best-effort-qos-demo-ctr
+[2019-07-05 12:10:25]     ready: false
+[2019-07-05 12:10:25]     restartCount: 0
+[2019-07-05 12:10:25]     state:
+[2019-07-05 12:10:25]       waiting:
+[2019-07-05 12:10:25]         reason: ContainerCreating
+[2019-07-05 12:10:25]   hostIP: 10.0.2.15
+[2019-07-05 12:10:25]   phase: Pending
+[2019-07-05 12:10:25]   qosClass: BestEffort
+[2019-07-05 12:10:25]   startTime: "2019-07-05T06:40:25Z"
+[2019-07-05 12:10:25] pod "guaranteed-qos-demo" deleted
+[2019-07-05 12:10:34] pod "burstable-qos-demo" deleted

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: guaranteed-qos-demo
+  namespace: qos-example
+spec:
+  containers:
+    - name: guaranteed-qos-demo-ctr
+      image: nginx
+      resources: # Must have both limits and resources
+        limits: 
+          memory: "200Mi" 
+          cpu: "700m"
+        requests:
+          memory: "200Mi" # Must be the same as limits
+          cpu: "700m"
