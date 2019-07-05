@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goproxy
+  labels:
+    app: goproxy
+spec:
+  containers:
+  - name: goproxy
+    image: k8s.gcr.io/goproxy:0.1
+    ports:
+    - containerPort: 8080
+    livenessProbe: # Readiness probes are configured similarly to liveness 
+    # probes. The only difference is that you use the readinessProbe field
+    # instead of the livenessProbe field.
+      tcpSocket:
+        port: 8080
+      initialDelaySeconds: 15
+      periodSeconds: 15 
+    

@@ -1,0 +1,253 @@
+[2019-07-05 20:39:14] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-05 20:39:14] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-05 20:40:01] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-05 20:40:42] 🚜  Pulling images ...
+[2019-07-05 20:41:16] 🚀  Launching Kubernetes ... 
+[2019-07-05 20:42:40] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-05 20:42:40] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-05 20:42:40] pod/liveness-exec created
+[2019-07-05 20:43:10] Name:         liveness-exec
+[2019-07-05 20:43:10] Namespace:    default
+[2019-07-05 20:43:10] Priority:     0
+[2019-07-05 20:43:10] Node:         minikube/10.0.2.15
+[2019-07-05 20:43:10] Start Time:   Fri, 05 Jul 2019 20:42:41 +0530
+[2019-07-05 20:43:10] Labels:       test=liveness
+[2019-07-05 20:43:10] Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-05 20:43:10]                 {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"test":"liveness"},"name":"liveness-exec","namespace":"default"},"s...
+[2019-07-05 20:43:10] Status:       Pending
+[2019-07-05 20:43:10] IP:           
+[2019-07-05 20:43:10] Containers:
+[2019-07-05 20:43:10]   liveness:
+[2019-07-05 20:43:10]     Container ID:  
+[2019-07-05 20:43:10]     Image:         k8s.gcr.io/busybox
+[2019-07-05 20:43:10]     Image ID:      
+[2019-07-05 20:43:10]     Port:          <none>
+[2019-07-05 20:43:10]     Host Port:     <none>
+[2019-07-05 20:43:10]     Args:
+[2019-07-05 20:43:10]       /bin/sh
+[2019-07-05 20:43:10]       -c
+[2019-07-05 20:43:10]       touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
+[2019-07-05 20:43:10]     State:          Waiting
+[2019-07-05 20:43:10]       Reason:       ContainerCreating
+[2019-07-05 20:43:10]     Ready:          False
+[2019-07-05 20:43:10]     Restart Count:  0
+[2019-07-05 20:43:10]     Liveness:       exec [cat /tmp/healthy] delay=5s timeout=1s period=5s #success=1 #failure=3
+[2019-07-05 20:43:10]     Environment:    <none>
+[2019-07-05 20:43:10]     Mounts:
+[2019-07-05 20:43:10]       /var/run/secrets/kubernetes.io/serviceaccount from default-token-9tnlm (ro)
+[2019-07-05 20:43:10] Conditions:
+[2019-07-05 20:43:10]   Type              Status
+[2019-07-05 20:43:10]   Initialized       True 
+[2019-07-05 20:43:10]   Ready             False 
+[2019-07-05 20:43:10]   ContainersReady   False 
+[2019-07-05 20:43:10]   PodScheduled      True 
+[2019-07-05 20:43:10] Volumes:
+[2019-07-05 20:43:10]   default-token-9tnlm:
+[2019-07-05 20:43:10]     Type:        Secret (a volume populated by a Secret)
+[2019-07-05 20:43:10]     SecretName:  default-token-9tnlm
+[2019-07-05 20:43:10]     Optional:    false
+[2019-07-05 20:43:10] QoS Class:       BestEffort
+[2019-07-05 20:43:10] Node-Selectors:  <none>
+[2019-07-05 20:43:10] Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+[2019-07-05 20:43:10]                  node.kubernetes.io/unreachable:NoExecute for 300s
+[2019-07-05 20:43:10] Events:
+[2019-07-05 20:43:10]   Type    Reason     Age   From               Message
+[2019-07-05 20:43:10]   ----    ------     ----  ----               -------
+[2019-07-05 20:43:10]   Normal  Scheduled  29s   default-scheduler  Successfully assigned default/liveness-exec to minikube
+[2019-07-05 20:43:10]   Normal  Pulling    28s   kubelet, minikube  Pulling image "k8s.gcr.io/busybox"
+[2019-07-05 20:43:46] Name:         liveness-exec
+[2019-07-05 20:43:46] Namespace:    default
+[2019-07-05 20:43:46] Priority:     0
+[2019-07-05 20:43:46] Node:         minikube/10.0.2.15
+[2019-07-05 20:43:46] Start Time:   Fri, 05 Jul 2019 20:42:41 +0530
+[2019-07-05 20:43:46] Labels:       test=liveness
+[2019-07-05 20:43:46] Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-05 20:43:46]                 {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"test":"liveness"},"name":"liveness-exec","namespace":"default"},"s...
+[2019-07-05 20:43:46] Status:       Pending
+[2019-07-05 20:43:46] IP:           
+[2019-07-05 20:43:46] Containers:
+[2019-07-05 20:43:46]   liveness:
+[2019-07-05 20:43:46]     Container ID:  
+[2019-07-05 20:43:46]     Image:         k8s.gcr.io/busybox
+[2019-07-05 20:43:46]     Image ID:      
+[2019-07-05 20:43:46]     Port:          <none>
+[2019-07-05 20:43:46]     Host Port:     <none>
+[2019-07-05 20:43:46]     Args:
+[2019-07-05 20:43:46]       /bin/sh
+[2019-07-05 20:43:46]       -c
+[2019-07-05 20:43:46]       touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
+[2019-07-05 20:43:46]     State:          Waiting
+[2019-07-05 20:43:46]       Reason:       ContainerCreating
+[2019-07-05 20:43:46]     Ready:          False
+[2019-07-05 20:43:46]     Restart Count:  0
+[2019-07-05 20:43:46]     Liveness:       exec [cat /tmp/healthy] delay=5s timeout=1s period=5s #success=1 #failure=3
+[2019-07-05 20:43:46]     Environment:    <none>
+[2019-07-05 20:43:46]     Mounts:
+[2019-07-05 20:43:46]       /var/run/secrets/kubernetes.io/serviceaccount from default-token-9tnlm (ro)
+[2019-07-05 20:43:46] Conditions:
+[2019-07-05 20:43:46]   Type              Status
+[2019-07-05 20:43:46]   Initialized       True 
+[2019-07-05 20:43:46]   Ready             False 
+[2019-07-05 20:43:46]   ContainersReady   False 
+[2019-07-05 20:43:46]   PodScheduled      True 
+[2019-07-05 20:43:46] Volumes:
+[2019-07-05 20:43:46]   default-token-9tnlm:
+[2019-07-05 20:43:46]     Type:        Secret (a volume populated by a Secret)
+[2019-07-05 20:43:46]     SecretName:  default-token-9tnlm
+[2019-07-05 20:43:46]     Optional:    false
+[2019-07-05 20:43:46] QoS Class:       BestEffort
+[2019-07-05 20:43:46] Node-Selectors:  <none>
+[2019-07-05 20:43:46] Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+[2019-07-05 20:43:46]                  node.kubernetes.io/unreachable:NoExecute for 300s
+[2019-07-05 20:43:46] Events:
+[2019-07-05 20:43:46]   Type    Reason     Age   From               Message
+[2019-07-05 20:43:46]   ----    ------     ----  ----               -------
+[2019-07-05 20:43:46]   Normal  Scheduled  65s   default-scheduler  Successfully assigned default/liveness-exec to minikube
+[2019-07-05 20:43:46]   Normal  Pulling    64s   kubelet, minikube  Pulling image "k8s.gcr.io/busybox"
+[2019-07-05 20:44:16] Name:         liveness-exec
+[2019-07-05 20:44:16] Namespace:    default
+[2019-07-05 20:44:16] Priority:     0
+[2019-07-05 20:44:16] Node:         minikube/10.0.2.15
+[2019-07-05 20:44:16] Start Time:   Fri, 05 Jul 2019 20:42:41 +0530
+[2019-07-05 20:44:16] Labels:       test=liveness
+[2019-07-05 20:44:16] Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-05 20:44:16]                 {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"test":"liveness"},"name":"liveness-exec","namespace":"default"},"s...
+[2019-07-05 20:44:16] Status:       Pending
+[2019-07-05 20:44:16] IP:           
+[2019-07-05 20:44:16] Containers:
+[2019-07-05 20:44:16]   liveness:
+[2019-07-05 20:44:16]     Container ID:  
+[2019-07-05 20:44:16]     Image:         k8s.gcr.io/busybox
+[2019-07-05 20:44:16]     Image ID:      
+[2019-07-05 20:44:16]     Port:          <none>
+[2019-07-05 20:44:16]     Host Port:     <none>
+[2019-07-05 20:44:16]     Args:
+[2019-07-05 20:44:16]       /bin/sh
+[2019-07-05 20:44:16]       -c
+[2019-07-05 20:44:16]       touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
+[2019-07-05 20:44:16]     State:          Waiting
+[2019-07-05 20:44:16]       Reason:       ContainerCreating
+[2019-07-05 20:44:16]     Ready:          False
+[2019-07-05 20:44:16]     Restart Count:  0
+[2019-07-05 20:44:16]     Liveness:       exec [cat /tmp/healthy] delay=5s timeout=1s period=5s #success=1 #failure=3
+[2019-07-05 20:44:16]     Environment:    <none>
+[2019-07-05 20:44:16]     Mounts:
+[2019-07-05 20:44:16]       /var/run/secrets/kubernetes.io/serviceaccount from default-token-9tnlm (ro)
+[2019-07-05 20:44:16] Conditions:
+[2019-07-05 20:44:16]   Type              Status
+[2019-07-05 20:44:16]   Initialized       True 
+[2019-07-05 20:44:16]   Ready             False 
+[2019-07-05 20:44:16]   ContainersReady   False 
+[2019-07-05 20:44:16]   PodScheduled      True 
+[2019-07-05 20:44:16] Volumes:
+[2019-07-05 20:44:16]   default-token-9tnlm:
+[2019-07-05 20:44:16]     Type:        Secret (a volume populated by a Secret)
+[2019-07-05 20:44:16]     SecretName:  default-token-9tnlm
+[2019-07-05 20:44:16]     Optional:    false
+[2019-07-05 20:44:16] QoS Class:       BestEffort
+[2019-07-05 20:44:16] Node-Selectors:  <none>
+[2019-07-05 20:44:16] Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+[2019-07-05 20:44:16]                  node.kubernetes.io/unreachable:NoExecute for 300s
+[2019-07-05 20:44:16] Events:
+[2019-07-05 20:44:16]   Type    Reason     Age   From               Message
+[2019-07-05 20:44:16]   ----    ------     ----  ----               -------
+[2019-07-05 20:44:16]   Normal  Scheduled  95s   default-scheduler  Successfully assigned default/liveness-exec to minikube
+[2019-07-05 20:44:16]   Normal  Pulling    94s   kubelet, minikube  Pulling image "k8s.gcr.io/busybox"
+[2019-07-05 20:44:16] pod/liveness-http created
+[2019-07-05 20:44:46] Name:         liveness-http
+[2019-07-05 20:44:46] Namespace:    default
+[2019-07-05 20:44:46] Priority:     0
+[2019-07-05 20:44:46] Node:         minikube/10.0.2.15
+[2019-07-05 20:44:46] Start Time:   Fri, 05 Jul 2019 20:44:16 +0530
+[2019-07-05 20:44:46] Labels:       test=liveness
+[2019-07-05 20:44:46] Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-05 20:44:46]                 {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"test":"liveness"},"name":"liveness-http","namespace":"default"},"s...
+[2019-07-05 20:44:46] Status:       Pending
+[2019-07-05 20:44:46] IP:           
+[2019-07-05 20:44:46] Containers:
+[2019-07-05 20:44:46]   liveness:
+[2019-07-05 20:44:46]     Container ID:  
+[2019-07-05 20:44:46]     Image:         k8s.gcr.io/busybox
+[2019-07-05 20:44:46]     Image ID:      
+[2019-07-05 20:44:46]     Port:          <none>
+[2019-07-05 20:44:46]     Host Port:     <none>
+[2019-07-05 20:44:46]     Args:
+[2019-07-05 20:44:46]       /server
+[2019-07-05 20:44:46]     State:          Waiting
+[2019-07-05 20:44:46]       Reason:       ContainerCreating
+[2019-07-05 20:44:46]     Ready:          False
+[2019-07-05 20:44:46]     Restart Count:  0
+[2019-07-05 20:44:46]     Liveness:       http-get http://:8080/healthz delay=5s timeout=1s period=5s #success=1 #failure=3
+[2019-07-05 20:44:46]     Environment:    <none>
+[2019-07-05 20:44:46]     Mounts:
+[2019-07-05 20:44:46]       /var/run/secrets/kubernetes.io/serviceaccount from default-token-9tnlm (ro)
+[2019-07-05 20:44:46] Conditions:
+[2019-07-05 20:44:46]   Type              Status
+[2019-07-05 20:44:46]   Initialized       True 
+[2019-07-05 20:44:46]   Ready             False 
+[2019-07-05 20:44:46]   ContainersReady   False 
+[2019-07-05 20:44:46]   PodScheduled      True 
+[2019-07-05 20:44:46] Volumes:
+[2019-07-05 20:44:46]   default-token-9tnlm:
+[2019-07-05 20:44:46]     Type:        Secret (a volume populated by a Secret)
+[2019-07-05 20:44:46]     SecretName:  default-token-9tnlm
+[2019-07-05 20:44:46]     Optional:    false
+[2019-07-05 20:44:46] QoS Class:       BestEffort
+[2019-07-05 20:44:46] Node-Selectors:  <none>
+[2019-07-05 20:44:46] Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+[2019-07-05 20:44:46]                  node.kubernetes.io/unreachable:NoExecute for 300s
+[2019-07-05 20:44:46] Events:
+[2019-07-05 20:44:46]   Type    Reason     Age   From               Message
+[2019-07-05 20:44:46]   ----    ------     ----  ----               -------
+[2019-07-05 20:44:46]   Normal  Scheduled  30s   default-scheduler  Successfully assigned default/liveness-http to minikube
+[2019-07-05 20:44:46]   Normal  Pulling    29s   kubelet, minikube  Pulling image "k8s.gcr.io/busybox"
+[2019-07-05 20:44:46] pod/goproxy created
+[2019-07-05 20:45:16] Name:         goproxy
+[2019-07-05 20:45:16] Namespace:    default
+[2019-07-05 20:45:16] Priority:     0
+[2019-07-05 20:45:16] Node:         minikube/10.0.2.15
+[2019-07-05 20:45:16] Start Time:   Fri, 05 Jul 2019 20:44:46 +0530
+[2019-07-05 20:45:16] Labels:       app=goproxy
+[2019-07-05 20:45:16] Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-05 20:45:16]                 {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"app":"goproxy"},"name":"goproxy","namespace":"default"},"spec":{"c...
+[2019-07-05 20:45:16] Status:       Pending
+[2019-07-05 20:45:16] IP:           
+[2019-07-05 20:45:16] Containers:
+[2019-07-05 20:45:16]   goproxy:
+[2019-07-05 20:45:16]     Container ID:   
+[2019-07-05 20:45:16]     Image:          k8s.gcr.io/goproxy:0.1
+[2019-07-05 20:45:16]     Image ID:       
+[2019-07-05 20:45:16]     Port:           8080/TCP
+[2019-07-05 20:45:16]     Host Port:      0/TCP
+[2019-07-05 20:45:16]     State:          Waiting
+[2019-07-05 20:45:16]       Reason:       ContainerCreating
+[2019-07-05 20:45:16]     Ready:          False
+[2019-07-05 20:45:16]     Restart Count:  0
+[2019-07-05 20:45:16]     Liveness:       tcp-socket :8080 delay=15s timeout=1s period=15s #success=1 #failure=3
+[2019-07-05 20:45:16]     Environment:    <none>
+[2019-07-05 20:45:16]     Mounts:
+[2019-07-05 20:45:16]       /var/run/secrets/kubernetes.io/serviceaccount from default-token-9tnlm (ro)
+[2019-07-05 20:45:16] Conditions:
+[2019-07-05 20:45:16]   Type              Status
+[2019-07-05 20:45:16]   Initialized       True 
+[2019-07-05 20:45:16]   Ready             False 
+[2019-07-05 20:45:16]   ContainersReady   False 
+[2019-07-05 20:45:16]   PodScheduled      True 
+[2019-07-05 20:45:16] Volumes:
+[2019-07-05 20:45:16]   default-token-9tnlm:
+[2019-07-05 20:45:16]     Type:        Secret (a volume populated by a Secret)
+[2019-07-05 20:45:16]     SecretName:  default-token-9tnlm
+[2019-07-05 20:45:16]     Optional:    false
+[2019-07-05 20:45:16] QoS Class:       BestEffort
+[2019-07-05 20:45:16] Node-Selectors:  <none>
+[2019-07-05 20:45:16] Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+[2019-07-05 20:45:16]                  node.kubernetes.io/unreachable:NoExecute for 300s
+[2019-07-05 20:45:16] Events:
+[2019-07-05 20:45:16]   Type    Reason     Age   From               Message
+[2019-07-05 20:45:16]   ----    ------     ----  ----               -------
+[2019-07-05 20:45:16]   Normal  Scheduled  30s   default-scheduler  Successfully assigned default/goproxy to minikube
+[2019-07-05 20:45:16]   Normal  Pulling    29s   kubelet, minikube  Pulling image "k8s.gcr.io/goproxy:0.1"
+[2019-07-05 20:45:18] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-05 20:45:30] 🛑  "minikube" stopped.
+[2019-07-05 20:45:31] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-05 20:45:31] 💔  The "minikube" cluster has been deleted.
