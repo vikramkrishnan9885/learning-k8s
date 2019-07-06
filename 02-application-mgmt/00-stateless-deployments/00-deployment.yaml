@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 2
+  template: # THIS IS IDENTICAL TO A POD SPEC
+  #
+  # This is interesting. It’s essentially a pod template jammed 
+  # inside our deployment spec. When the deployment creates pods, 
+  # it will create them using this template!
+  # 
+  # So everything under the template key is a regular pod 
+  # specification.
+    metadata:
+      labels:
+        app:nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80

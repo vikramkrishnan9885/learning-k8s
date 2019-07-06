@@ -1,0 +1,59 @@
+[2019-07-06 21:21:51] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-06 21:21:51] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-06 21:22:51] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-06 21:23:38] 🚜  Pulling images ...
+[2019-07-06 21:24:00] 🚀  Launching Kubernetes ... 
+[2019-07-06 21:25:34] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-06 21:25:34] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-06 21:25:34] persistentvolumeclaim/mysql-pvc created
+[2019-07-06 21:25:35] persistentvolume/mysql-pv created
+[2019-07-06 21:25:35] deployment.apps/mysql created
+[2019-07-06 21:25:35] service/mysql created
+[2019-07-06 21:25:35] Name:               mysql
+[2019-07-06 21:25:35] Namespace:          default
+[2019-07-06 21:25:35] CreationTimestamp:  Sat, 06 Jul 2019 21:25:35 +0530
+[2019-07-06 21:25:35] Labels:             <none>
+[2019-07-06 21:25:35] Annotations:        deployment.kubernetes.io/revision: 1
+[2019-07-06 21:25:35]                     kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-06 21:25:35]                       {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"mysql","namespace":"default"},"spec":{"selector":{"matchL...
+[2019-07-06 21:25:35] Selector:           app=mysql
+[2019-07-06 21:25:35] Replicas:           1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+[2019-07-06 21:25:35] StrategyType:       Recreate
+[2019-07-06 21:25:35] MinReadySeconds:    0
+[2019-07-06 21:25:35] Pod Template:
+[2019-07-06 21:25:35]   Labels:  app=mysql
+[2019-07-06 21:25:35]   Containers:
+[2019-07-06 21:25:35]    mysql:
+[2019-07-06 21:25:35]     Image:      mysql:5.6
+[2019-07-06 21:25:35]     Port:       3306/TCP
+[2019-07-06 21:25:35]     Host Port:  0/TCP
+[2019-07-06 21:25:35]     Environment:
+[2019-07-06 21:25:35]       MYSQL_ROOT_PASSWORD:  password
+[2019-07-06 21:25:35]     Mounts:
+[2019-07-06 21:25:35]       /var/lib/mysql from mysql-persistent-storage (rw)
+[2019-07-06 21:25:35]   Volumes:
+[2019-07-06 21:25:35]    mysql-persistent-storage:
+[2019-07-06 21:25:35]     Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+[2019-07-06 21:25:35]     ClaimName:  mysql-pvc
+[2019-07-06 21:25:35]     ReadOnly:   false
+[2019-07-06 21:25:35] Conditions:
+[2019-07-06 21:25:35]   Type           Status  Reason
+[2019-07-06 21:25:35]   ----           ------  ------
+[2019-07-06 21:25:35]   Available      False   MinimumReplicasUnavailable
+[2019-07-06 21:25:35]   Progressing    True    ReplicaSetUpdated
+[2019-07-06 21:25:35] OldReplicaSets:  <none>
+[2019-07-06 21:25:35] NewReplicaSet:   mysql-84bdf65dd5 (1/1 replicas created)
+[2019-07-06 21:25:35] Events:
+[2019-07-06 21:25:35]   Type    Reason             Age   From                   Message
+[2019-07-06 21:25:35]   ----    ------             ----  ----                   -------
+[2019-07-06 21:25:35]   Normal  ScalingReplicaSet  0s    deployment-controller  Scaled up replica set mysql-84bdf65dd5 to 1
+[2019-07-06 21:25:35] NAME                     READY   STATUS    RESTARTS   AGE
+[2019-07-06 21:25:35] mysql-84bdf65dd5-lrz95   0/1     Pending   0          0s
+[2019-07-06 21:25:35] deployment.extensions "mysql" deleted
+[2019-07-06 21:25:35] service "mysql" deleted
+[2019-07-06 21:25:36] persistentvolumeclaim "mysql-pvc" deleted
+[2019-07-06 21:25:36] persistentvolume "mysql-pv" deleted
+[2019-07-06 21:25:36] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-06 21:25:48] 🛑  "minikube" stopped.
+[2019-07-06 21:25:49] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-06 21:25:49] 💔  The "minikube" cluster has been deleted.
