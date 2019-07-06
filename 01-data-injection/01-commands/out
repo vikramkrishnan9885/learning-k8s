@@ -1,0 +1,12 @@
+[2019-07-06 14:14:34] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-06 14:14:34] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-06 14:15:34] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-06 14:16:10] 🚜  Pulling images ...
+[2019-07-06 14:16:35] 🚀  Launching Kubernetes ... 
+[2019-07-06 14:18:29] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-06 14:18:29] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-06 14:33:38] pod/command-demo created
+[2019-07-06 14:43:38] NAME           READY   STATUS      RESTARTS   AGE
+[2019-07-06 14:43:38] command-demo   0/1     Completed   0          10m
+[2019-07-06 14:43:38] command-demo
+[2019-07-06 14:43:38] tcp://10.96.0.1:443

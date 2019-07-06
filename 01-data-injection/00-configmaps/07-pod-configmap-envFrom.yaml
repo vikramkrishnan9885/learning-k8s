@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dapi-test-pod
+spec:
+  containers:
+    - name: test-container
+      image: k8s.gcr.io/busybox
+      command: ["/bin/sh","-c","env"]
+      envFrom:
+      # Use envFrom to define all of the ConfigMap’s data as 
+      # container environment variables. The key from the 
+      # ConfigMap becomes the environment variable name in the Pod
+      - configMapRef:
+          name: special-config
+  restartPolicy: Never
+

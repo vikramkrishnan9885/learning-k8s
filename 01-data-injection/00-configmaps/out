@@ -1,0 +1,294 @@
+[2019-07-06 13:53:13] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-06 13:53:13] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-06 13:54:13] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-06 13:54:52] 🚜  Pulling images ...
+[2019-07-06 13:55:17] 🚀  Launching Kubernetes ... 
+[2019-07-06 13:57:11] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-06 13:57:11] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-06 13:57:15] configmap/game-config created
+[2019-07-06 13:57:15] Name:         game-config
+[2019-07-06 13:57:15] Namespace:    default
+[2019-07-06 13:57:15] Labels:       <none>
+[2019-07-06 13:57:15] Annotations:  <none>
+[2019-07-06 13:57:15] 
+[2019-07-06 13:57:15] Data
+[2019-07-06 13:57:15] ====
+[2019-07-06 13:57:15] game-env-file.properties:
+[2019-07-06 13:57:15] ----
+[2019-07-06 13:57:15] enemies=aliens
+[2019-07-06 13:57:15] lives=3
+[2019-07-06 13:57:15] allowed="true"
+[2019-07-06 13:57:15] 
+[2019-07-06 13:57:15] # This comment and the empty line above it are ignored
+[2019-07-06 13:57:15] 
+[2019-07-06 13:57:15] game.properties:
+[2019-07-06 13:57:15] ----
+[2019-07-06 13:57:15] enemies=aliens
+[2019-07-06 13:57:15] lives=3
+[2019-07-06 13:57:15] enemies.cheat=true
+[2019-07-06 13:57:15] enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:15] secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:15] secret.code.allowed=true
+[2019-07-06 13:57:15] secret.code.lives=30
+[2019-07-06 13:57:15] ui-env-file.properties:
+[2019-07-06 13:57:15] ----
+[2019-07-06 13:57:15] color=purple
+[2019-07-06 13:57:15] textmode=true
+[2019-07-06 13:57:15] how=fairlyNice
+[2019-07-06 13:57:15] 
+[2019-07-06 13:57:15] ui.properties:
+[2019-07-06 13:57:15] ----
+[2019-07-06 13:57:15] color.good=purple
+[2019-07-06 13:57:15] color.bad=yellow
+[2019-07-06 13:57:15] allow.textmode=true
+[2019-07-06 13:57:15] how.nice.to.look=fairlyNice
+[2019-07-06 13:57:15] 
+[2019-07-06 13:57:15] Events:  <none>
+[2019-07-06 13:57:15] apiVersion: v1
+[2019-07-06 13:57:15] data:
+[2019-07-06 13:57:15]   game-env-file.properties: |
+[2019-07-06 13:57:15]     enemies=aliens
+[2019-07-06 13:57:15]     lives=3
+[2019-07-06 13:57:15]     allowed="true"
+[2019-07-06 13:57:15] 
+[2019-07-06 13:57:15]     # This comment and the empty line above it are ignored
+[2019-07-06 13:57:15]   game.properties: |-
+[2019-07-06 13:57:15]     enemies=aliens
+[2019-07-06 13:57:15]     lives=3
+[2019-07-06 13:57:15]     enemies.cheat=true
+[2019-07-06 13:57:15]     enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:15]     secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:15]     secret.code.allowed=true
+[2019-07-06 13:57:15]     secret.code.lives=30
+[2019-07-06 13:57:15]   ui-env-file.properties: |
+[2019-07-06 13:57:15]     color=purple
+[2019-07-06 13:57:15]     textmode=true
+[2019-07-06 13:57:15]     how=fairlyNice
+[2019-07-06 13:57:15]   ui.properties: |
+[2019-07-06 13:57:15]     color.good=purple
+[2019-07-06 13:57:15]     color.bad=yellow
+[2019-07-06 13:57:15]     allow.textmode=true
+[2019-07-06 13:57:15]     how.nice.to.look=fairlyNice
+[2019-07-06 13:57:15] kind: ConfigMap
+[2019-07-06 13:57:15] metadata:
+[2019-07-06 13:57:15]   creationTimestamp: "2019-07-06T08:27:15Z"
+[2019-07-06 13:57:15]   name: game-config
+[2019-07-06 13:57:15]   namespace: default
+[2019-07-06 13:57:15]   resourceVersion: "641"
+[2019-07-06 13:57:15]   selfLink: /api/v1/namespaces/default/configmaps/game-config
+[2019-07-06 13:57:15]   uid: 18efb8c7-3634-45de-8c01-a5496bb6776c
+[2019-07-06 13:57:15] configmap/game-config-2 created
+[2019-07-06 13:57:16] Name:         game-config-2
+[2019-07-06 13:57:16] Namespace:    default
+[2019-07-06 13:57:16] Labels:       <none>
+[2019-07-06 13:57:16] Annotations:  <none>
+[2019-07-06 13:57:16] 
+[2019-07-06 13:57:16] Data
+[2019-07-06 13:57:16] ====
+[2019-07-06 13:57:16] game.properties:
+[2019-07-06 13:57:16] ----
+[2019-07-06 13:57:16] enemies=aliens
+[2019-07-06 13:57:16] lives=3
+[2019-07-06 13:57:16] enemies.cheat=true
+[2019-07-06 13:57:16] enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:16] secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:16] secret.code.allowed=true
+[2019-07-06 13:57:16] secret.code.lives=30
+[2019-07-06 13:57:16] Events:  <none>
+[2019-07-06 13:57:16] Name:         game-config-2
+[2019-07-06 13:57:16] Namespace:    default
+[2019-07-06 13:57:16] Labels:       <none>
+[2019-07-06 13:57:16] Annotations:  <none>
+[2019-07-06 13:57:16] 
+[2019-07-06 13:57:16] Data
+[2019-07-06 13:57:16] ====
+[2019-07-06 13:57:16] game.properties:
+[2019-07-06 13:57:16] ----
+[2019-07-06 13:57:16] enemies=aliens
+[2019-07-06 13:57:16] lives=3
+[2019-07-06 13:57:16] enemies.cheat=true
+[2019-07-06 13:57:16] enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:16] secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:16] secret.code.allowed=true
+[2019-07-06 13:57:16] secret.code.lives=30
+[2019-07-06 13:57:16] Events:  <none>
+[2019-07-06 13:57:16] configmap/game-config-3 created
+[2019-07-06 13:57:16] apiVersion: v1
+[2019-07-06 13:57:16] data:
+[2019-07-06 13:57:16]   game-special-key: |-
+[2019-07-06 13:57:16]     enemies=aliens
+[2019-07-06 13:57:16]     lives=3
+[2019-07-06 13:57:16]     enemies.cheat=true
+[2019-07-06 13:57:16]     enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:16]     secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:16]     secret.code.allowed=true
+[2019-07-06 13:57:16]     secret.code.lives=30
+[2019-07-06 13:57:16] kind: ConfigMap
+[2019-07-06 13:57:16] metadata:
+[2019-07-06 13:57:16]   creationTimestamp: "2019-07-06T08:27:16Z"
+[2019-07-06 13:57:16]   name: game-config-3
+[2019-07-06 13:57:16]   namespace: default
+[2019-07-06 13:57:16]   resourceVersion: "643"
+[2019-07-06 13:57:16]   selfLink: /api/v1/namespaces/default/configmaps/game-config-3
+[2019-07-06 13:57:16]   uid: 492781d5-27ca-444c-85b4-cd3d69e5366c
+[2019-07-06 13:57:17] enemies=aliens
+[2019-07-06 13:57:17] lives=3
+[2019-07-06 13:57:17] allowed="true"
+[2019-07-06 13:57:17] 
+[2019-07-06 13:57:17] # This comment and the empty line above it are ignored
+[2019-07-06 13:57:17] configmap/game-config-env-file created
+[2019-07-06 13:57:17] apiVersion: v1
+[2019-07-06 13:57:17] data:
+[2019-07-06 13:57:17]   allowed: '"true"'
+[2019-07-06 13:57:17]   enemies: aliens
+[2019-07-06 13:57:17]   lives: "3"
+[2019-07-06 13:57:17] kind: ConfigMap
+[2019-07-06 13:57:17] metadata:
+[2019-07-06 13:57:17]   creationTimestamp: "2019-07-06T08:27:17Z"
+[2019-07-06 13:57:17]   name: game-config-env-file
+[2019-07-06 13:57:17]   namespace: default
+[2019-07-06 13:57:17]   resourceVersion: "646"
+[2019-07-06 13:57:17]   selfLink: /api/v1/namespaces/default/configmaps/game-config-env-file
+[2019-07-06 13:57:17]   uid: 38b871ad-1938-4815-ac7e-2a2c533085a7
+[2019-07-06 13:57:19] configmap/config-multi-env-files created
+[2019-07-06 13:57:19] apiVersion: v1
+[2019-07-06 13:57:19] data:
+[2019-07-06 13:57:19]   color: purple
+[2019-07-06 13:57:19]   how: fairlyNice
+[2019-07-06 13:57:19]   textmode: "true"
+[2019-07-06 13:57:19] kind: ConfigMap
+[2019-07-06 13:57:19] metadata:
+[2019-07-06 13:57:19]   creationTimestamp: "2019-07-06T08:27:19Z"
+[2019-07-06 13:57:19]   name: config-multi-env-files
+[2019-07-06 13:57:19]   namespace: default
+[2019-07-06 13:57:19]   resourceVersion: "649"
+[2019-07-06 13:57:19]   selfLink: /api/v1/namespaces/default/configmaps/config-multi-env-files
+[2019-07-06 13:57:19]   uid: 019adbce-4afd-4668-af6f-c6a14817e0ce
+[2019-07-06 13:57:19] configmap/special-config created
+[2019-07-06 13:57:19] apiVersion: v1
+[2019-07-06 13:57:19] data:
+[2019-07-06 13:57:19]   special.how: very
+[2019-07-06 13:57:19]   special.type: charm
+[2019-07-06 13:57:19] kind: ConfigMap
+[2019-07-06 13:57:19] metadata:
+[2019-07-06 13:57:19]   creationTimestamp: "2019-07-06T08:27:19Z"
+[2019-07-06 13:57:19]   name: special-config
+[2019-07-06 13:57:19]   namespace: default
+[2019-07-06 13:57:19]   resourceVersion: "650"
+[2019-07-06 13:57:19]   selfLink: /api/v1/namespaces/default/configmaps/special-config
+[2019-07-06 13:57:19]   uid: ec8ffef1-2919-4ce5-ad36-258b2012b577
+[2019-07-06 13:57:19] apiVersion: v1
+[2019-07-06 13:57:19] items:
+[2019-07-06 13:57:19] - apiVersion: v1
+[2019-07-06 13:57:19]   data:
+[2019-07-06 13:57:19]     color: purple
+[2019-07-06 13:57:19]     how: fairlyNice
+[2019-07-06 13:57:19]     textmode: "true"
+[2019-07-06 13:57:19]   kind: ConfigMap
+[2019-07-06 13:57:19]   metadata:
+[2019-07-06 13:57:19]     creationTimestamp: "2019-07-06T08:27:19Z"
+[2019-07-06 13:57:19]     name: config-multi-env-files
+[2019-07-06 13:57:19]     namespace: default
+[2019-07-06 13:57:19]     resourceVersion: "649"
+[2019-07-06 13:57:19]     selfLink: /api/v1/namespaces/default/configmaps/config-multi-env-files
+[2019-07-06 13:57:19]     uid: 019adbce-4afd-4668-af6f-c6a14817e0ce
+[2019-07-06 13:57:19] - apiVersion: v1
+[2019-07-06 13:57:19]   data:
+[2019-07-06 13:57:19]     game-env-file.properties: |
+[2019-07-06 13:57:19]       enemies=aliens
+[2019-07-06 13:57:19]       lives=3
+[2019-07-06 13:57:19]       allowed="true"
+[2019-07-06 13:57:19] 
+[2019-07-06 13:57:19]       # This comment and the empty line above it are ignored
+[2019-07-06 13:57:19]     game.properties: |-
+[2019-07-06 13:57:19]       enemies=aliens
+[2019-07-06 13:57:19]       lives=3
+[2019-07-06 13:57:19]       enemies.cheat=true
+[2019-07-06 13:57:19]       enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:19]       secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:19]       secret.code.allowed=true
+[2019-07-06 13:57:19]       secret.code.lives=30
+[2019-07-06 13:57:19]     ui-env-file.properties: |
+[2019-07-06 13:57:19]       color=purple
+[2019-07-06 13:57:19]       textmode=true
+[2019-07-06 13:57:19]       how=fairlyNice
+[2019-07-06 13:57:19]     ui.properties: |
+[2019-07-06 13:57:19]       color.good=purple
+[2019-07-06 13:57:19]       color.bad=yellow
+[2019-07-06 13:57:19]       allow.textmode=true
+[2019-07-06 13:57:19]       how.nice.to.look=fairlyNice
+[2019-07-06 13:57:19]   kind: ConfigMap
+[2019-07-06 13:57:19]   metadata:
+[2019-07-06 13:57:19]     creationTimestamp: "2019-07-06T08:27:15Z"
+[2019-07-06 13:57:19]     name: game-config
+[2019-07-06 13:57:19]     namespace: default
+[2019-07-06 13:57:19]     resourceVersion: "641"
+[2019-07-06 13:57:19]     selfLink: /api/v1/namespaces/default/configmaps/game-config
+[2019-07-06 13:57:19]     uid: 18efb8c7-3634-45de-8c01-a5496bb6776c
+[2019-07-06 13:57:19] - apiVersion: v1
+[2019-07-06 13:57:19]   data:
+[2019-07-06 13:57:19]     game.properties: |-
+[2019-07-06 13:57:19]       enemies=aliens
+[2019-07-06 13:57:19]       lives=3
+[2019-07-06 13:57:19]       enemies.cheat=true
+[2019-07-06 13:57:19]       enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:19]       secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:19]       secret.code.allowed=true
+[2019-07-06 13:57:19]       secret.code.lives=30
+[2019-07-06 13:57:19]   kind: ConfigMap
+[2019-07-06 13:57:19]   metadata:
+[2019-07-06 13:57:19]     creationTimestamp: "2019-07-06T08:27:15Z"
+[2019-07-06 13:57:19]     name: game-config-2
+[2019-07-06 13:57:19]     namespace: default
+[2019-07-06 13:57:19]     resourceVersion: "642"
+[2019-07-06 13:57:19]     selfLink: /api/v1/namespaces/default/configmaps/game-config-2
+[2019-07-06 13:57:19]     uid: c09948a2-1f76-437f-baf6-3f1f41fcc663
+[2019-07-06 13:57:19] - apiVersion: v1
+[2019-07-06 13:57:19]   data:
+[2019-07-06 13:57:19]     game-special-key: |-
+[2019-07-06 13:57:19]       enemies=aliens
+[2019-07-06 13:57:19]       lives=3
+[2019-07-06 13:57:19]       enemies.cheat=true
+[2019-07-06 13:57:19]       enemies.cheat.level=noGoodRotten
+[2019-07-06 13:57:19]       secret.code.passphrase=UUDDLRLRBABAS
+[2019-07-06 13:57:19]       secret.code.allowed=true
+[2019-07-06 13:57:19]       secret.code.lives=30
+[2019-07-06 13:57:19]   kind: ConfigMap
+[2019-07-06 13:57:19]   metadata:
+[2019-07-06 13:57:19]     creationTimestamp: "2019-07-06T08:27:16Z"
+[2019-07-06 13:57:19]     name: game-config-3
+[2019-07-06 13:57:19]     namespace: default
+[2019-07-06 13:57:19]     resourceVersion: "643"
+[2019-07-06 13:57:19]     selfLink: /api/v1/namespaces/default/configmaps/game-config-3
+[2019-07-06 13:57:19]     uid: 492781d5-27ca-444c-85b4-cd3d69e5366c
+[2019-07-06 13:57:19] - apiVersion: v1
+[2019-07-06 13:57:19]   data:
+[2019-07-06 13:57:19]     allowed: '"true"'
+[2019-07-06 13:57:19]     enemies: aliens
+[2019-07-06 13:57:19]     lives: "3"
+[2019-07-06 13:57:19]   kind: ConfigMap
+[2019-07-06 13:57:19]   metadata:
+[2019-07-06 13:57:19]     creationTimestamp: "2019-07-06T08:27:17Z"
+[2019-07-06 13:57:19]     name: game-config-env-file
+[2019-07-06 13:57:19]     namespace: default
+[2019-07-06 13:57:19]     resourceVersion: "646"
+[2019-07-06 13:57:19]     selfLink: /api/v1/namespaces/default/configmaps/game-config-env-file
+[2019-07-06 13:57:19]     uid: 38b871ad-1938-4815-ac7e-2a2c533085a7
+[2019-07-06 13:57:19] - apiVersion: v1
+[2019-07-06 13:57:19]   data:
+[2019-07-06 13:57:19]     special.how: very
+[2019-07-06 13:57:19]     special.type: charm
+[2019-07-06 13:57:19]   kind: ConfigMap
+[2019-07-06 13:57:19]   metadata:
+[2019-07-06 13:57:19]     creationTimestamp: "2019-07-06T08:27:19Z"
+[2019-07-06 13:57:19]     name: special-config
+[2019-07-06 13:57:19]     namespace: default
+[2019-07-06 13:57:19]     resourceVersion: "650"
+[2019-07-06 13:57:19]     selfLink: /api/v1/namespaces/default/configmaps/special-config
+[2019-07-06 13:57:19]     uid: ec8ffef1-2919-4ce5-ad36-258b2012b577
+[2019-07-06 13:57:19] kind: List
+[2019-07-06 13:57:19] metadata:
+[2019-07-06 13:57:19]   resourceVersion: ""
+[2019-07-06 13:57:19]   selfLink: ""
+[2019-07-06 13:57:20] configmap/special-config-2-c92b5mmcf2 created
+[2019-07-06 13:57:20] pod/dapi-test-pod created
