@@ -1,0 +1,34 @@
+[2019-07-06 18:37:51] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-06 18:37:51] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-06 18:38:49] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-06 18:39:30] 🚜  Pulling images ...
+[2019-07-06 18:40:05] 🚀  Launching Kubernetes ... 
+[2019-07-06 18:41:59] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-06 18:41:59] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-06 18:42:00] secret/test-secret created
+[2019-07-06 18:42:00] NAME          TYPE     DATA   AGE
+[2019-07-06 18:42:00] test-secret   Opaque   2      0s
+[2019-07-06 18:42:00] Name:         test-secret
+[2019-07-06 18:42:00] Namespace:    default
+[2019-07-06 18:42:00] Labels:       <none>
+[2019-07-06 18:42:00] Annotations:  
+[2019-07-06 18:42:00] Type:         Opaque
+[2019-07-06 18:42:00] 
+[2019-07-06 18:42:00] Data
+[2019-07-06 18:42:00] ====
+[2019-07-06 18:42:00] password:  12 bytes
+[2019-07-06 18:42:00] username:  6 bytes
+[2019-07-06 18:42:00] pod/secret-test-pod created
+[2019-07-06 18:52:00] NAME              READY   STATUS    RESTARTS   AGE
+[2019-07-06 18:52:00] secret-test-pod   1/1     Running   0          10m
+[2019-07-06 18:52:01] password
+[2019-07-06 18:52:01] username
+[2019-07-06 18:52:01] secret/backend-user created
+[2019-07-06 18:52:01] pod/env-single-secret created
+[2019-07-06 18:52:01] secret/db-user created
+[2019-07-06 18:52:01] pod/envvars-multiple-secrets created
+[2019-07-06 18:52:01] pod/envfrom-secret created
+[2019-07-06 18:52:02] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-06 18:52:14] 🛑  "minikube" stopped.
+[2019-07-06 18:52:16] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-06 18:52:16] 💔  The "minikube" cluster has been deleted.
