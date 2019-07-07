@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: patch-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: patch-demo-ctr
+        image: nginx
+      tolerations: # https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
+      - effect: NoSchedule
+        key: dedicated
+        value: test-team

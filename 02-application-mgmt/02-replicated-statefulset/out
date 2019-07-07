@@ -1,33 +1,107 @@
-[2019-07-06 22:49:30] 😄  minikube v1.2.0 on linux (amd64)
-[2019-07-06 22:49:30] 🔥  Creating virtualbox VM (CPUs=4, Memory=5120MB, Disk=20000MB) ...
-[2019-07-06 22:50:29] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
-[2019-07-06 22:51:07] 🚜  Pulling images ...
-[2019-07-06 22:51:40] 🚀  Launching Kubernetes ... 
-[2019-07-06 22:53:24] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
-[2019-07-06 22:53:24] 🏄  Done! kubectl is now configured to use "minikube"
-[2019-07-06 22:53:24] service/cassandra created
-[2019-07-06 22:58:25] NAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
-[2019-07-06 22:58:25] cassandra   ClusterIP   None         <none>        9042/TCP   5m1s
-[2019-07-06 22:58:25] statefulset.apps/cassandra created
-[2019-07-06 22:58:25] storageclass.storage.k8s.io/fast created
-[2019-07-06 23:13:27] NAME        READY   AGE
-[2019-07-06 23:13:27] cassandra   1/3     15m
-[2019-07-06 23:13:28] NAME          READY   STATUS              RESTARTS   AGE
-[2019-07-06 23:13:28] cassandra-0   1/1     Running             0          15m
-[2019-07-06 23:13:28] cassandra-1   0/1     ContainerCreating   0          6m12s
-[2019-07-06 23:13:42] Datacenter: DC1-K8Demo
-[2019-07-06 23:13:42] ======================
-[2019-07-06 23:13:42] Status=Up/Down
-[2019-07-06 23:13:42] |/ State=Normal/Leaving/Joining/Moving
-[2019-07-06 23:13:42] --  Address      Load       Tokens       Owns (effective)  Host ID                               Rack
-[2019-07-06 23:13:42] UN  172.17.0.10  99.6 KiB   32           100.0%            857ce1e2-f0be-4ca0-941c-f20d601ffd76  Rack1-K8Demo
-[2019-07-06 23:13:42] 
-[2019-07-06 23:13:42] statefulset.apps "cassandra" deleted
-[2019-07-06 23:13:42] Sleeping 10
-[2019-07-06 23:13:53] persistentvolumeclaim "cassandra-data-cassandra-0" deleted
-[2019-07-06 23:13:53] persistentvolumeclaim "cassandra-data-cassandra-1" deleted
-[2019-07-06 23:14:04] service "cassandra" deleted
-[2019-07-06 23:14:05] ✋  Stopping "minikube" in virtualbox ...
-[2019-07-06 23:14:17] 🛑  "minikube" stopped.
-[2019-07-06 23:14:18] 🔥  Deleting "minikube" from virtualbox ...
-[2019-07-06 23:14:18] 💔  The "minikube" cluster has been deleted.
+[2019-07-07 11:13:27] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 11:13:27] 🔥  Creating virtualbox VM (CPUs=4, Memory=5120MB, Disk=20000MB) ...
+[2019-07-07 11:14:30] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 11:15:18] 🚜  Pulling images ...
+[2019-07-07 11:15:39] 🚀  Launching Kubernetes ... 
+[2019-07-07 11:17:23] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 11:17:23] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 11:17:24] service/cassandra created
+[2019-07-07 11:22:24] NAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
+[2019-07-07 11:22:24] cassandra   ClusterIP   None         <none>        9042/TCP   5m
+[2019-07-07 11:22:24] statefulset.apps/cassandra created
+[2019-07-07 11:22:24] storageclass.storage.k8s.io/fast created
+[2019-07-07 11:37:25] NAME        READY   AGE
+[2019-07-07 11:37:25] cassandra   3/3     15m
+[2019-07-07 11:37:25] NAME          READY   STATUS    RESTARTS   AGE
+[2019-07-07 11:37:25] cassandra-0   1/1     Running   0          15m
+[2019-07-07 11:37:25] cassandra-1   1/1     Running   0          12m
+[2019-07-07 11:37:25] cassandra-2   1/1     Running   0          9m32s
+[2019-07-07 11:37:40] Datacenter: DC1-K8Demo
+[2019-07-07 11:37:40] ======================
+[2019-07-07 11:37:40] Status=Up/Down
+[2019-07-07 11:37:40] |/ State=Normal/Leaving/Joining/Moving
+[2019-07-07 11:37:40] --  Address      Load       Tokens       Owns (effective)  Host ID                               Rack
+[2019-07-07 11:37:40] UN  172.17.0.11  70.89 KiB  32           69.1%             001c36b9-bc69-4cea-a05d-6dd05443f334  Rack1-K8Demo
+[2019-07-07 11:37:40] UN  172.17.0.10  104.54 KiB  32           62.7%             0a7a3eed-1be7-4c4f-8aad-41af802cf325  Rack1-K8Demo
+[2019-07-07 11:37:40] UN  172.17.0.12  70.92 KiB  32           68.2%             49abec54-c0c7-4a81-a0b1-4b19101d916c  Rack1-K8Demo
+[2019-07-07 11:37:40] 
+[2019-07-07 11:40:02] deployment.apps/patch-demo unchanged
+[2019-07-07 11:50:02] NAME                          READY   STATUS    RESTARTS   AGE
+[2019-07-07 11:50:02] cassandra-0                   1/1     Running   0          27m
+[2019-07-07 11:50:02] cassandra-1                   1/1     Running   0          24m
+[2019-07-07 11:50:02] cassandra-2                   1/1     Running   0          22m
+[2019-07-07 11:50:02] patch-demo-66756f89cc-9xd68   1/1     Running   0          10m
+[2019-07-07 11:50:02] patch-demo-66756f89cc-w9fb4   1/1     Running   0          10m
+[2019-07-07 11:55:03] apiVersion: extensions/v1beta1
+[2019-07-07 11:55:03] kind: Deployment
+[2019-07-07 11:55:03] metadata:
+[2019-07-07 11:55:03]   annotations:
+[2019-07-07 11:55:03]     deployment.kubernetes.io/revision: "1"
+[2019-07-07 11:55:03]     kubectl.kubernetes.io/last-applied-configuration: |
+[2019-07-07 11:55:03]       {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"patch-demo","namespace":"default"},"spec":{"replicas":2,"selector":{"matchLabels":{"app":"nginx"}},"template":{"metadata":{"labels":{"app":"nginx"}},"spec":{"containers":[{"image":"nginx","name":"patch-demo-ctr"}],"tolerations":[{"effect":"NoSchedule","key":"dedicated","value":"test-team"}]}}}}
+[2019-07-07 11:55:03]   creationTimestamp: "2019-07-07T06:09:34Z"
+[2019-07-07 11:55:03]   generation: 1
+[2019-07-07 11:55:03]   name: patch-demo
+[2019-07-07 11:55:03]   namespace: default
+[2019-07-07 11:55:03]   resourceVersion: "2665"
+[2019-07-07 11:55:03]   selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/patch-demo
+[2019-07-07 11:55:03]   uid: 8d1e2f6e-e465-4891-8c2f-b64264b7c8f6
+[2019-07-07 11:55:03] spec:
+[2019-07-07 11:55:03]   progressDeadlineSeconds: 600
+[2019-07-07 11:55:03]   replicas: 2
+[2019-07-07 11:55:03]   revisionHistoryLimit: 10
+[2019-07-07 11:55:03]   selector:
+[2019-07-07 11:55:03]     matchLabels:
+[2019-07-07 11:55:03]       app: nginx
+[2019-07-07 11:55:03]   strategy:
+[2019-07-07 11:55:03]     rollingUpdate:
+[2019-07-07 11:55:03]       maxSurge: 25%
+[2019-07-07 11:55:03]       maxUnavailable: 25%
+[2019-07-07 11:55:03]     type: RollingUpdate
+[2019-07-07 11:55:03]   template:
+[2019-07-07 11:55:03]     metadata:
+[2019-07-07 11:55:03]       creationTimestamp: null
+[2019-07-07 11:55:03]       labels:
+[2019-07-07 11:55:03]         app: nginx
+[2019-07-07 11:55:03]     spec:
+[2019-07-07 11:55:03]       containers:
+[2019-07-07 11:55:03]       - image: nginx
+[2019-07-07 11:55:03]         imagePullPolicy: Always
+[2019-07-07 11:55:03]         name: patch-demo-ctr
+[2019-07-07 11:55:03]         resources: {}
+[2019-07-07 11:55:03]         terminationMessagePath: /dev/termination-log
+[2019-07-07 11:55:03]         terminationMessagePolicy: File
+[2019-07-07 11:55:03]       dnsPolicy: ClusterFirst
+[2019-07-07 11:55:03]       restartPolicy: Always
+[2019-07-07 11:55:03]       schedulerName: default-scheduler
+[2019-07-07 11:55:03]       securityContext: {}
+[2019-07-07 11:55:03]       terminationGracePeriodSeconds: 30
+[2019-07-07 11:55:03]       tolerations:
+[2019-07-07 11:55:03]       - effect: NoSchedule
+[2019-07-07 11:55:03]         key: dedicated
+[2019-07-07 11:55:03]         value: test-team
+[2019-07-07 11:55:03] status:
+[2019-07-07 11:55:03]   availableReplicas: 2
+[2019-07-07 11:55:03]   conditions:
+[2019-07-07 11:55:03]   - lastTransitionTime: "2019-07-07T06:10:19Z"
+[2019-07-07 11:55:03]     lastUpdateTime: "2019-07-07T06:10:19Z"
+[2019-07-07 11:55:03]     message: Deployment has minimum availability.
+[2019-07-07 11:55:03]     reason: MinimumReplicasAvailable
+[2019-07-07 11:55:03]     status: "True"
+[2019-07-07 11:55:03]     type: Available
+[2019-07-07 11:55:03]   - lastTransitionTime: "2019-07-07T06:09:34Z"
+[2019-07-07 11:55:03]     lastUpdateTime: "2019-07-07T06:10:19Z"
+[2019-07-07 11:55:03]     message: ReplicaSet "patch-demo-66756f89cc" has successfully progressed.
+[2019-07-07 11:55:03]     reason: NewReplicaSetAvailable
+[2019-07-07 11:55:03]     status: "True"
+[2019-07-07 11:55:03]     type: Progressing
+[2019-07-07 11:55:03]   observedGeneration: 1
+[2019-07-07 11:55:03]   readyReplicas: 2
+[2019-07-07 11:55:03]   replicas: 2
+[2019-07-07 11:55:03]   updatedReplicas: 2
+[2019-07-07 12:05:03] NAME                          READY   STATUS    RESTARTS   AGE
+[2019-07-07 12:05:03] cassandra-0                   1/1     Running   0          42m
+[2019-07-07 12:05:03] cassandra-1                   1/1     Running   0          39m
+[2019-07-07 12:05:03] cassandra-2                   1/1     Running   0          37m
+[2019-07-07 12:05:03] patch-demo-66756f89cc-9xd68   1/1     Running   0          25m
+[2019-07-07 12:05:03] patch-demo-66756f89cc-w9fb4   1/1     Running   0          25m
