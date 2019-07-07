@@ -1,0 +1,20 @@
+[2019-07-07 16:01:19] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 16:01:19] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-07 16:02:10] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 16:02:49] 🚜  Pulling images ...
+[2019-07-07 16:03:09] 🚀  Launching Kubernetes ... 
+[2019-07-07 16:05:03] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 16:05:03] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 16:05:06] deployment.apps/redis-master created
+[2019-07-07 16:15:07] NAME                            READY   STATUS    RESTARTS   AGE
+[2019-07-07 16:15:07] redis-master-545d695785-9w9js   1/1     Running   0          10m
+[2019-07-07 16:15:07] NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+[2019-07-07 16:15:07] redis-master   1/1     1            1           10m
+[2019-07-07 16:15:07] NAME                      DESIRED   CURRENT   READY   AGE
+[2019-07-07 16:15:07] redis-master-545d695785   1         1         1       10m
+[2019-07-07 16:15:09] service/redis-master created
+[2019-07-07 16:15:09] redis-master   ClusterIP   10.96.61.98   <none>        6379/TCP   0s
+[2019-07-07 16:15:09] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-07 16:15:21] 🛑  "minikube" stopped.
+[2019-07-07 16:15:22] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-07 16:15:22] 💔  The "minikube" cluster has been deleted.

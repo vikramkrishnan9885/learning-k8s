@@ -1,0 +1,159 @@
+[2019-07-07 17:39:39] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 17:39:39] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-07 17:40:37] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 17:41:17] 🚜  Pulling images ...
+[2019-07-07 17:41:39] 🚀  Launching Kubernetes ... 
+[2019-07-07 17:43:23] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 17:43:23] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 17:43:24] deployment.apps/hello-world created
+[2019-07-07 17:53:24] NAME          READY   UP-TO-DATE   AVAILABLE   AGE
+[2019-07-07 17:53:24] hello-world   2/2     2            2           10m
+[2019-07-07 17:53:24] Name:                   hello-world
+[2019-07-07 17:53:24] Namespace:              default
+[2019-07-07 17:53:24] CreationTimestamp:      Sun, 07 Jul 2019 17:43:24 +0530
+[2019-07-07 17:53:24] Labels:                 <none>
+[2019-07-07 17:53:24] Annotations:            deployment.kubernetes.io/revision: 1
+[2019-07-07 17:53:24]                         kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-07 17:53:24]                           {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"hello-world","namespace":"default"},"spec":{"replicas":2,...
+[2019-07-07 17:53:24] Selector:               run=load-balancer-example
+[2019-07-07 17:53:24] Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+[2019-07-07 17:53:24] StrategyType:           RollingUpdate
+[2019-07-07 17:53:24] MinReadySeconds:        0
+[2019-07-07 17:53:24] RollingUpdateStrategy:  25% max unavailable, 25% max surge
+[2019-07-07 17:53:24] Pod Template:
+[2019-07-07 17:53:24]   Labels:  run=load-balancer-example
+[2019-07-07 17:53:24]   Containers:
+[2019-07-07 17:53:24]    hello-world:
+[2019-07-07 17:53:24]     Image:        gcr.io/google-samples/node-hello:1.0
+[2019-07-07 17:53:24]     Port:         8080/TCP
+[2019-07-07 17:53:24]     Host Port:    0/TCP
+[2019-07-07 17:53:24]     Environment:  <none>
+[2019-07-07 17:53:24]     Mounts:       <none>
+[2019-07-07 17:53:24]   Volumes:        <none>
+[2019-07-07 17:53:24] Conditions:
+[2019-07-07 17:53:24]   Type           Status  Reason
+[2019-07-07 17:53:24]   ----           ------  ------
+[2019-07-07 17:53:24]   Available      True    MinimumReplicasAvailable
+[2019-07-07 17:53:24]   Progressing    True    NewReplicaSetAvailable
+[2019-07-07 17:53:24] OldReplicaSets:  <none>
+[2019-07-07 17:53:24] NewReplicaSet:   hello-world-6db874c846 (2/2 replicas created)
+[2019-07-07 17:53:24] Events:
+[2019-07-07 17:53:24]   Type    Reason             Age   From                   Message
+[2019-07-07 17:53:24]   ----    ------             ----  ----                   -------
+[2019-07-07 17:53:24]   Normal  ScalingReplicaSet  10m   deployment-controller  Scaled up replica set hello-world-6db874c846 to 2
+[2019-07-07 17:53:24] NAME                     DESIRED   CURRENT   READY   AGE
+[2019-07-07 17:53:24] hello-world-6db874c846   2         2         2       10m
+[2019-07-07 17:53:24] Name:           hello-world-6db874c846
+[2019-07-07 17:53:24] Namespace:      default
+[2019-07-07 17:53:24] Selector:       pod-template-hash=6db874c846,run=load-balancer-example
+[2019-07-07 17:53:24] Labels:         pod-template-hash=6db874c846
+[2019-07-07 17:53:24]                 run=load-balancer-example
+[2019-07-07 17:53:24] Annotations:    deployment.kubernetes.io/desired-replicas: 2
+[2019-07-07 17:53:24]                 deployment.kubernetes.io/max-replicas: 3
+[2019-07-07 17:53:24]                 deployment.kubernetes.io/revision: 1
+[2019-07-07 17:53:24] Controlled By:  Deployment/hello-world
+[2019-07-07 17:53:24] Replicas:       2 current / 2 desired
+[2019-07-07 17:53:24] Pods Status:    2 Running / 0 Waiting / 0 Succeeded / 0 Failed
+[2019-07-07 17:53:24] Pod Template:
+[2019-07-07 17:53:24]   Labels:  pod-template-hash=6db874c846
+[2019-07-07 17:53:24]            run=load-balancer-example
+[2019-07-07 17:53:24]   Containers:
+[2019-07-07 17:53:24]    hello-world:
+[2019-07-07 17:53:24]     Image:        gcr.io/google-samples/node-hello:1.0
+[2019-07-07 17:53:24]     Port:         8080/TCP
+[2019-07-07 17:53:24]     Host Port:    0/TCP
+[2019-07-07 17:53:24]     Environment:  <none>
+[2019-07-07 17:53:24]     Mounts:       <none>
+[2019-07-07 17:53:24]   Volumes:        <none>
+[2019-07-07 17:53:24] Events:
+[2019-07-07 17:53:24]   Type    Reason            Age   From                   Message
+[2019-07-07 17:53:24]   ----    ------            ----  ----                   -------
+[2019-07-07 17:53:24]   Normal  SuccessfulCreate  10m   replicaset-controller  Created pod: hello-world-6db874c846-2t294
+[2019-07-07 17:53:24]   Normal  SuccessfulCreate  10m   replicaset-controller  Created pod: hello-world-6db874c846-v589g
+[2019-07-07 17:53:24] service/example-service exposed
+[2019-07-07 17:53:25] NAME                           READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+[2019-07-07 17:53:25] hello-world-6db874c846-2t294   1/1     Running   0          10m   172.17.0.10   minikube   <none>           <none>
+[2019-07-07 17:53:25] hello-world-6db874c846-v589g   1/1     Running   0          10m   172.17.0.11   minikube   <none>           <none>
+[2019-07-07 17:53:25] [0;32mKubernetes master[0m is running at [0;33mhttps://192.168.99.100:8443[0m
+[2019-07-07 17:53:25] [0;32mKubeDNS[0m is running at [0;33mhttps://192.168.99.100:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy[0m
+[2019-07-07 17:53:25] 
+[2019-07-07 17:53:25] To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+[2019-07-07 17:53:25] deployment.apps/hello created
+[2019-07-07 17:53:25] Name:                   hello
+[2019-07-07 17:53:25] Namespace:              default
+[2019-07-07 17:53:25] CreationTimestamp:      Sun, 07 Jul 2019 17:53:25 +0530
+[2019-07-07 17:53:25] Labels:                 <none>
+[2019-07-07 17:53:25] Annotations:            deployment.kubernetes.io/revision: 1
+[2019-07-07 17:53:25]                         kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-07 17:53:25]                           {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"hello","namespace":"default"},"spec":{"replicas":7,"selec...
+[2019-07-07 17:53:25] Selector:               app=hello,tier=backend,track=stable
+[2019-07-07 17:53:25] Replicas:               7 desired | 0 updated | 0 total | 0 available | 0 unavailable
+[2019-07-07 17:53:25] StrategyType:           RollingUpdate
+[2019-07-07 17:53:25] MinReadySeconds:        0
+[2019-07-07 17:53:25] RollingUpdateStrategy:  25% max unavailable, 25% max surge
+[2019-07-07 17:53:25] Pod Template:
+[2019-07-07 17:53:25]   Labels:  app=hello
+[2019-07-07 17:53:25]            tier=backend
+[2019-07-07 17:53:25]            track=stable
+[2019-07-07 17:53:25]   Containers:
+[2019-07-07 17:53:25]    hello:
+[2019-07-07 17:53:25]     Image:        gcr.io/google-samples/hello-go-gke:1.0
+[2019-07-07 17:53:25]     Port:         80/TCP
+[2019-07-07 17:53:25]     Host Port:    0/TCP
+[2019-07-07 17:53:25]     Environment:  <none>
+[2019-07-07 17:53:25]     Mounts:       <none>
+[2019-07-07 17:53:25]   Volumes:        <none>
+[2019-07-07 17:53:25] Conditions:
+[2019-07-07 17:53:25]   Type           Status  Reason
+[2019-07-07 17:53:25]   ----           ------  ------
+[2019-07-07 17:53:25]   Progressing    True    NewReplicaSetCreated
+[2019-07-07 17:53:25] OldReplicaSets:  <none>
+[2019-07-07 17:53:25] NewReplicaSet:   hello-65d8867867 (0/7 replicas created)
+[2019-07-07 17:53:25] Events:
+[2019-07-07 17:53:25]   Type    Reason             Age   From                   Message
+[2019-07-07 17:53:25]   ----    ------             ----  ----                   -------
+[2019-07-07 17:53:25]   Normal  ScalingReplicaSet  0s    deployment-controller  Scaled up replica set hello-65d8867867 to 7
+[2019-07-07 17:53:25] service/hello created
+[2019-07-07 17:53:25] deployment.apps/frontend created
+[2019-07-07 17:53:25] Name:                   frontend
+[2019-07-07 17:53:25] Namespace:              default
+[2019-07-07 17:53:25] CreationTimestamp:      Sun, 07 Jul 2019 17:53:25 +0530
+[2019-07-07 17:53:25] Labels:                 <none>
+[2019-07-07 17:53:25] Annotations:            deployment.kubernetes.io/revision: 1
+[2019-07-07 17:53:25]                         kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-07 17:53:25]                           {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"frontend","namespace":"default"},"spec":{"replicas":1,"se...
+[2019-07-07 17:53:25] Selector:               app=hello,tier=frontend,track=stable
+[2019-07-07 17:53:25] Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+[2019-07-07 17:53:25] StrategyType:           RollingUpdate
+[2019-07-07 17:53:25] MinReadySeconds:        0
+[2019-07-07 17:53:25] RollingUpdateStrategy:  25% max unavailable, 25% max surge
+[2019-07-07 17:53:25] Pod Template:
+[2019-07-07 17:53:25]   Labels:  app=hello
+[2019-07-07 17:53:25]            tier=frontend
+[2019-07-07 17:53:25]            track=stable
+[2019-07-07 17:53:25]   Containers:
+[2019-07-07 17:53:25]    nginx:
+[2019-07-07 17:53:25]     Image:        gcr.io/google-samples/hello-frontend:1.0
+[2019-07-07 17:53:25]     Port:         <none>
+[2019-07-07 17:53:25]     Host Port:    <none>
+[2019-07-07 17:53:25]     Environment:  <none>
+[2019-07-07 17:53:25]     Mounts:       <none>
+[2019-07-07 17:53:25]   Volumes:        <none>
+[2019-07-07 17:53:25] Conditions:
+[2019-07-07 17:53:25]   Type           Status  Reason
+[2019-07-07 17:53:25]   ----           ------  ------
+[2019-07-07 17:53:25]   Available      False   MinimumReplicasUnavailable
+[2019-07-07 17:53:25]   Progressing    True    ReplicaSetUpdated
+[2019-07-07 17:53:25] OldReplicaSets:  <none>
+[2019-07-07 17:53:25] NewReplicaSet:   frontend-7586cbc586 (1/1 replicas created)
+[2019-07-07 17:53:25] Events:
+[2019-07-07 17:53:25]   Type    Reason             Age   From                   Message
+[2019-07-07 17:53:25]   ----    ------             ----  ----                   -------
+[2019-07-07 17:53:25]   Normal  ScalingReplicaSet  0s    deployment-controller  Scaled up replica set frontend-7586cbc586 to 1
+[2019-07-07 17:53:26] service/frontend created
+[2019-07-07 17:53:26] service "example-service" deleted
+[2019-07-07 17:53:26] deployment.extensions "hello-world" deleted
+[2019-07-07 17:53:26] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-07 17:53:40] 🛑  "minikube" stopped.
+[2019-07-07 17:53:40] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-07 17:53:40] 💔  The "minikube" cluster has been deleted.
