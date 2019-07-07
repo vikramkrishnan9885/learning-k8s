@@ -1,0 +1,106 @@
+[2019-07-07 13:10:18] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 13:10:18] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-07 13:11:04] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 13:11:04]     ▪ apiserver.runtime-config=settings.k8s.io/v1alpha1=true
+[2019-07-07 13:11:38] 🚜  Pulling images ...
+[2019-07-07 13:12:27] 🚀  Launching Kubernetes ... 
+[2019-07-07 13:14:21] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 13:14:21] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 13:14:22] podpreset.settings.k8s.io/allow-database created
+[2019-07-07 13:14:22] NAME             CREATED AT
+[2019-07-07 13:14:22] allow-database   2019-07-07T07:44:22Z
+[2019-07-07 13:14:22] pod/website created
+[2019-07-07 13:24:23] apiVersion: v1
+[2019-07-07 13:24:23] kind: Pod
+[2019-07-07 13:24:23] metadata:
+[2019-07-07 13:24:23]   annotations:
+[2019-07-07 13:24:23]     kubectl.kubernetes.io/last-applied-configuration: |
+[2019-07-07 13:24:23]       {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"app":"website","role":"frontend"},"name":"website","namespace":"default"},"spec":{"containers":[{"image":"nginx","name":"website","ports":[{"containerPort":80}]}]}}
+[2019-07-07 13:24:23]   creationTimestamp: "2019-07-07T07:44:22Z"
+[2019-07-07 13:24:23]   labels:
+[2019-07-07 13:24:23]     app: website
+[2019-07-07 13:24:23]     role: frontend
+[2019-07-07 13:24:23]   name: website
+[2019-07-07 13:24:23]   namespace: default
+[2019-07-07 13:24:23]   resourceVersion: "636"
+[2019-07-07 13:24:23]   selfLink: /api/v1/namespaces/default/pods/website
+[2019-07-07 13:24:23]   uid: a110d627-54e7-42ca-b75c-1ef4b8492396
+[2019-07-07 13:24:23] spec:
+[2019-07-07 13:24:23]   containers:
+[2019-07-07 13:24:23]   - image: nginx
+[2019-07-07 13:24:23]     imagePullPolicy: Always
+[2019-07-07 13:24:23]     name: website
+[2019-07-07 13:24:23]     ports:
+[2019-07-07 13:24:23]     - containerPort: 80
+[2019-07-07 13:24:23]       protocol: TCP
+[2019-07-07 13:24:23]     resources: {}
+[2019-07-07 13:24:23]     terminationMessagePath: /dev/termination-log
+[2019-07-07 13:24:23]     terminationMessagePolicy: File
+[2019-07-07 13:24:23]     volumeMounts:
+[2019-07-07 13:24:23]     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+[2019-07-07 13:24:23]       name: default-token-k6pvw
+[2019-07-07 13:24:23]       readOnly: true
+[2019-07-07 13:24:23]   dnsPolicy: ClusterFirst
+[2019-07-07 13:24:23]   enableServiceLinks: true
+[2019-07-07 13:24:23]   nodeName: minikube
+[2019-07-07 13:24:23]   priority: 0
+[2019-07-07 13:24:23]   restartPolicy: Always
+[2019-07-07 13:24:23]   schedulerName: default-scheduler
+[2019-07-07 13:24:23]   securityContext: {}
+[2019-07-07 13:24:23]   serviceAccount: default
+[2019-07-07 13:24:23]   serviceAccountName: default
+[2019-07-07 13:24:23]   terminationGracePeriodSeconds: 30
+[2019-07-07 13:24:23]   tolerations:
+[2019-07-07 13:24:23]   - effect: NoExecute
+[2019-07-07 13:24:23]     key: node.kubernetes.io/not-ready
+[2019-07-07 13:24:23]     operator: Exists
+[2019-07-07 13:24:23]     tolerationSeconds: 300
+[2019-07-07 13:24:23]   - effect: NoExecute
+[2019-07-07 13:24:23]     key: node.kubernetes.io/unreachable
+[2019-07-07 13:24:23]     operator: Exists
+[2019-07-07 13:24:23]     tolerationSeconds: 300
+[2019-07-07 13:24:23]   volumes:
+[2019-07-07 13:24:23]   - name: default-token-k6pvw
+[2019-07-07 13:24:23]     secret:
+[2019-07-07 13:24:23]       defaultMode: 420
+[2019-07-07 13:24:23]       secretName: default-token-k6pvw
+[2019-07-07 13:24:23] status:
+[2019-07-07 13:24:23]   conditions:
+[2019-07-07 13:24:23]   - lastProbeTime: null
+[2019-07-07 13:24:23]     lastTransitionTime: "2019-07-07T07:44:22Z"
+[2019-07-07 13:24:23]     status: "True"
+[2019-07-07 13:24:23]     type: Initialized
+[2019-07-07 13:24:23]   - lastProbeTime: null
+[2019-07-07 13:24:23]     lastTransitionTime: "2019-07-07T07:44:22Z"
+[2019-07-07 13:24:23]     message: 'containers with unready status: [website]'
+[2019-07-07 13:24:23]     reason: ContainersNotReady
+[2019-07-07 13:24:23]     status: "False"
+[2019-07-07 13:24:23]     type: Ready
+[2019-07-07 13:24:23]   - lastProbeTime: null
+[2019-07-07 13:24:23]     lastTransitionTime: "2019-07-07T07:44:22Z"
+[2019-07-07 13:24:23]     message: 'containers with unready status: [website]'
+[2019-07-07 13:24:23]     reason: ContainersNotReady
+[2019-07-07 13:24:23]     status: "False"
+[2019-07-07 13:24:23]     type: ContainersReady
+[2019-07-07 13:24:23]   - lastProbeTime: null
+[2019-07-07 13:24:23]     lastTransitionTime: "2019-07-07T07:44:22Z"
+[2019-07-07 13:24:23]     status: "True"
+[2019-07-07 13:24:23]     type: PodScheduled
+[2019-07-07 13:24:23]   containerStatuses:
+[2019-07-07 13:24:23]   - image: nginx
+[2019-07-07 13:24:23]     imageID: ""
+[2019-07-07 13:24:23]     lastState: {}
+[2019-07-07 13:24:23]     name: website
+[2019-07-07 13:24:23]     ready: false
+[2019-07-07 13:24:23]     restartCount: 0
+[2019-07-07 13:24:23]     state:
+[2019-07-07 13:24:23]       waiting:
+[2019-07-07 13:24:23]         reason: ContainerCreating
+[2019-07-07 13:24:23]   hostIP: 10.0.2.15
+[2019-07-07 13:24:23]   phase: Pending
+[2019-07-07 13:24:23]   qosClass: BestEffort
+[2019-07-07 13:24:23]   startTime: "2019-07-07T07:44:22Z"
+[2019-07-07 13:24:28] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-07 13:24:40] 🛑  "minikube" stopped.
+[2019-07-07 13:24:40] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-07 13:24:41] 💔  The "minikube" cluster has been deleted.

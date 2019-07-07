@@ -1,0 +1,25 @@
+apiVersion: settings.k8s.io/v1alpha1  # Specify the settings.k8s.io/v1alpha1 API.
+kind: PodPreset
+metadata:
+  name: allow-database # Name of the pod preset. This name is used in the pod annotation.
+spec:
+  selector:
+    matchLabels:
+      role: frontend # A label selector that matches the label in the pod specification.
+  env:  # 	Creates an environment variable to pass to the container.
+  - name: DB_PORT
+    value: "6379"
+  volumeMounts: # 	Specifies where external storage volumes should be mounted within the container.
+  - mountPath: /cache
+    name: cache-volume
+  volumes: # Defines storage volumes that are available to the container(s).
+  - name: cache-volume
+    emptyDir: {}
+
+# Using pod preset objects you can inject:
+#   * secret objects
+#   * ConfigMap objects
+#   * storage volumes
+#   * container volume mounts
+#   * environment variables
+# FOR MORE DETAILS: https://kubernetes.io/docs/concepts/workloads/pods/podpreset/
