@@ -1,0 +1,77 @@
+[2019-07-07 22:46:17] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 22:46:17] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-07 22:47:08] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 22:47:53] 🚜  Pulling images ...
+[2019-07-07 22:48:23] 🚀  Launching Kubernetes ... 
+[2019-07-07 22:49:57] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 22:49:57] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 22:49:57] kubernetes-api
+[2019-07-07 22:49:57] --------------
+[2019-07-07 22:49:57] √ can initialize the client
+[2019-07-07 22:49:57] √ can query the Kubernetes API
+[2019-07-07 22:49:57] 
+[2019-07-07 22:49:57] kubernetes-version
+[2019-07-07 22:49:57] ------------------
+[2019-07-07 22:49:57] √ is running the minimum Kubernetes API version
+[2019-07-07 22:49:58] √ is running the minimum kubectl version
+[2019-07-07 22:49:58] 
+[2019-07-07 22:49:58] pre-kubernetes-setup
+[2019-07-07 22:49:58] --------------------
+[2019-07-07 22:49:58] √ control plane namespace does not already exist
+[2019-07-07 22:49:58] √ can create Namespaces
+[2019-07-07 22:49:58] √ can create ClusterRoles
+[2019-07-07 22:49:58] √ can create ClusterRoleBindings
+[2019-07-07 22:49:58] √ can create CustomResourceDefinitions
+[2019-07-07 22:49:58] √ can create ServiceAccounts
+[2019-07-07 22:49:58] √ can create Services
+[2019-07-07 22:49:58] √ can create Deployments
+[2019-07-07 22:49:58] √ can create ConfigMaps
+[2019-07-07 22:49:58] 
+[2019-07-07 22:49:58] pre-kubernetes-capability
+[2019-07-07 22:49:58] -------------------------
+[2019-07-07 22:49:58] √ has NET_ADMIN capability
+[2019-07-07 22:50:03] 
+[2019-07-07 22:50:03] linkerd-version
+[2019-07-07 22:50:03] ---------------
+[2019-07-07 22:50:03] √ can determine the latest version
+[2019-07-07 22:50:03] √ cli is up-to-date
+[2019-07-07 22:50:03] 
+[2019-07-07 22:50:03] Status check results are √
+[2019-07-07 22:50:03] namespace/booksapp created
+[2019-07-07 22:50:07] service/webapp created
+[2019-07-07 22:50:07] deployment.extensions/webapp created
+[2019-07-07 22:50:07] service/authors created
+[2019-07-07 22:50:07] deployment.extensions/authors created
+[2019-07-07 22:50:07] service/books created
+[2019-07-07 22:50:07] deployment.extensions/books created
+[2019-07-07 22:50:07] deployment.extensions/traffic created
+[2019-07-07 22:50:08] Waiting for deployment "webapp" rollout to finish: 0 of 3 updated replicas are available...
+[2019-07-07 23:05:12] Waiting for deployment "webapp" rollout to finish: 1 of 3 updated replicas are available...
+[2019-07-07 23:05:18] Waiting for deployment "webapp" rollout to finish: 2 of 3 updated replicas are available...
+[2019-07-07 23:05:18] deployment "webapp" successfully rolled out
+[2019-07-07 23:05:19] NAME                           READY   STATUS              RESTARTS   AGE
+[2019-07-07 23:05:19] pod/authors-84d65d4fb-26nm7    0/1     ContainerCreating   0          15m
+[2019-07-07 23:05:19] pod/books-5fbfb54988-v42b5     0/1     ContainerCreating   0          15m
+[2019-07-07 23:05:19] pod/traffic-66c7b9c4cc-x6sr5   0/1     ContainerCreating   0          15m
+[2019-07-07 23:05:19] pod/webapp-579bfc8b44-57tjs    1/1     Running             0          15m
+[2019-07-07 23:05:19] pod/webapp-579bfc8b44-ns4m8    1/1     Running             0          15m
+[2019-07-07 23:05:19] pod/webapp-579bfc8b44-rdld8    1/1     Running             0          15m
+[2019-07-07 23:05:19] NAME              TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+[2019-07-07 23:05:19] service/authors   ClusterIP      None            <none>        7001/TCP         15m
+[2019-07-07 23:05:19] service/books     ClusterIP      None            <none>        7002/TCP         15m
+[2019-07-07 23:05:19] service/webapp    LoadBalancer   10.101.88.245   <pending>     7000:32252/TCP   15m
+[2019-07-07 23:05:19] NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
+[2019-07-07 23:05:19] deployment.apps/authors   0/1     1            0           15m
+[2019-07-07 23:05:19] deployment.apps/books     0/1     1            0           15m
+[2019-07-07 23:05:19] deployment.apps/traffic   0/1     1            0           15m
+[2019-07-07 23:05:19] deployment.apps/webapp    3/3     3            3           15m
+[2019-07-07 23:05:19] NAME                                 DESIRED   CURRENT   READY   AGE
+[2019-07-07 23:05:19] replicaset.apps/authors-84d65d4fb    1         1         0       15m
+[2019-07-07 23:05:19] replicaset.apps/books-5fbfb54988     1         1         0       15m
+[2019-07-07 23:05:19] replicaset.apps/traffic-66c7b9c4cc   1         1         0       15m
+[2019-07-07 23:05:19] replicaset.apps/webapp-579bfc8b44    3         3         3       15m
+[2019-07-07 23:05:19] Forwarding from 127.0.0.1:7000 -> 7000
+[2019-07-07 23:05:19] Forwarding from [::1]:7000 -> 7000
+[2019-07-07 23:11:59] Handling connection for 7000
+[2019-07-07 23:11:59] Handling connection for 7000
+[2019-07-07 23:12:10] Handling connection for 7000

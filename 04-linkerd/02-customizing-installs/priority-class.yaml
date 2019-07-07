@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: linkerd-identity
+spec:
+  template:
+    spec:
+      priorityClassName: system-cluster-critical
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: linkerd-controller
+spec:
+  template:
+    spec:
+      priorityClassName: system-cluster-critical

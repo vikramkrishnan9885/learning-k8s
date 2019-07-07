@@ -1,0 +1,76 @@
+[2019-07-07 22:16:18] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 22:16:18] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-07 22:17:17] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 22:18:01] 🚜  Pulling images ...
+[2019-07-07 22:18:25] 🚀  Launching Kubernetes ... 
+[2019-07-07 22:20:19] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 22:20:19] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 22:20:19] kubernetes-api
+[2019-07-07 22:20:19] --------------
+[2019-07-07 22:20:19] √ can initialize the client
+[2019-07-07 22:20:19] √ can query the Kubernetes API
+[2019-07-07 22:20:19] 
+[2019-07-07 22:20:19] kubernetes-version
+[2019-07-07 22:20:19] ------------------
+[2019-07-07 22:20:19] √ is running the minimum Kubernetes API version
+[2019-07-07 22:20:19] √ is running the minimum kubectl version
+[2019-07-07 22:20:19] 
+[2019-07-07 22:20:19] pre-kubernetes-setup
+[2019-07-07 22:20:19] --------------------
+[2019-07-07 22:20:19] √ control plane namespace does not already exist
+[2019-07-07 22:20:19] √ can create Namespaces
+[2019-07-07 22:20:19] √ can create ClusterRoles
+[2019-07-07 22:20:19] √ can create ClusterRoleBindings
+[2019-07-07 22:20:19] √ can create CustomResourceDefinitions
+[2019-07-07 22:20:19] √ can create ServiceAccounts
+[2019-07-07 22:20:19] √ can create Services
+[2019-07-07 22:20:19] √ can create Deployments
+[2019-07-07 22:20:19] √ can create ConfigMaps
+[2019-07-07 22:20:19] 
+[2019-07-07 22:20:19] pre-kubernetes-capability
+[2019-07-07 22:20:19] -------------------------
+[2019-07-07 22:20:19] √ has NET_ADMIN capability
+[2019-07-07 22:20:21] 
+[2019-07-07 22:20:21] linkerd-version
+[2019-07-07 22:20:21] ---------------
+[2019-07-07 22:20:21] √ can determine the latest version
+[2019-07-07 22:20:21] √ cli is up-to-date
+[2019-07-07 22:20:21] 
+[2019-07-07 22:20:21] Status check results are √
+[2019-07-07 22:20:22] namespace/linkerd created
+[2019-07-07 22:20:22] customresourcedefinition.apiextensions.k8s.io/serviceprofiles.linkerd.io created
+[2019-07-07 22:20:22] serviceaccount/linkerd-controller created
+[2019-07-07 22:20:22] serviceaccount/linkerd-grafana created
+[2019-07-07 22:20:22] serviceaccount/linkerd-identity created
+[2019-07-07 22:20:22] serviceaccount/linkerd-prometheus created
+[2019-07-07 22:20:22] serviceaccount/linkerd-sp-validator created
+[2019-07-07 22:20:22] serviceaccount/linkerd-web created
+[2019-07-07 22:20:22] clusterrole.rbac.authorization.k8s.io/linkerd-linkerd-sp-validator created
+[2019-07-07 22:20:22] clusterrole.rbac.authorization.k8s.io/linkerd-linkerd-controller created
+[2019-07-07 22:20:22] clusterrole.rbac.authorization.k8s.io/linkerd-linkerd-identity created
+[2019-07-07 22:20:22] clusterrole.rbac.authorization.k8s.io/linkerd-linkerd-prometheus created
+[2019-07-07 22:20:22] clusterrolebinding.rbac.authorization.k8s.io/linkerd-linkerd-sp-validator created
+[2019-07-07 22:20:22] clusterrolebinding.rbac.authorization.k8s.io/linkerd-linkerd-controller created
+[2019-07-07 22:20:22] clusterrolebinding.rbac.authorization.k8s.io/linkerd-linkerd-identity created
+[2019-07-07 22:20:22] clusterrolebinding.rbac.authorization.k8s.io/linkerd-linkerd-prometheus created
+[2019-07-07 22:20:22] configmap/linkerd-config created
+[2019-07-07 22:20:22] configmap/linkerd-grafana-config created
+[2019-07-07 22:20:22] configmap/linkerd-prometheus-config created
+[2019-07-07 22:20:22] secret/linkerd-identity-issuer created
+[2019-07-07 22:20:22] service/linkerd-controller-api created
+[2019-07-07 22:20:22] service/linkerd-destination created
+[2019-07-07 22:20:22] service/linkerd-grafana created
+[2019-07-07 22:20:22] service/linkerd-identity created
+[2019-07-07 22:20:22] service/linkerd-prometheus created
+[2019-07-07 22:20:22] service/linkerd-sp-validator created
+[2019-07-07 22:20:22] service/linkerd-web created
+[2019-07-07 22:20:23] deployment.extensions/linkerd-controller created
+[2019-07-07 22:20:23] deployment.extensions/linkerd-grafana created
+[2019-07-07 22:20:23] deployment.extensions/linkerd-identity created
+[2019-07-07 22:20:23] deployment.extensions/linkerd-prometheus created
+[2019-07-07 22:20:23] deployment.extensions/linkerd-sp-validator created
+[2019-07-07 22:20:23] deployment.extensions/linkerd-web created
+[2019-07-07 22:35:26] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-07 22:35:39] 🛑  "minikube" stopped.
+[2019-07-07 22:35:45] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-07 22:35:50] 💔  The "minikube" cluster has been deleted.
