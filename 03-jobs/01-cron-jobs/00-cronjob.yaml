@@ -1,0 +1,26 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: hello
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello
+            image: busybox
+            args:
+            - /bin/sh
+            - -c
+            - date; echo Hello from k8s cluster
+          restartPolicy: OnFailure
+
+# Writing a CronJob Spec STDCSL
+#   * Schedule (schedule) (Req)
+#   * Template (jobTemplate) (Req) - This is the same as a job spec - TSP (template, selector, parallelism)
+#   * Deadline (startingDeadlineSeconds) (Opt)
+#   * Concurrency (concurrencyPolicy) (Opt)
+#   * Suspend (suspend) (Opt)
+#   * Limits (successfulJobsHistoryLimit and failedJobsHistoryLimit) (Opt)

@@ -1,0 +1,78 @@
+[2019-07-07 14:57:23] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 14:57:23] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-07 14:58:23] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 14:59:01] 🚜  Pulling images ...
+[2019-07-07 14:59:21] 🚀  Launching Kubernetes ... 
+[2019-07-07 15:01:15] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 15:01:15] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 15:01:16] job.batch/pi created
+[2019-07-07 15:01:16] Name:           pi
+[2019-07-07 15:01:16] Namespace:      default
+[2019-07-07 15:01:16] Selector:       controller-uid=2b2fc16b-ff50-43df-8e93-17c36c7a99fc
+[2019-07-07 15:01:16] Labels:         controller-uid=2b2fc16b-ff50-43df-8e93-17c36c7a99fc
+[2019-07-07 15:01:16]                 job-name=pi
+[2019-07-07 15:01:16] Annotations:    kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-07 15:01:16]                   {"apiVersion":"batch/v1","kind":"Job","metadata":{"annotations":{},"name":"pi","namespace":"default"},"spec":{"backoffLimit":4,"template":...
+[2019-07-07 15:01:16] Parallelism:    1
+[2019-07-07 15:01:16] Completions:    1
+[2019-07-07 15:01:16] Start Time:     Sun, 07 Jul 2019 15:01:16 +0530
+[2019-07-07 15:01:16] Pods Statuses:  1 Running / 0 Succeeded / 0 Failed
+[2019-07-07 15:01:16] Pod Template:
+[2019-07-07 15:01:16]   Labels:  controller-uid=2b2fc16b-ff50-43df-8e93-17c36c7a99fc
+[2019-07-07 15:01:16]            job-name=pi
+[2019-07-07 15:01:16]   Containers:
+[2019-07-07 15:01:16]    pi:
+[2019-07-07 15:01:16]     Image:      perl
+[2019-07-07 15:01:16]     Port:       <none>
+[2019-07-07 15:01:16]     Host Port:  <none>
+[2019-07-07 15:01:16]     Command:
+[2019-07-07 15:01:16]       perl
+[2019-07-07 15:01:16]       -Mbignum=bpi
+[2019-07-07 15:01:16]       -wle
+[2019-07-07 15:01:16]       print bpi(2000)
+[2019-07-07 15:01:16]     Environment:  <none>
+[2019-07-07 15:01:16]     Mounts:       <none>
+[2019-07-07 15:01:16]   Volumes:        <none>
+[2019-07-07 15:01:16] Events:
+[2019-07-07 15:01:16]   Type    Reason            Age   From            Message
+[2019-07-07 15:01:16]   ----    ------            ----  ----            -------
+[2019-07-07 15:01:16]   Normal  SuccessfulCreate  0s    job-controller  Created pod: pi-lmqrd
+[2019-07-07 15:16:16] Name:           pi
+[2019-07-07 15:16:16] Namespace:      default
+[2019-07-07 15:16:16] Selector:       controller-uid=2b2fc16b-ff50-43df-8e93-17c36c7a99fc
+[2019-07-07 15:16:16] Labels:         controller-uid=2b2fc16b-ff50-43df-8e93-17c36c7a99fc
+[2019-07-07 15:16:16]                 job-name=pi
+[2019-07-07 15:16:16] Annotations:    kubectl.kubernetes.io/last-applied-configuration:
+[2019-07-07 15:16:16]                   {"apiVersion":"batch/v1","kind":"Job","metadata":{"annotations":{},"name":"pi","namespace":"default"},"spec":{"backoffLimit":4,"template":...
+[2019-07-07 15:16:16] Parallelism:    1
+[2019-07-07 15:16:16] Completions:    1
+[2019-07-07 15:16:16] Start Time:     Sun, 07 Jul 2019 15:01:16 +0530
+[2019-07-07 15:16:16] Pods Statuses:  1 Running / 0 Succeeded / 0 Failed
+[2019-07-07 15:16:16] Pod Template:
+[2019-07-07 15:16:16]   Labels:  controller-uid=2b2fc16b-ff50-43df-8e93-17c36c7a99fc
+[2019-07-07 15:16:16]            job-name=pi
+[2019-07-07 15:16:16]   Containers:
+[2019-07-07 15:16:16]    pi:
+[2019-07-07 15:16:16]     Image:      perl
+[2019-07-07 15:16:16]     Port:       <none>
+[2019-07-07 15:16:16]     Host Port:  <none>
+[2019-07-07 15:16:16]     Command:
+[2019-07-07 15:16:16]       perl
+[2019-07-07 15:16:16]       -Mbignum=bpi
+[2019-07-07 15:16:16]       -wle
+[2019-07-07 15:16:16]       print bpi(2000)
+[2019-07-07 15:16:16]     Environment:  <none>
+[2019-07-07 15:16:16]     Mounts:       <none>
+[2019-07-07 15:16:16]   Volumes:        <none>
+[2019-07-07 15:16:16] Events:
+[2019-07-07 15:16:16]   Type    Reason            Age   From            Message
+[2019-07-07 15:16:16]   ----    ------            ----  ----            -------
+[2019-07-07 15:16:16]   Normal  SuccessfulCreate  15m   job-controller  Created pod: pi-lmqrd
+[2019-07-07 15:16:16] NAME       READY   STATUS              RESTARTS   AGE
+[2019-07-07 15:16:16] pi-lmqrd   0/1     ContainerCreating   0          15m
+[2019-07-07 15:16:16] pi-lmqrd
+[2019-07-07 15:16:17] job.batch "pi" deleted
+[2019-07-07 15:16:17] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-07 15:16:30] 🛑  "minikube" stopped.
+[2019-07-07 15:16:30] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-07 15:16:31] 💔  The "minikube" cluster has been deleted.

@@ -1,0 +1,20 @@
+[2019-07-07 14:19:24] 😄  minikube v1.2.0 on linux (amd64)
+[2019-07-07 14:19:24] 🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+[2019-07-07 14:20:24] 🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+[2019-07-07 14:21:03] 🚜  Pulling images ...
+[2019-07-07 14:21:54] 🚀  Launching Kubernetes ... 
+[2019-07-07 14:23:48] ⌛  Verifying: apiserver proxy etcd scheduler controller dns
+[2019-07-07 14:23:48] 🏄  Done! kubectl is now configured to use "minikube"
+[2019-07-07 14:23:49] cronjob.batch/hello created
+[2019-07-07 14:23:49] NAME    SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+[2019-07-07 14:23:49] hello   */1 * * * *   False     0        <none>          0s
+[2019-07-07 14:25:49] NAME               COMPLETIONS   DURATION   AGE
+[2019-07-07 14:25:49] hello-1562489640   0/1           106s       106s
+[2019-07-07 14:25:49] hello-1562489700   0/1           46s        46s
+[2019-07-07 14:25:49] NAME    SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+[2019-07-07 14:25:49] hello   */1 * * * *   False     2        49s             2m
+[2019-07-07 14:25:49] cronjob.batch "hello" deleted
+[2019-07-07 14:25:50] ✋  Stopping "minikube" in virtualbox ...
+[2019-07-07 14:26:02] 🛑  "minikube" stopped.
+[2019-07-07 14:26:02] 🔥  Deleting "minikube" from virtualbox ...
+[2019-07-07 14:26:03] 💔  The "minikube" cluster has been deleted.
