@@ -1,0 +1,801 @@
+[2019-07-09 15:01:18]     Credentialed Accounts
+[2019-07-09 15:01:18] ACTIVE  ACCOUNT
+[2019-07-09 15:01:18] *       kvikram9885@gmail.com
+[2019-07-09 15:01:18] [compute]
+[2019-07-09 15:01:18] region = us-central1
+[2019-07-09 15:01:18] zone = us-central1-b
+[2019-07-09 15:01:18] [core]
+[2019-07-09 15:01:18] account = kvikram9885@gmail.com
+[2019-07-09 15:01:18] disable_usage_reporting = True
+[2019-07-09 15:01:18] project = my-project-cpb100-180518
+[2019-07-09 15:01:18] Google Cloud SDK [253.0.0]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] Platform: [Linux, x86_64] ('Linux', 'vikram-Inspiron-7370', '4.15.0-54-generic', '#58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019', 'x86_64', 'x86_64')
+[2019-07-09 15:01:18] Locale: ('en_US', 'UTF-8')
+[2019-07-09 15:01:18] Python Version: [2.7.15+ (default, Nov 27 2018, 23:36:35)  [GCC 7.3.0]]
+[2019-07-09 15:01:18] Python Location: [/usr/bin/python2]
+[2019-07-09 15:01:18] Site Packages: [Disabled]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] Installation Root: [/usr/lib/google-cloud-sdk]
+[2019-07-09 15:01:18] Installed Components:
+[2019-07-09 15:01:18]   core: [2019.06.28]
+[2019-07-09 15:01:18]   kubectl: [2019.06.28]
+[2019-07-09 15:01:18]   beta: [2019.06.28]
+[2019-07-09 15:01:18]   gsutil: [4.39]
+[2019-07-09 15:01:18]   bq: [2.0.44]
+[2019-07-09 15:01:18]   alpha: [2019.06.28]
+[2019-07-09 15:01:18] System PATH: [/home/vikram/anaconda3/bin:/home/vikram/torch/install/bin:/home/vikram/.sdkman/candidates/gradle/current/bin:/home/vikram/torch/install/bin:/home/vikram/.local/bin:/home/vikram/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/vikram/julia/bin/:/usr/local/go/bin:/home/vikram/gowork/bin:/home/vikram/.linkerd2/bin]
+[2019-07-09 15:01:18] Python PATH: [/usr/bin/../lib/google-cloud-sdk/lib/third_party:/usr/lib/google-cloud-sdk/lib:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload]
+[2019-07-09 15:01:18] Cloud SDK on PATH: [False]
+[2019-07-09 15:01:18] Kubectl on PATH: [/usr/local/bin/kubectl]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] Installation Properties: [/usr/lib/google-cloud-sdk/properties]
+[2019-07-09 15:01:18] User Config Directory: [/home/vikram/.config/gcloud]
+[2019-07-09 15:01:18] Active Configuration Name: [default]
+[2019-07-09 15:01:18] Active Configuration Path: [/home/vikram/.config/gcloud/configurations/config_default]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] Account: [kvikram9885@gmail.com]
+[2019-07-09 15:01:18] Project: [my-project-cpb100-180518]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] Current Properties:
+[2019-07-09 15:01:18]   [core]
+[2019-07-09 15:01:18]     project: [my-project-cpb100-180518]
+[2019-07-09 15:01:18]     account: [kvikram9885@gmail.com]
+[2019-07-09 15:01:18]     disable_usage_reporting: [True]
+[2019-07-09 15:01:18]   [compute]
+[2019-07-09 15:01:18]     region: [us-central1]
+[2019-07-09 15:01:18]     zone: [us-central1-b]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] Logs Directory: [/home/vikram/.config/gcloud/logs]
+[2019-07-09 15:01:18] Last Log File: [/home/vikram/.config/gcloud/logs/2019.07.09/15.01.18.517889.log]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] git: [git version 2.17.1]
+[2019-07-09 15:01:18] ssh: [OpenSSH_7.6p1 Ubuntu-4ubuntu0.3, OpenSSL 1.0.2n  7 Dec 2017]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] NAME
+[2019-07-09 15:01:18]     gcloud compute instances create - create Google Compute Engine virtual
+[2019-07-09 15:01:18]         machine instances
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] SYNOPSIS
+[2019-07-09 15:01:18]     gcloud compute instances create INSTANCE_NAMES [INSTANCE_NAMES ...]
+[2019-07-09 15:01:18]         [--accelerator=[count=COUNT],[type=TYPE]] [--async]
+[2019-07-09 15:01:18]         [--no-boot-disk-auto-delete]
+[2019-07-09 15:01:18]         [--boot-disk-device-name=BOOT_DISK_DEVICE_NAME]
+[2019-07-09 15:01:18]         [--boot-disk-size=BOOT_DISK_SIZE] [--boot-disk-type=BOOT_DISK_TYPE]
+[2019-07-09 15:01:18]         [--can-ip-forward] [--create-disk=[PROPERTY=VALUE,...]]
+[2019-07-09 15:01:18]         [--csek-key-file=FILE] [--deletion-protection]
+[2019-07-09 15:01:18]         [--description=DESCRIPTION]
+[2019-07-09 15:01:18]         [--disk=[auto-delete=AUTO-DELETE],
+[2019-07-09 15:01:18]           [boot=BOOT],[device-name=DEVICE-NAME],[mode=MODE],[name=NAME]]
+[2019-07-09 15:01:18]         [--hostname=HOSTNAME] [--labels=[KEY=VALUE,...]]
+[2019-07-09 15:01:18]         [--local-ssd=[device-name=DEVICE-NAME],[interface=INTERFACE]]
+[2019-07-09 15:01:18]         [--machine-type=MACHINE_TYPE] [--maintenance-policy=MAINTENANCE_POLICY]
+[2019-07-09 15:01:18]         [--metadata=KEY=VALUE,[KEY=VALUE,...]]
+[2019-07-09 15:01:18]         [--metadata-from-file=KEY=LOCAL_FILE_PATH,[...]]
+[2019-07-09 15:01:18]         [--min-cpu-platform=PLATFORM] [--network=NETWORK]
+[2019-07-09 15:01:18]         [--network-interface=[PROPERTY=VALUE,...]]
+[2019-07-09 15:01:18]         [--network-tier=NETWORK_TIER] [--preemptible]
+[2019-07-09 15:01:18]         [--private-network-ip=PRIVATE_NETWORK_IP]
+[2019-07-09 15:01:18]         [--no-require-csek-key-create] [--no-restart-on-failure]
+[2019-07-09 15:01:18]         [--shielded-integrity-monitoring] [--shielded-secure-boot]
+[2019-07-09 15:01:18]         [--shielded-vtpm] [--source-instance-template=SOURCE_INSTANCE_TEMPLATE]
+[2019-07-09 15:01:18]         [--subnet=SUBNET] [--tags=TAG,[TAG,...]] [--zone=ZONE]
+[2019-07-09 15:01:18]         [--address=ADDRESS | --no-address]
+[2019-07-09 15:01:18]         [--boot-disk-kms-key=BOOT_DISK_KMS_KEY
+[2019-07-09 15:01:18]           : --boot-disk-kms-keyring=BOOT_DISK_KMS_KEYRING
+[2019-07-09 15:01:18]           --boot-disk-kms-location=BOOT_DISK_KMS_LOCATION
+[2019-07-09 15:01:18]           --boot-disk-kms-project=BOOT_DISK_KMS_PROJECT]
+[2019-07-09 15:01:18]         [--custom-cpu=CUSTOM_CPU --custom-memory=CUSTOM_MEMORY
+[2019-07-09 15:01:18]           : --custom-extensions --custom-vm-gen=CUSTOM_VM_GEN]
+[2019-07-09 15:01:18]         [--image-project=IMAGE_PROJECT --image=IMAGE
+[2019-07-09 15:01:18]           | --image-family=IMAGE_FAMILY | --source-snapshot=SOURCE_SNAPSHOT]
+[2019-07-09 15:01:18]         [--node=NODE | --node-affinity-file=NODE_AFFINITY_FILE
+[2019-07-09 15:01:18]           | --node-group=NODE_GROUP] [--public-ptr | --no-public-ptr]
+[2019-07-09 15:01:18]         [--public-ptr-domain=PUBLIC_PTR_DOMAIN | --no-public-ptr-domain]
+[2019-07-09 15:01:18]         [--scopes=[SCOPE,...] | --no-scopes]
+[2019-07-09 15:01:18]         [--service-account=SERVICE_ACCOUNT | --no-service-account]
+[2019-07-09 15:01:18]         [GCLOUD_WIDE_FLAG ...]
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] DESCRIPTION
+[2019-07-09 15:01:18]     gcloud compute instances create facilitates the creation of Google Compute
+[2019-07-09 15:01:18]     Engine virtual machines. For example, running:
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]         $ gcloud compute instances create example-instance-1 \
+[2019-07-09 15:01:18]             example-instance-2 example-instance-3 --zone us-central1-a
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]     will create three instances called example-instance-1, example-instance-2,
+[2019-07-09 15:01:18]     and example-instance-3 in the us-central1-a zone.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]     When an instance is in RUNNING state and the system begins to boot, the
+[2019-07-09 15:01:18]     instance creation is considered finished, and the command returns with a
+[2019-07-09 15:01:18]     list of new virtual machines. Note that you usually cannot log into a new
+[2019-07-09 15:01:18]     instance until it finishes booting. Check the progress of an instance using
+[2019-07-09 15:01:18]     gcloud compute instances get-serial-port-output.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]     For more examples, refer to the EXAMPLES section below.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] POSITIONAL ARGUMENTS
+[2019-07-09 15:01:18]      INSTANCE_NAMES [INSTANCE_NAMES ...]
+[2019-07-09 15:01:18]         Names of the instances to create.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18] FLAGS
+[2019-07-09 15:01:18]      --accelerator=[count=COUNT],[type=TYPE]
+[2019-07-09 15:01:18]         Attaches accelerators (e.g. GPUs) to the instances.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]          type
+[2019-07-09 15:01:18]             The specific type (e.g. nvidia-tesla-k80 for nVidia Tesla K80) of
+[2019-07-09 15:01:18]             accelerator to attach to the instances. Use 'gcloud compute
+[2019-07-09 15:01:18]             accelerator-types list' to learn about all available accelerator
+[2019-07-09 15:01:18]             types.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]          count
+[2019-07-09 15:01:18]             Number of accelerators to attach to each instance. The default
+[2019-07-09 15:01:18]             value is 1.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]      --async
+[2019-07-09 15:01:18]         Display information about the operation in progress, without waiting
+[2019-07-09 15:01:18]         for the operation to complete.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:18]      --boot-disk-auto-delete
+[2019-07-09 15:01:18]         Automatically delete boot disks when their instances are deleted.
+[2019-07-09 15:01:18]         Enabled by default, use --no-boot-disk-auto-delete to disable.
+[2019-07-09 15:01:18] 
+[2019-07-09 15:01:19]      --boot-disk-device-name=BOOT_DISK_DEVICE_NAME
+[2019-07-09 15:01:19]         The name the guest operating system will see for the boot disk. This
+[2019-07-09 15:01:19]         option can only be specified if a new boot disk is being created (as
+[2019-07-09 15:01:19]         opposed to mounting an existing persistent disk).
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --boot-disk-size=BOOT_DISK_SIZE
+[2019-07-09 15:01:19]         The size of the boot disk. This option can only be specified if a new
+[2019-07-09 15:01:19]         boot disk is being created (as opposed to mounting an existing
+[2019-07-09 15:01:19]         persistent disk). The value must be a whole number followed by a size
+[2019-07-09 15:01:19]         unit of KB for kilobyte, MB for megabyte, GB for gigabyte, or TB for
+[2019-07-09 15:01:19]         terabyte. For example, 10GB will produce a 10 gigabyte disk. The
+[2019-07-09 15:01:19]         minimum size a boot disk can have is 10 GB. Disk size must be a
+[2019-07-09 15:01:19]         multiple of 1 GB. Limit your boot disk size to 2TB to account for MBR
+[2019-07-09 15:01:19]         partition table limitations.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --boot-disk-type=BOOT_DISK_TYPE
+[2019-07-09 15:01:19]         The type of the boot disk. This option can only be specified if a new
+[2019-07-09 15:01:19]         boot disk is being created (as opposed to mounting an existing
+[2019-07-09 15:01:19]         persistent disk). To get a list of available disk types, run $ gcloud
+[2019-07-09 15:01:19]         compute disk-types list.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --can-ip-forward
+[2019-07-09 15:01:19]         If provided, allows the instances to send and receive packets with
+[2019-07-09 15:01:19]         non-matching destination or source IP addresses.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --create-disk=[PROPERTY=VALUE,...]
+[2019-07-09 15:01:19]         Creates and attaches persistent disks to the instances.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          name
+[2019-07-09 15:01:19]             Specifies the name of the disk. This option cannot be specified if
+[2019-07-09 15:01:19]             more than one instance is being created.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          description
+[2019-07-09 15:01:19]             Optional textual description for the disk being created.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          mode
+[2019-07-09 15:01:19]             Specifies the mode of the disk. Supported options are ro for
+[2019-07-09 15:01:19]             read-only and rw for read-write. If omitted, rw is used as a
+[2019-07-09 15:01:19]             default.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          image
+[2019-07-09 15:01:19]             Specifies the name of the image that the disk will be initialized
+[2019-07-09 15:01:19]             with. A new disk will be created based on the given image. To view
+[2019-07-09 15:01:19]             a list of public images and projects, run $ gcloud compute images
+[2019-07-09 15:01:19]             list. It is best practice to use image when a specific version of
+[2019-07-09 15:01:19]             an image is needed. If both image and image-family flags are
+[2019-07-09 15:01:19]             omitted a blank disk will be created.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          image-family
+[2019-07-09 15:01:19]             The family of the image that the disk will be initialized with.
+[2019-07-09 15:01:19]             When a family is specified instead of an image, the latest
+[2019-07-09 15:01:19]             non-deprecated image associated with that family is used. It is
+[2019-07-09 15:01:19]             best practice to use image-family when the latest version of an
+[2019-07-09 15:01:19]             image is needed.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          image-project
+[2019-07-09 15:01:19]             The project that the image or image family belongs to. It is best
+[2019-07-09 15:01:19]             practice to define image-project.
+[2019-07-09 15:01:19]             + If specifying one of our public images, image-project must be
+[2019-07-09 15:01:19]               provided.
+[2019-07-09 15:01:19]             + If there are several of the same image-family value in multiple
+[2019-07-09 15:01:19]               projects, image-project must be specified to clarify the image to
+[2019-07-09 15:01:19]               be used.
+[2019-07-09 15:01:19]             + If not specified and either image or image-family is provided,
+[2019-07-09 15:01:19]               the current default project is used.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          size
+[2019-07-09 15:01:19]             The size of the disk. The value must be a whole number followed by
+[2019-07-09 15:01:19]             a size unit of KB for kilobyte, MB for megabyte, GB for gigabyte,
+[2019-07-09 15:01:19]             or TB for terabyte. For example, 10GB will produce a 10 gigabyte
+[2019-07-09 15:01:19]             disk. Disk size must be a multiple of 1 GB. If not specified, the
+[2019-07-09 15:01:19]             default image size will be used for the new disk.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          type
+[2019-07-09 15:01:19]             The type of the disk. To get a list of available disk types, run $
+[2019-07-09 15:01:19]             gcloud compute disk-types list. The default disk type is
+[2019-07-09 15:01:19]             pd-standard.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          device-name
+[2019-07-09 15:01:19]             An optional name that indicates the disk name the guest operating
+[2019-07-09 15:01:19]             system will see. If omitted, a device name of the form
+[2019-07-09 15:01:19]             persistent-disk-N will be used.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          auto-delete
+[2019-07-09 15:01:19]             If yes, this persistent disk will be automatically deleted when the
+[2019-07-09 15:01:19]             instance is deleted. However, if the disk is later detached from
+[2019-07-09 15:01:19]             the instance, this option won't apply. The default value for this
+[2019-07-09 15:01:19]             is no.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          kms-key
+[2019-07-09 15:01:19]             Fully qualified Cloud KMS cryptokey name that will protect the
+[2019-07-09 15:01:19]             disk. This can either be the fully qualified path or the name. The
+[2019-07-09 15:01:19]             fully qualified Cloud KMS cryptokey name format is:
+[2019-07-09 15:01:19]             projects/<kms-project>/locations/<kms-location>/keyRings/<kms-keyring>/
+[2019-07-09 15:01:19]             cryptoKeys/<key-name>. If the value is not fully qualified then
+[2019-07-09 15:01:19]             kms-location, kms-keyring, and optionally kms-project are required.
+[2019-07-09 15:01:19]             See
+[2019-07-09 15:01:19]             https://cloud.google.com/compute/docs/disks/customer-managed-encryption
+[2019-07-09 15:01:19]             for more details.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          kms-project
+[2019-07-09 15:01:19]             Project that contains the Cloud KMS cryptokey that will protect the
+[2019-07-09 15:01:19]             disk. If the project is not specified then the project where the
+[2019-07-09 15:01:19]             disk is being created will be used. If this flag is set then
+[2019-07-09 15:01:19]             key-location, kms-keyring, and kms-key are required. See
+[2019-07-09 15:01:19]             https://cloud.google.com/compute/docs/disks/customer-managed-encryption
+[2019-07-09 15:01:19]             for more details.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          kms-location
+[2019-07-09 15:01:19]             Location of the Cloud KMS cryptokey to be used for protecting the
+[2019-07-09 15:01:19]             disk. All Cloud KMS cryptokeys are reside in a 'location'. To get a
+[2019-07-09 15:01:19]             list of possible locations run 'gcloud kms locations list'. If this
+[2019-07-09 15:01:19]             flag is set then kms-keyring and kms-key are required. See
+[2019-07-09 15:01:19]             https://cloud.google.com/compute/docs/disks/customer-managed-encryption
+[2019-07-09 15:01:19]             for more details.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          kms-keyring
+[2019-07-09 15:01:19]             The keyring which contains the Cloud KMS cryptokey that will
+[2019-07-09 15:01:19]             protect the disk. If this flag is set then kms-location and kms-key
+[2019-07-09 15:01:19]             are required. See
+[2019-07-09 15:01:19]             https://cloud.google.com/compute/docs/disks/customer-managed-encryption
+[2019-07-09 15:01:19]             for more details.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          source-snapshot
+[2019-07-09 15:01:19]             The source disk snapshot that will be used to create the disk. You
+[2019-07-09 15:01:19]             can provide this as a full URL to the snapshot or just the snapshot
+[2019-07-09 15:01:19]             name. For example, the following are valid values:
+[2019-07-09 15:01:19]                 o https://www.googleapis.com/compute/v1/projects/myproject/global/snapshots/snapshot
+[2019-07-09 15:01:19]                 o snapshot
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --csek-key-file=FILE
+[2019-07-09 15:01:19]         Path to a Customer-Supplied Encryption Key (CSEK) key file, mapping
+[2019-07-09 15:01:19]         Google Compute Engine resources to user managed keys to be used when
+[2019-07-09 15:01:19]         creating, mounting, or snapshotting disks.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         If you pass - as value of the flag the CSEK will be read from stdin.
+[2019-07-09 15:01:19]         See
+[2019-07-09 15:01:19]         https://cloud.google.com/compute/docs/disks/customer-supplied-encryption
+[2019-07-09 15:01:19]         for more details.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --deletion-protection
+[2019-07-09 15:01:19]         Enables deletion protection for the instance.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --description=DESCRIPTION
+[2019-07-09 15:01:19]         Specifies a textual description of the instances.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --disk=[auto-delete=AUTO-DELETE],[boot=BOOT],[device-name=DEVICE-NAME],[mode=MODE],[name=NAME]
+[2019-07-09 15:01:19]         Attaches persistent disks to the instances. The disks specified must
+[2019-07-09 15:01:19]         already exist.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          name
+[2019-07-09 15:01:19]             The disk to attach to the instances. When creating more than one
+[2019-07-09 15:01:19]             instance and using this property, the only valid mode for attaching
+[2019-07-09 15:01:19]             the disk is read-only (see mode below).
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          mode
+[2019-07-09 15:01:19]             Specifies the mode of the disk. Supported options are ro for
+[2019-07-09 15:01:19]             read-only and rw for read-write. If omitted, rw is used as a
+[2019-07-09 15:01:19]             default. It is an error for mode to be rw when creating more than
+[2019-07-09 15:01:19]             one instance because read-write disks can only be attached to a
+[2019-07-09 15:01:19]             single instance.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          boot
+[2019-07-09 15:01:19]             If yes, indicates that this is a boot disk. The virtual machines
+[2019-07-09 15:01:19]             will use the first partition of the disk for their root file
+[2019-07-09 15:01:19]             systems. The default value for this is no.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          device-name
+[2019-07-09 15:01:19]             An optional name that indicates the disk name the guest operating
+[2019-07-09 15:01:19]             system will see. If omitted, a device name of the form
+[2019-07-09 15:01:19]             persistent-disk-N will be used.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          auto-delete
+[2019-07-09 15:01:19]             If yes, this persistent disk will be automatically deleted when the
+[2019-07-09 15:01:19]             instance is deleted. However, if the disk is later detached from
+[2019-07-09 15:01:19]             the instance, this option won't apply. The default value for this
+[2019-07-09 15:01:19]             is yes.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --hostname=HOSTNAME
+[2019-07-09 15:01:19]         Specify the hostname of the instance to be created. The specified
+[2019-07-09 15:01:19]         homename must be RFC1035 compliant. If hostname is not specified, the
+[2019-07-09 15:01:19]         default hostname is [INSTANCE_NAME].c.[PROJECT_ID].internal when using
+[2019-07-09 15:01:19]         the global DNS, and [INSTANCE_NAME].[ZONE].c.[PROJECT_ID].internal when
+[2019-07-09 15:01:19]         using zonal DNS.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --labels=[KEY=VALUE,...]
+[2019-07-09 15:01:19]         List of label KEY=VALUE pairs to add.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         Keys must start with a lowercase character and contain only hyphens
+[2019-07-09 15:01:19]         (-), underscores (_), lowercase characters, and numbers. Values must
+[2019-07-09 15:01:19]         contain only hyphens (-), underscores (_), lowercase characters, and
+[2019-07-09 15:01:19]         numbers.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --local-ssd=[device-name=DEVICE-NAME],[interface=INTERFACE]
+[2019-07-09 15:01:19]         Attaches a local SSD to the instances.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          device-name
+[2019-07-09 15:01:19]             Optional. A name that indicates the disk name the guest operating
+[2019-07-09 15:01:19]             system will see. Can only be specified if interface is SCSI. If
+[2019-07-09 15:01:19]             omitted, a device name of the form local-ssd-N will be used.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          interface
+[2019-07-09 15:01:19]             Optional. The kind of disk interface exposed to the VM for this
+[2019-07-09 15:01:19]             SSD. Valid values are SCSI and NVME. SCSI is the default and is
+[2019-07-09 15:01:19]             supported by more guest operating systems. NVME may provide higher
+[2019-07-09 15:01:19]             performance.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --machine-type=MACHINE_TYPE
+[2019-07-09 15:01:19]         Specifies the machine type used for the instances. To get a list of
+[2019-07-09 15:01:19]         available machine types, run 'gcloud compute machine-types list'. If
+[2019-07-09 15:01:19]         unspecified, the default type is n1-standard-1.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --maintenance-policy=MAINTENANCE_POLICY
+[2019-07-09 15:01:19]         Specifies the behavior of the instances when their host machines
+[2019-07-09 15:01:19]         undergo maintenance. The default is MIGRATE. MAINTENANCE_POLICY must be
+[2019-07-09 15:01:19]         one of:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          MIGRATE
+[2019-07-09 15:01:19]             The instances should be migrated to a new host. This will
+[2019-07-09 15:01:19]             temporarily impact the performance of instances during a migration
+[2019-07-09 15:01:19]             event.
+[2019-07-09 15:01:19]          TERMINATE
+[2019-07-09 15:01:19]             The instances should be terminated.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --metadata=KEY=VALUE,[KEY=VALUE,...]
+[2019-07-09 15:01:19]         Metadata to be made available to the guest operating system running on
+[2019-07-09 15:01:19]         the instances. Each metadata entry is a key/value pair separated by an
+[2019-07-09 15:01:19]         equals sign. Metadata keys must be unique and less than 128 bytes in
+[2019-07-09 15:01:19]         length. Values must be less than or equal to 32,768 bytes in length.
+[2019-07-09 15:01:19]         Multiple arguments can be passed to this flag, e.g., --metadata
+[2019-07-09 15:01:19]         key-1=value-1,key-2=value-2,key-3=value-3.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         In images that have Compute Engine tools installed on them, such as the
+[2019-07-09 15:01:19]         official images (https://cloud.google.com/compute/docs/images), the
+[2019-07-09 15:01:19]         following metadata keys have special meanings:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          startup-script
+[2019-07-09 15:01:19]             Specifies a script that will be executed by the instances once they
+[2019-07-09 15:01:19]             start running. For convenience, --metadata-from-file can be used to
+[2019-07-09 15:01:19]             pull the value from a file.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          startup-script-url
+[2019-07-09 15:01:19]             Same as startup-script except that the script contents are pulled
+[2019-07-09 15:01:19]             from a publicly-accessible location on the web.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --metadata-from-file=KEY=LOCAL_FILE_PATH,[...]
+[2019-07-09 15:01:19]         Same as --metadata except that the value for the entry will be read
+[2019-07-09 15:01:19]         from a local file. This is useful for values that are too large such as
+[2019-07-09 15:01:19]         startup-script contents.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --min-cpu-platform=PLATFORM
+[2019-07-09 15:01:19]         When specified, the VM will be scheduled on host with specified CPU
+[2019-07-09 15:01:19]         architecture or a newer one. To list available CPU platforms in given
+[2019-07-09 15:01:19]         zone, run:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             $ gcloud compute zones describe ZONE \
+[2019-07-09 15:01:19]               --format="value(availableCpuPlatforms)"
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         Default setting is "AUTOMATIC".
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         CPU platform selection is available only in selected zones.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         You can find more information on-line:
+[2019-07-09 15:01:19]         https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --network=NETWORK
+[2019-07-09 15:01:19]         Specifies the network that the instances will be part of. If --subnet
+[2019-07-09 15:01:19]         is also specified subnet must be a subnetwork of network specified by
+[2019-07-09 15:01:19]         --network. If neither is specified, this defaults to the "default"
+[2019-07-09 15:01:19]         network.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --network-interface=[PROPERTY=VALUE,...]
+[2019-07-09 15:01:19]         Adds a network interface to the instance. Mutually exclusive with any
+[2019-07-09 15:01:19]         of these flags: --address, --network, --network-tier, --subnet,
+[2019-07-09 15:01:19]         --private-network-ip. This flag can be repeated to specify multiple
+[2019-07-09 15:01:19]         network interfaces.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         The following keys are allowed:
+[2019-07-09 15:01:19]          address
+[2019-07-09 15:01:19]             Assigns the given external address to the instance that is created.
+[2019-07-09 15:01:19]             Specifying an empty string will assign an ephemeral IP. Mutually
+[2019-07-09 15:01:19]             exclusive with no-address. If neither key is present the instance
+[2019-07-09 15:01:19]             will get an ephemeral IP.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          network
+[2019-07-09 15:01:19]             Specifies the network that the interface will be part of. If subnet
+[2019-07-09 15:01:19]             is also specified it must be subnetwork of this network. If neither
+[2019-07-09 15:01:19]             is specified, this defaults to the "default" network.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          no-address
+[2019-07-09 15:01:19]             If specified the interface will have no external IP. Mutually
+[2019-07-09 15:01:19]             exclusive with address. If neither key is present the instance will
+[2019-07-09 15:01:19]             get an ephemeral IP.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          network-tier
+[2019-07-09 15:01:19]             Specifies the network tier of the interface. NETWORK_TIER must be
+[2019-07-09 15:01:19]             one of: PREMIUM, STANDARD. The default value is PREMIUM.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          private-network-ip
+[2019-07-09 15:01:19]             Assigns the given RFC1918 IP address to the interface.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          subnet
+[2019-07-09 15:01:19]             Specifies the subnet that the interface will be part of. If network
+[2019-07-09 15:01:19]             key is also specified this must be a subnetwork of the specified
+[2019-07-09 15:01:19]             network.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]          aliases
+[2019-07-09 15:01:19]             Specifies the IP alias ranges to allocate for this interface. If
+[2019-07-09 15:01:19]             there are multiple IP alias ranges, they are separated by
+[2019-07-09 15:01:19]             semicolons.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             For example:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]                 --aliases="10.128.1.0/24;range1:/32"
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             Each IP alias range consists of a range name and an IP range
+[2019-07-09 15:01:19]             separated by a colon, or just the IP range. The range name is the
+[2019-07-09 15:01:19]             name of the range within the network interface's subnet from which
+[2019-07-09 15:01:19]             to allocate an IP alias range. If unspecified, it defaults to the
+[2019-07-09 15:01:19]             primary IP range of the subnet. The IP range can be a CIDR range
+[2019-07-09 15:01:19]             (e.g. 192.168.100.0/24), a single IP address (e.g. 192.168.100.1),
+[2019-07-09 15:01:19]             or a netmask in CIDR format (e.g. /24). If the IP range is
+[2019-07-09 15:01:19]             specified by CIDR range or single IP address, it must belong to the
+[2019-07-09 15:01:19]             CIDR range specified by the range name on the subnet. If the IP
+[2019-07-09 15:01:19]             range is specified by netmask, the IP allocator will pick an
+[2019-07-09 15:01:19]             available range with the specified netmask and allocate it to this
+[2019-07-09 15:01:19]             network interface.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --network-tier=NETWORK_TIER
+[2019-07-09 15:01:19]         Specifies the network tier that will be used to configure the instance.
+[2019-07-09 15:01:19]         NETWORK_TIER must be one of: PREMIUM, STANDARD. The default value is
+[2019-07-09 15:01:19]         PREMIUM.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --preemptible
+[2019-07-09 15:01:19]         If provided, instances will be preemptible and time-limited. Instances
+[2019-07-09 15:01:19]         may be preempted to free up resources for standard VM instances, and
+[2019-07-09 15:01:19]         will only be able to run for a limited amount of time. Preemptible
+[2019-07-09 15:01:19]         instances can not be restarted and will not migrate.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --private-network-ip=PRIVATE_NETWORK_IP
+[2019-07-09 15:01:19]         Specifies the RFC1918 IP to assign to the instance. The IP should be in
+[2019-07-09 15:01:19]         the subnet or legacy network IP range.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --require-csek-key-create
+[2019-07-09 15:01:19]         Refuse to create resources not protected by a user managed key in the
+[2019-07-09 15:01:19]         key file when --csek-key-file is given. This behavior is enabled by
+[2019-07-09 15:01:19]         default to prevent incorrect gcloud invocations from accidentally
+[2019-07-09 15:01:19]         creating resources with no user managed key. Disabling the check allows
+[2019-07-09 15:01:19]         creation of some resources without a matching Customer-Supplied
+[2019-07-09 15:01:19]         Encryption Key in the supplied --csek-key-file. See
+[2019-07-09 15:01:19]         https://cloud.google.com/compute/docs/disks/customer-supplied-encryption
+[2019-07-09 15:01:19]         for more details. Enabled by default, use --no-require-csek-key-create
+[2019-07-09 15:01:19]         to disable.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --restart-on-failure
+[2019-07-09 15:01:19]         The instances will be restarted if they are terminated by Compute
+[2019-07-09 15:01:19]         Engine. This does not affect terminations performed by the user.
+[2019-07-09 15:01:19]         Enabled by default, use --no-restart-on-failure to disable.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --shielded-integrity-monitoring
+[2019-07-09 15:01:19]         Enables monitoring and attestation of the boot integrity of the
+[2019-07-09 15:01:19]         instance. The attestation is performed against the integrity policy
+[2019-07-09 15:01:19]         baseline. This baseline is initially derived from the implicitly
+[2019-07-09 15:01:19]         trusted boot image when the instance is created. This baseline can be
+[2019-07-09 15:01:19]         updated by using --shielded-vm-learn-integrity-policy.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --shielded-secure-boot
+[2019-07-09 15:01:19]         The instance will boot with secure boot enabled.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --shielded-vtpm
+[2019-07-09 15:01:19]         The instance will boot with the TPM (Trusted Platform Module) enabled.
+[2019-07-09 15:01:19]         A TPM is a hardware module that can be used for different security
+[2019-07-09 15:01:19]         operations such as remote attestation, encryption and sealing of keys.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --source-instance-template=SOURCE_INSTANCE_TEMPLATE
+[2019-07-09 15:01:19]         The name of the instance template that the instance will be created
+[2019-07-09 15:01:19]         from.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         Users can also override machine type and labels. Values of other flags
+[2019-07-09 15:01:19]         will be ignored and --source-instance-template will be used instead.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --subnet=SUBNET
+[2019-07-09 15:01:19]         Specifies the subnet that the instances will be part of. If --network
+[2019-07-09 15:01:19]         is also specified subnet must be a subnetwork of network specified by
+[2019-07-09 15:01:19]         --network.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --tags=TAG,[TAG,...]
+[2019-07-09 15:01:19]         Specifies a list of tags to apply to the instance. These tags allow
+[2019-07-09 15:01:19]         network firewall rules and routes to be applied to specified VM
+[2019-07-09 15:01:19]         instances. See gcloud compute firewall-rules create(1) for more
+[2019-07-09 15:01:19]         details.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         To read more about configuring network tags, read this guide:
+[2019-07-09 15:01:19]         https://cloud.google.com/vpc/docs/add-remove-network-tags
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         To list instances with their respective status and tags, run:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             $ gcloud compute instances list \
+[2019-07-09 15:01:19]                 --format='table(name,status,tags.list())'
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         To list instances tagged with a specific tag, tag1, run:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             $ gcloud compute instances list --filter='tags:tag1'
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --zone=ZONE
+[2019-07-09 15:01:19]         Zone of the instances to create. If not specified and the compute/zone
+[2019-07-09 15:01:19]         property isn't set, you may be prompted to select a zone.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         To avoid prompting when this flag is omitted, you can set the
+[2019-07-09 15:01:19]         compute/zone property:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             $ gcloud config set compute/zone ZONE
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         A list of zones can be fetched by running:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             $ gcloud compute zones list
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         To unset the property, run:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             $ gcloud config unset compute/zone
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         Alternatively, the zone can be stored in the environment variable
+[2019-07-09 15:01:19]         CLOUDSDK_COMPUTE_ZONE.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      At most one of these may be specified:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --address=ADDRESS
+[2019-07-09 15:01:19]           Assigns the given external address to the instance that is created.
+[2019-07-09 15:01:19]           The address may be an IP address or the name or URI of an address
+[2019-07-09 15:01:19]           resource. This option can only be used when creating a single
+[2019-07-09 15:01:19]           instance.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --no-address
+[2019-07-09 15:01:19]           If provided, the instances will not be assigned external IP
+[2019-07-09 15:01:19]           addresses.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      Key resource - The Cloud KMS (Key Management Service) cryptokey that will
+[2019-07-09 15:01:19]      be used to protect the disk. The arguments in this group can be used to
+[2019-07-09 15:01:19]      specify the attributes of this resource.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --boot-disk-kms-key=BOOT_DISK_KMS_KEY
+[2019-07-09 15:01:19]           ID of the key or fully qualified identifier for the key. This flag
+[2019-07-09 15:01:19]           must be specified if any of the other arguments in this group are
+[2019-07-09 15:01:19]           specified.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --boot-disk-kms-keyring=BOOT_DISK_KMS_KEYRING
+[2019-07-09 15:01:19]           The KMS keyring of the key.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --boot-disk-kms-location=BOOT_DISK_KMS_LOCATION
+[2019-07-09 15:01:19]           The Cloud location for the key.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --boot-disk-kms-project=BOOT_DISK_KMS_PROJECT
+[2019-07-09 15:01:19]           The Cloud project for the key.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      Custom machine type extensions.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --custom-cpu=CUSTOM_CPU
+[2019-07-09 15:01:19]           A whole number value indicating how many cores are desired in the
+[2019-07-09 15:01:19]           custom machine type. This flag must be specified if any of the other
+[2019-07-09 15:01:19]           arguments in this group are specified.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --custom-memory=CUSTOM_MEMORY
+[2019-07-09 15:01:19]           A whole number value indicating how much memory is desired in the
+[2019-07-09 15:01:19]           custom machine type. A size unit should be provided (eg. 3072MB or
+[2019-07-09 15:01:19]           9GB) - if no units are specified, GB is assumed. This flag must be
+[2019-07-09 15:01:19]           specified if any of the other arguments in this group are specified.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --custom-extensions
+[2019-07-09 15:01:19]           Use the extended custom machine type.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --custom-vm-gen=CUSTOM_VM_GEN
+[2019-07-09 15:01:19]           Specifies VM generation. n1 - VMs with CPU platforms Skylake and
+[2019-07-09 15:01:19]           older, n2 - VMs with CPU platform Cascade Lake. n2 offers flexible
+[2019-07-09 15:01:19]           sizing from 2 to 80 vCPUs, and 1 to 640GBs of memory. It also
+[2019-07-09 15:01:19]           features a number of performance enhancements including exposing a
+[2019-07-09 15:01:19]           more accurate NUMA topology to the guest OS. The default is n1.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      --image-project=IMAGE_PROJECT
+[2019-07-09 15:01:19]         The project against which all image and image family references will be
+[2019-07-09 15:01:19]         resolved. It is best practice to define image-project.
+[2019-07-09 15:01:19]         * If specifying one of our public images, image-project must be
+[2019-07-09 15:01:19]           provided.
+[2019-07-09 15:01:19]         * If there are several of the same image-family value in multiple
+[2019-07-09 15:01:19]           projects, image-project must be specified to clarify the image to be
+[2019-07-09 15:01:19]           used.
+[2019-07-09 15:01:19]         * If not specified and either image or image-family is provided, the
+[2019-07-09 15:01:19]           current default project is used.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      At most one of these may be specified:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --image=IMAGE
+[2019-07-09 15:01:19]           Specifies the boot image for the instances. For each instance, a new
+[2019-07-09 15:01:19]           boot disk will be created from the given image. Each boot disk will
+[2019-07-09 15:01:19]           have the same name as the instance. To view a list of public images
+[2019-07-09 15:01:19]           and projects, run $ gcloud compute images list. It is best practice
+[2019-07-09 15:01:19]           to use --image when a specific version of an image is needed.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]           When using this option, --boot-disk-device-name and --boot-disk-size
+[2019-07-09 15:01:19]           can be used to override the boot disk's device name and size,
+[2019-07-09 15:01:19]           respectively.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --image-family=IMAGE_FAMILY
+[2019-07-09 15:01:19]           The family of the image that the boot disk will be initialized with.
+[2019-07-09 15:01:19]           When a family is specified instead of an image, the latest
+[2019-07-09 15:01:19]           non-deprecated image associated with that family is used. It is best
+[2019-07-09 15:01:19]           practice to use --image-family when the latest version of an image is
+[2019-07-09 15:01:19]           needed.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]           By default, debian-9 is assumed for this flag.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --source-snapshot=SOURCE_SNAPSHOT
+[2019-07-09 15:01:19]           The name of the source disk snapshot that the instance boot disk will
+[2019-07-09 15:01:19]           be created from. You can provide this as a full URL to the snapshot
+[2019-07-09 15:01:19]           or just the snapshot name. For example, the following are valid
+[2019-07-09 15:01:19]           values:
+[2019-07-09 15:01:19]           + https://www.googleapis.com/compute/v1/projects/myproject/global/snapshots/snapshot
+[2019-07-09 15:01:19]           + snapshot
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      Sole Tenancy. At most one of these may be specified:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --node=NODE
+[2019-07-09 15:01:19]           The name of the node to schedule this instance on.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --node-affinity-file=NODE_AFFINITY_FILE
+[2019-07-09 15:01:19]           The JSON/YAML file containing the configuration of desired nodes onto
+[2019-07-09 15:01:19]           which this instance could be scheduled. These rules filter the nodes
+[2019-07-09 15:01:19]           according to their node affinity labels. A node's affinity labels
+[2019-07-09 15:01:19]           come from the node template of the group the node is in.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]           The file should contain a list of a JSON/YAML objects with the
+[2019-07-09 15:01:19]           following fields:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        key
+[2019-07-09 15:01:19]           Corresponds to the node affinity label keys of the Node resource.
+[2019-07-09 15:01:19]        operator
+[2019-07-09 15:01:19]           Specifies the node selection type. Must be one of: IN: Requires
+[2019-07-09 15:01:19]           Compute Engine to seek for matched nodes. NOT_IN: Requires Compute
+[2019-07-09 15:01:19]           Engine to avoid certain nodes.
+[2019-07-09 15:01:19]        values
+[2019-07-09 15:01:19]           Optional. A list of values which correspond to the node affinity
+[2019-07-09 15:01:19]           label values of the Node resource.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --node-group=NODE_GROUP
+[2019-07-09 15:01:19]           The name of the node group to schedule this instance on.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      At most one of these may be specified:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --public-ptr
+[2019-07-09 15:01:19]           Creates a DNS PTR record for the external IP of the instance.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --no-public-ptr
+[2019-07-09 15:01:19]           If provided, no DNS PTR record is created for the external IP of the
+[2019-07-09 15:01:19]           instance. Mutually exclusive with public-ptr-domain.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      At most one of these may be specified:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --public-ptr-domain=PUBLIC_PTR_DOMAIN
+[2019-07-09 15:01:19]           Assigns a custom PTR domain for the external IP of the instance.
+[2019-07-09 15:01:19]           Mutually exclusive with no-public-ptr.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --no-public-ptr-domain
+[2019-07-09 15:01:19]           If both this flag and --public-ptr are specified, creates a DNS PTR
+[2019-07-09 15:01:19]           record for the external IP of the instance with the PTR domain name
+[2019-07-09 15:01:19]           being the DNS name of the instance.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      At most one of these may be specified:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --scopes=[SCOPE,...]
+[2019-07-09 15:01:19]           If not provided, the instance will be assigned the default scopes,
+[2019-07-09 15:01:19]           described below. However, if neither --scopes nor --no-scopes are
+[2019-07-09 15:01:19]           specified and the project has no default service account, then the
+[2019-07-09 15:01:19]           instance will be created with no scopes.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]           SCOPE can be either the full URI of the scope or an alias. default
+[2019-07-09 15:01:19]           scopes are assigned to all instances. Available aliases are:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]             Alias                  URI
+[2019-07-09 15:01:19]             bigquery               https://www.googleapis.com/auth/bigquery
+[2019-07-09 15:01:19]             cloud-platform         https://www.googleapis.com/auth/cloud-platform
+[2019-07-09 15:01:19]             cloud-source-repos     https://www.googleapis.com/auth/source.full_control
+[2019-07-09 15:01:19]             cloud-source-repos-ro  https://www.googleapis.com/auth/source.read_only
+[2019-07-09 15:01:19]             compute-ro             https://www.googleapis.com/auth/compute.readonly
+[2019-07-09 15:01:19]             compute-rw             https://www.googleapis.com/auth/compute
+[2019-07-09 15:01:19]             datastore              https://www.googleapis.com/auth/datastore
+[2019-07-09 15:01:19]             default                https://www.googleapis.com/auth/devstorage.read_only
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/logging.write
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/monitoring.write
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/pubsub
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/service.management.readonly
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/servicecontrol
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/trace.append
+[2019-07-09 15:01:19]             gke-default            https://www.googleapis.com/auth/devstorage.read_only
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/logging.write
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/monitoring
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/service.management.readonly
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/servicecontrol
+[2019-07-09 15:01:19]                                    https://www.googleapis.com/auth/trace.append
+[2019-07-09 15:01:19]             logging-write          https://www.googleapis.com/auth/logging.write
+[2019-07-09 15:01:19]             monitoring             https://www.googleapis.com/auth/monitoring
+[2019-07-09 15:01:19]             monitoring-write       https://www.googleapis.com/auth/monitoring.write
+[2019-07-09 15:01:19]             pubsub                 https://www.googleapis.com/auth/pubsub
+[2019-07-09 15:01:19]             service-control        https://www.googleapis.com/auth/servicecontrol
+[2019-07-09 15:01:19]             service-management     https://www.googleapis.com/auth/service.management.readonly
+[2019-07-09 15:01:19]             sql (deprecated)       https://www.googleapis.com/auth/sqlservice
+[2019-07-09 15:01:19]             sql-admin              https://www.googleapis.com/auth/sqlservice.admin
+[2019-07-09 15:01:19]             storage-full           https://www.googleapis.com/auth/devstorage.full_control
+[2019-07-09 15:01:19]             storage-ro             https://www.googleapis.com/auth/devstorage.read_only
+[2019-07-09 15:01:19]             storage-rw             https://www.googleapis.com/auth/devstorage.read_write
+[2019-07-09 15:01:19]             taskqueue              https://www.googleapis.com/auth/taskqueue
+[2019-07-09 15:01:19]             trace                  https://www.googleapis.com/auth/trace.append
+[2019-07-09 15:01:19]             userinfo-email         https://www.googleapis.com/auth/userinfo.email
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]           DEPRECATION WARNING: https://www.googleapis.com/auth/sqlservice
+[2019-07-09 15:01:19]           account scope and sql alias do not provide SQL instance management
+[2019-07-09 15:01:19]           capabilities and have been deprecated. Please, use
+[2019-07-09 15:01:19]           https://www.googleapis.com/auth/sqlservice.admin or sql-admin to
+[2019-07-09 15:01:19]           manage your Google SQL Service instances.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --no-scopes
+[2019-07-09 15:01:19]           Create instance without scopes
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]      At most one of these may be specified:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --service-account=SERVICE_ACCOUNT
+[2019-07-09 15:01:19]           A service account is an identity attached to the instance. Its access
+[2019-07-09 15:01:19]           tokens can be accessed through the instance metadata server and are
+[2019-07-09 15:01:19]           used to authenticate applications on the instance. The account can be
+[2019-07-09 15:01:19]           set using an email address corresponding to the required service
+[2019-07-09 15:01:19]           account. You can explicitly specify the Compute Engine default
+[2019-07-09 15:01:19]           service account using the 'default' alias.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]           If not provided, the instance will get project's default service
+[2019-07-09 15:01:19]           account.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]        --no-service-account
+[2019-07-09 15:01:19]           Create instance without service account
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19] GCLOUD WIDE FLAGS
+[2019-07-09 15:01:19]     These flags are available to all commands: --account, --billing-project,
+[2019-07-09 15:01:19]     --configuration, --flags-file, --flatten, --format, --help,
+[2019-07-09 15:01:19]     --impersonate-service-account, --log-http, --project, --quiet,
+[2019-07-09 15:01:19]     --trace-token, --user-output-enabled, --verbosity. Run $ gcloud help for
+[2019-07-09 15:01:19]     details.
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19] EXAMPLES
+[2019-07-09 15:01:19]     To create an instance with the latest Red Hat Enterprise Linux 7 image
+[2019-07-09 15:01:19]     available, run:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         $ gcloud compute instances create example-instance \
+[2019-07-09 15:01:19]             --image-family=rhel-7 --image-project=rhel-cloud \
+[2019-07-09 15:01:19]             --zone=us-central1-a
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19] NOTES
+[2019-07-09 15:01:19]     These variants are also available:
+[2019-07-09 15:01:19] 
+[2019-07-09 15:01:19]         $ gcloud alpha compute instances create
+[2019-07-09 15:01:19]         $ gcloud beta compute instances create
+[2019-07-09 15:01:19] 
