@@ -1,0 +1,20 @@
+[2019-07-09 20:11:56] NAME                      LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-09 20:11:56] persistent-disk-tutorial  us-central1-b  1.12.8-gke.10   35.222.24.231  n1-standard-1  1.12.8-gke.10  2          RUNNING
+[2019-07-09 20:12:01] persistentvolumeclaim/mysql-volumeclaim created
+[2019-07-09 20:12:04] persistentvolumeclaim/wordpress-volumeclaim created
+[2019-07-09 20:22:09] NAME                    STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+[2019-07-09 20:22:09] mysql-volumeclaim       Bound    pvc-b626108a-a257-11e9-83ce-42010af00221   200Gi      RWO            standard       10m
+[2019-07-09 20:22:09] wordpress-volumeclaim   Bound    pvc-b7d572d8-a257-11e9-83ce-42010af00221   200Gi      RWO            standard       10m
+[2019-07-09 21:14:32] secret/mysql created
+[2019-07-09 21:14:36] deployment.apps/mysql created
+[2019-07-09 21:19:38] NAME                     READY   STATUS    RESTARTS   AGE
+[2019-07-09 21:19:38] mysql-5b9b49cf46-rs5c8   1/1     Running   0          5m2s
+[2019-07-09 21:19:40] service/mysql created
+[2019-07-09 21:21:43] NAME    TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE
+[2019-07-09 21:21:43] mysql   ClusterIP   10.40.15.86   <none>        3306/TCP   2m2s
+[2019-07-09 21:51:19] deployment.apps/wordpress created
+[2019-07-09 21:56:22] NAME                         READY   STATUS    RESTARTS   AGE
+[2019-07-09 21:56:22] wordpress-74c847b8cd-m54j4   1/1     Running   0          5m3s
+[2019-07-09 21:56:26] service/wordpress created
+[2019-07-09 22:01:33] NAME        TYPE           CLUSTER-IP   EXTERNAL-IP    PORT(S)        AGE
+[2019-07-09 22:01:33] wordpress   LoadBalancer   10.40.4.43   34.67.235.14   80:31983/TCP   5m7s

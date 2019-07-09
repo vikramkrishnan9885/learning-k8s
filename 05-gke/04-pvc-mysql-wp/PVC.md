@@ -30,7 +30,8 @@
 * **Pods use claims as Volumes**.
 * **Portability** is another advantage of using PersistentVolumes and PersistentVolumeClaims. 
     * You can easily **use the same Pod specification** across different clusters and environments because **PersistentVolume is an interface** to the actual backing storage.
-* When you delete this claim, the corresponding PersistentVolume object as well as the provisioned Compute Engine persistent disk are also deleted.
+* When you **delete this claim**, the **corresponding PersistentVolume object** as well as the **provisioned Compute Engine persistent disk** are also deleted.
+    * Should you want to prevent deletion of dynamically provisioned persistent disks, set the **reclaim** policy of the PersistentVolume resource, or its StorageClass resource, to **Retain**. In this case, you are charged for the persistent disk for as long as it exists even if there is no PersistentVolumeClaim consuming it.
 
 # StorageClasses
 * A StorageClass provides a way for administrators to describe the "classes" of storage they offer. 
@@ -53,3 +54,13 @@
         * A **new PersistentVolume** is **dynamically provisioned** based on the **StorageClass configuration**.
             * GKE has a **default StorageClass** installed that will allow you to **dynamically provision PersistentVolumes backed by persistent disks**. 
             * When a **StorageClass is not specified** in the PersistentVolumeClaim, the cluster's **default StorageClass** is used instead.
+
+# Access Modes
+* PersistentVolumes support the following access modes:
+    * **ReadWriteOnce:** The Volume can be mounted as read-write by a single node.
+    * **ReadOnlyMany:** The Volume can be mounted read-only by many nodes.
+    * **ReadWriteMany:** The Volume can be mounted as read-write by many nodes. 
+        * PersistentVolumes that are backed by Compute Engine persistent disks **don't support** this access mode.
+* ReadWriteOnce is the **most common use case** for Persistent Disks and works as the default access mode for most applications. 
+* Compute Engine Persistent Disks also support ReadOnlyMany mode so that many applications or many replicas of the same application can consume the same disk at the same time. 
+    * An example use case is **serving static content** across multiple replicas.

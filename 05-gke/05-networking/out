@@ -1,0 +1,10 @@
+[2019-07-09 22:57:51] NAME                 LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-09 22:57:51] loadbalancedcluster  us-central1-b  1.12.8-gke.10   35.188.128.83  n1-standard-1  1.12.8-gke.10  3          RUNNING
+[2019-07-09 22:58:01] deployment.extensions/web created
+[2019-07-09 22:58:05] service/web created
+[2019-07-09 22:58:09] NAME   TYPE       CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
+[2019-07-09 22:58:09] web    NodePort   10.0.13.126   <none>        8080:30756/TCP   4s
+[2019-07-09 22:58:13] ingress.extensions/basic-ingress created
+[2019-07-09 23:03:16] NAME            HOSTS   ADDRESS       PORTS   AGE
+[2019-07-09 23:03:16] basic-ingress   *       34.98.70.21   80      5m2s
+[2019-07-09 23:03:53] ingress.extensions "basic-ingress" deleted
