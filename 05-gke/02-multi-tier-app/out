@@ -1,0 +1,122 @@
+[2019-07-09 17:10:36] NAME       LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-09 17:10:36] guestbook  us-central1-b  1.12.8-gke.10   34.66.117.208  n1-standard-1  1.12.8-gke.10  2          RUNNING
+[2019-07-09 17:10:37] NAME                LOCATION       MASTER_VERSION  MASTER_IP       MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-09 17:10:37] standard-cluster-1  us-central1-a  1.12.8-gke.10   35.188.139.241  n1-standard-1  1.12.8-gke.10  3          RUNNING
+[2019-07-09 17:10:37] guestbook           us-central1-b  1.12.8-gke.10   34.66.117.208   n1-standard-1  1.12.8-gke.10  2          RUNNING
+[2019-07-09 17:10:38] addonsConfig:
+[2019-07-09 17:10:38]   kubernetesDashboard:
+[2019-07-09 17:10:38]     disabled: true
+[2019-07-09 17:10:38]   networkPolicyConfig:
+[2019-07-09 17:10:38]     disabled: true
+[2019-07-09 17:10:38] clusterIpv4Cidr: 10.12.0.0/14
+[2019-07-09 17:10:38] createTime: '2019-07-09T11:36:45+00:00'
+[2019-07-09 17:10:38] currentMasterVersion: 1.12.8-gke.10
+[2019-07-09 17:10:38] currentNodeCount: 2
+[2019-07-09 17:10:38] currentNodeVersion: 1.12.8-gke.10
+[2019-07-09 17:10:38] defaultMaxPodsConstraint:
+[2019-07-09 17:10:38]   maxPodsPerNode: '110'
+[2019-07-09 17:10:38] endpoint: 34.66.117.208
+[2019-07-09 17:10:38] initialClusterVersion: 1.12.8-gke.10
+[2019-07-09 17:10:38] instanceGroupUrls:
+[2019-07-09 17:10:38] - https://www.googleapis.com/compute/v1/projects/my-project-cpb100-180518/zones/us-central1-b/instanceGroupManagers/gke-guestbook-default-pool-07815018-grp
+[2019-07-09 17:10:38] ipAllocationPolicy:
+[2019-07-09 17:10:38]   clusterIpv4Cidr: 10.12.0.0/14
+[2019-07-09 17:10:38]   clusterIpv4CidrBlock: 10.12.0.0/14
+[2019-07-09 17:10:38]   clusterSecondaryRangeName: gke-guestbook-pods-8f6b758b
+[2019-07-09 17:10:38]   servicesIpv4Cidr: 10.16.0.0/20
+[2019-07-09 17:10:38]   servicesIpv4CidrBlock: 10.16.0.0/20
+[2019-07-09 17:10:38]   servicesSecondaryRangeName: gke-guestbook-services-8f6b758b
+[2019-07-09 17:10:38]   useIpAliases: true
+[2019-07-09 17:10:38] labelFingerprint: a9dc16a7
+[2019-07-09 17:10:38] legacyAbac: {}
+[2019-07-09 17:10:38] location: us-central1-b
+[2019-07-09 17:10:38] locations:
+[2019-07-09 17:10:38] - us-central1-b
+[2019-07-09 17:10:38] loggingService: logging.googleapis.com
+[2019-07-09 17:10:38] masterAuth:
+[2019-07-09 17:10:38]   clusterCaCertificate: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDekNDQWZPZ0F3SUJBZ0lRZkhBc0dZTk5LcEJFVCsrcjRYcTZFakFOQmdrcWhraUc5dzBCQVFzRkFEQXYKTVMwd0t3WURWUVFERXlReE5HUXdOR1kyWXkwell6TmxMVFF5WWpNdE9URXpOeTAyTkdZd1pUbG1PR0V3T0RZdwpIaGNOTVRrd056QTVNVEF6TmpRMVdoY05NalF3TnpBM01URXpOalExV2pBdk1TMHdLd1lEVlFRREV5UXhOR1F3Ck5HWTJZeTB6WXpObExUUXlZak10T1RFek55MDJOR1l3WlRsbU9HRXdPRFl3Z2dFaU1BMEdDU3FHU0liM0RRRUIKQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNvZlZmMjJaN3IvZ3Z4bTk1MkU3YXJvRTFJdzlUWGVueGRuc0hxQzd5SgpJR1VNSEZXOUxBMkJsNzVXeWV0TkwvcFpHRUlxQTAzSnJaeDd5OTA0U1F4Sml0aHl5OEZIYVNYNUd1VytHMU1UCmlGeExyYXZ1L0xiWDQ5TnZ1ODhkUDJVek40cXZnVmVydVlxVnQ2ZU10Y0h1RENCdkMyN2FyWXJqekd2enBGdmMKaFJ2R3ZBSCt4TWJQMFUwSnJ1WjdXc2RicnVqYVQ5ZkUwN0pTOVczNitmNDBkUU5TWHVZNmFSWEtaTVgwck9aWgp0R0E2UkFJOUxiOTVnTTFLWkk5dEovdWxrUVBMUmNxaXVmcGNRYkdqZnhhWjVKZ2dCZVl2b0JlN1pLQzNwQ1dmClpKTnRKekF5amZBYmwwVUJnRHpZZXhmdEhQUnE0M01LK0VEdlpZOUlKUm5iQWdNQkFBR2pJekFoTUE0R0ExVWQKRHdFQi93UUVBd0lDQkRBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFBSQpOUiszc0NxVEg4OTNtMVNqQVBsYmFUaU1qVUxnN2k3dFVoUUQyZ25JS0RoSnl6bU1vYTYwdEVxNEp1VDEvVW51ClVzT2xYWVZnUXhsWSthUjJBWFVsN280OTdSTG9BclRkRDZHSjh5WC9nK2hGelZQejl1MDJVM1d0SGwxQ0Q2YVQKVU5GakFSUFEvUnVlV2hzMnp3c1M4ZGZGRTI5WTRYd1djTEV4VS9CcXBudWNTZGVwZ1hrKzRrdWI3THY2dzlNUwo4UDN4c2JFbThhbGRUSUVrcFJMSWk5eTdwUUlxejRYeG1GUXlhMnRkaVEyNFh5bytZcC9GOWZjVXRWVGMvM0Z1Cjl6eGE4bmw3b0RybVRqbWtoMDl2WGFkUU8vbjMwNndMaGZvR1p6ZmsyaWlYeXZrbVhFOEpLdG50UkRVY2xENisKbUVTdmJ3NG5Wc2sybWh5UFRYM0QKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+[2019-07-09 17:10:38] monitoringService: monitoring.googleapis.com
+[2019-07-09 17:10:38] name: guestbook
+[2019-07-09 17:10:38] network: default
+[2019-07-09 17:10:38] networkConfig:
+[2019-07-09 17:10:38]   network: projects/my-project-cpb100-180518/global/networks/default
+[2019-07-09 17:10:38]   subnetwork: projects/my-project-cpb100-180518/regions/us-central1/subnetworks/default
+[2019-07-09 17:10:38] nodeConfig:
+[2019-07-09 17:10:38]   diskSizeGb: 100
+[2019-07-09 17:10:38]   diskType: pd-standard
+[2019-07-09 17:10:38]   imageType: COS
+[2019-07-09 17:10:38]   machineType: n1-standard-1
+[2019-07-09 17:10:38]   metadata:
+[2019-07-09 17:10:38]     disable-legacy-endpoints: 'true'
+[2019-07-09 17:10:38]   oauthScopes:
+[2019-07-09 17:10:38]   - https://www.googleapis.com/auth/devstorage.read_only
+[2019-07-09 17:10:38]   - https://www.googleapis.com/auth/logging.write
+[2019-07-09 17:10:38]   - https://www.googleapis.com/auth/monitoring
+[2019-07-09 17:10:38]   - https://www.googleapis.com/auth/service.management.readonly
+[2019-07-09 17:10:38]   - https://www.googleapis.com/auth/servicecontrol
+[2019-07-09 17:10:38]   - https://www.googleapis.com/auth/trace.append
+[2019-07-09 17:10:38]   serviceAccount: default
+[2019-07-09 17:10:38] nodePools:
+[2019-07-09 17:10:38] - config:
+[2019-07-09 17:10:38]     diskSizeGb: 100
+[2019-07-09 17:10:38]     diskType: pd-standard
+[2019-07-09 17:10:38]     imageType: COS
+[2019-07-09 17:10:38]     machineType: n1-standard-1
+[2019-07-09 17:10:38]     metadata:
+[2019-07-09 17:10:38]       disable-legacy-endpoints: 'true'
+[2019-07-09 17:10:38]     oauthScopes:
+[2019-07-09 17:10:38]     - https://www.googleapis.com/auth/devstorage.read_only
+[2019-07-09 17:10:38]     - https://www.googleapis.com/auth/logging.write
+[2019-07-09 17:10:38]     - https://www.googleapis.com/auth/monitoring
+[2019-07-09 17:10:38]     - https://www.googleapis.com/auth/service.management.readonly
+[2019-07-09 17:10:38]     - https://www.googleapis.com/auth/servicecontrol
+[2019-07-09 17:10:38]     - https://www.googleapis.com/auth/trace.append
+[2019-07-09 17:10:38]     serviceAccount: default
+[2019-07-09 17:10:38]   initialNodeCount: 2
+[2019-07-09 17:10:38]   instanceGroupUrls:
+[2019-07-09 17:10:38]   - https://www.googleapis.com/compute/v1/projects/my-project-cpb100-180518/zones/us-central1-b/instanceGroupManagers/gke-guestbook-default-pool-07815018-grp
+[2019-07-09 17:10:38]   management:
+[2019-07-09 17:10:38]     autoRepair: true
+[2019-07-09 17:10:38]   maxPodsConstraint:
+[2019-07-09 17:10:38]     maxPodsPerNode: '110'
+[2019-07-09 17:10:38]   name: default-pool
+[2019-07-09 17:10:38]   podIpv4CidrSize: 24
+[2019-07-09 17:10:38]   selfLink: https://container.googleapis.com/v1/projects/my-project-cpb100-180518/zones/us-central1-b/clusters/guestbook/nodePools/default-pool
+[2019-07-09 17:10:38]   status: RUNNING
+[2019-07-09 17:10:38]   version: 1.12.8-gke.10
+[2019-07-09 17:10:38] selfLink: https://container.googleapis.com/v1/projects/my-project-cpb100-180518/zones/us-central1-b/clusters/guestbook
+[2019-07-09 17:10:38] servicesIpv4Cidr: 10.16.0.0/20
+[2019-07-09 17:10:38] status: RUNNING
+[2019-07-09 17:10:38] subnetwork: default
+[2019-07-09 17:10:38] zone: us-central1-b
+[2019-07-09 17:12:21] deployment.extensions/redis-master created
+[2019-07-09 17:17:23] NAME                            READY   STATUS    RESTARTS   AGE
+[2019-07-09 17:17:23] redis-master-57fc67768d-94lqr   1/1     Running   0          5m2s
+[2019-07-09 17:22:46] deployment.extensions/redis-slave created
+[2019-07-09 17:27:48] NAME                            READY   STATUS    RESTARTS   AGE
+[2019-07-09 17:27:48] redis-master-57fc67768d-94lqr   1/1     Running   0          15m
+[2019-07-09 17:27:48] redis-slave-57f9f8db74-w4khw    1/1     Running   0          5m3s
+[2019-07-09 17:27:48] redis-slave-57f9f8db74-xsvwl    1/1     Running   0          5m3s
+[2019-07-09 17:27:50] service/redis-slave created
+[2019-07-09 17:32:54] NAME           TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+[2019-07-09 17:32:54] kubernetes     ClusterIP   10.16.0.1      <none>        443/TCP    23m
+[2019-07-09 17:32:54] redis-master   ClusterIP   10.16.15.241   <none>        6379/TCP   10m
+[2019-07-09 17:32:54] redis-slave    ClusterIP   10.16.14.19    <none>        6379/TCP   5m4s
+[2019-07-09 17:35:32] deployment.extensions/frontend created
+[2019-07-09 17:40:34] NAME                        READY   STATUS    RESTARTS   AGE
+[2019-07-09 17:40:34] frontend-654c699bc8-svnch   1/1     Running   0          5m2s
+[2019-07-09 17:40:34] frontend-654c699bc8-wfqcb   1/1     Running   0          5m2s
+[2019-07-09 17:40:34] frontend-654c699bc8-wwsh4   1/1     Running   0          5m2s
+[2019-07-09 17:40:36] service/frontend created
+[2019-07-09 17:45:41] NAME       TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
+[2019-07-09 17:45:41] frontend   LoadBalancer   10.16.3.224   34.66.80.38   80:30265/TCP   5m5s
+[2019-07-09 17:45:43] deployment.extensions/frontend scaled
+[2019-07-09 17:50:46] NAME                            READY   STATUS    RESTARTS   AGE
+[2019-07-09 17:50:46] frontend-654c699bc8-c4qwr       0/1     Pending   0          5m2s
+[2019-07-09 17:50:46] frontend-654c699bc8-dgz4v       1/1     Running   0          5m2s
+[2019-07-09 17:50:46] frontend-654c699bc8-svnch       1/1     Running   0          15m
+[2019-07-09 17:50:46] frontend-654c699bc8-wfqcb       1/1     Running   0          15m
+[2019-07-09 17:50:46] frontend-654c699bc8-wwsh4       1/1     Running   0          15m
+[2019-07-09 17:50:46] redis-master-57fc67768d-94lqr   1/1     Running   0          38m
+[2019-07-09 17:50:46] redis-slave-57f9f8db74-w4khw    1/1     Running   0          28m
+[2019-07-09 17:50:46] redis-slave-57f9f8db74-xsvwl    1/1     Running   0          28m

@@ -1,0 +1,61 @@
+[2019-07-09 18:04:07] NAME          LOCATION       MASTER_VERSION  MASTER_IP     MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-09 18:04:07] demo-cluster  us-central1-f  1.12.8-gke.10   34.67.113.99  n1-standard-1  1.12.8-gke.10  3          RUNNING
+[2019-07-09 18:04:11] serviceaccount/tiller created
+[2019-07-09 18:04:13] clusterrolebinding.rbac.authorization.k8s.io/tiller created
+[2019-07-09 18:04:14] $HELM_HOME has been configured at /home/vikram/.helm.
+[2019-07-09 18:04:16] 
+[2019-07-09 18:04:16] Tiller (the Helm server-side component) has been installed into your Kubernetes Cluster.
+[2019-07-09 18:04:16] 
+[2019-07-09 18:04:16] Please note: by default, Tiller is deployed with an insecure 'allow unauthenticated users' policy.
+[2019-07-09 18:04:16] To prevent this, run `helm init` with the --tiller-tls-verify flag.
+[2019-07-09 18:04:16] For more information on securing your installation see: https://docs.helm.sh/using_helm/#securing-your-helm-installation
+[2019-07-09 18:04:16] Hang tight while we grab the latest from your chart repositories...
+[2019-07-09 18:04:16] ...Skip local chart repository
+[2019-07-09 18:04:48] ...Successfully got an update from the "stable" chart repository
+[2019-07-09 18:04:48] Update Complete.
+[2019-07-09 18:04:55] NAME:   mycache
+[2019-07-09 18:04:57] LAST DEPLOYED: Tue Jul  9 18:04:55 2019
+[2019-07-09 18:04:57] NAMESPACE: default
+[2019-07-09 18:04:57] STATUS: DEPLOYED
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] RESOURCES:
+[2019-07-09 18:04:57] ==> v1/Pod(related)
+[2019-07-09 18:04:57] NAME                 READY  STATUS             RESTARTS  AGE
+[2019-07-09 18:04:57] mycache-memcached-0  0/1    ContainerCreating  0         2s
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] ==> v1/Service
+[2019-07-09 18:04:57] NAME               TYPE       CLUSTER-IP  EXTERNAL-IP  PORT(S)    AGE
+[2019-07-09 18:04:57] mycache-memcached  ClusterIP  None        <none>       11211/TCP  2s
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] ==> v1beta1/PodDisruptionBudget
+[2019-07-09 18:04:57] NAME               MIN AVAILABLE  MAX UNAVAILABLE  ALLOWED DISRUPTIONS  AGE
+[2019-07-09 18:04:57] mycache-memcached  2              N/A              0                    2s
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] ==> v1beta1/StatefulSet
+[2019-07-09 18:04:57] NAME               READY  AGE
+[2019-07-09 18:04:57] mycache-memcached  0/3    2s
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] NOTES:
+[2019-07-09 18:04:57] Memcached can be accessed via port 11211 on the following DNS name from within your cluster:
+[2019-07-09 18:04:57] mycache-memcached.default.svc.cluster.local
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] If you'd like to test your instance, forward the port locally:
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57]   export POD_NAME=$(kubectl get pods --namespace default -l "app=mycache-memcached" -o jsonpath="{.items[0].metadata.name}")
+[2019-07-09 18:04:57]   kubectl port-forward $POD_NAME 11211
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] In another tab, attempt to set a key:
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57]   $ echo -e 'set mykey 0 60 5\r\nhello\r' | nc localhost 11211
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57] You should see:
+[2019-07-09 18:04:57] 
+[2019-07-09 18:04:57]   STORED
+[2019-07-09 18:04:57] 
+[2019-07-09 18:09:59] NAME                  READY   STATUS    RESTARTS   AGE
+[2019-07-09 18:09:59] mycache-memcached-0   1/1     Running   0          5m4s
+[2019-07-09 18:09:59] mycache-memcached-1   1/1     Running   0          4m54s
+[2019-07-09 18:09:59] mycache-memcached-2   1/1     Running   0          4m42s
+[2019-07-09 18:10:02] NoneNAME                ENDPOINTS                                         AGE
+[2019-07-09 18:10:02] mycache-memcached   10.40.0.7:11211,10.40.1.5:11211,10.40.2.5:11211   5m7s
