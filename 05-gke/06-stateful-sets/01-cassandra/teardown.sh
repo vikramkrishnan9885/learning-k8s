@@ -5,3 +5,7 @@ grace=$(kubectl get po cassandra-0 -o=jsonpath='{.spec.terminationGracePeriodSec
   && echo "Sleeping $grace" \
   && sleep $grace \
   && kubectl delete pvc -l app=cassandra
+
+kubectl delete service -l app=cassandra
+
+gcloud container clusters delete cassandra
