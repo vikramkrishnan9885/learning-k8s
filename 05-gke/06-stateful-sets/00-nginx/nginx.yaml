@@ -1,0 +1,146 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx # also used in the StatefulSet
+spec:
+  ports:
+  - port: 80
+    name: web
+  clusterIP: None # This is a Headless Services
+    # Sometimes you don’t need load-balancing and a single Service
+    # IP. In this case, you can create what are termed "headless" 
+    # Services, by explicitly specifying "None" for the cluster IP (.spec.clusterIP).
+    #
+    # You can use a headless Service to interface with other 
+    # service discovery mechanisms, without being tied to Kubernetes' 
+    # implementation. For example, you could implement a 
+    # custom Operator to be built on the API.
+    #
+    # For such Services, a cluster IP is not allocated, kube-proxy 
+    # does not handle these Services, and there is no load balancing 
+    # or proxying done by the platform for them. How DNS is automatically 
+    # configured depends on whether the Service has selectors defined
+    #
+  selector:
+    app: nginx # also used in the StatefulSet
+      # A Service object named nginx is created, indicated by the 
+      # metadata: name field. The Service targets an app called nginx, 
+      # indicated by labels: app: nginx and selector: app: nginx. 
+      # The Service exposes port 80 and names it web. This Service 
+      # control the network domain and to route Internet traffic to 
+      # the containerized application deployed by the StatefulSet.
+---
+apiVersion: apps/v1
+kind: StatefulSet # Using StatefulSets
+  # StatefulSets are valuable for applications that require one or 
+  # more of the following.
+  #   * Stable, unique network identifiers.
+  #   * Stable, persistent storage.
+  #   * Ordered, graceful deployment and scaling.
+  #   * Ordered, automated rolling updates.
+  # In the above, stable is synonymous with persistence across Pod
+  #  (re)scheduling. If an application doesn’t require any stable 
+  # identifiers or ordered deployment, deletion, or scaling, 
+  # you should deploy your application with a controller that 
+  # provides a set of stateless replicas. Controllers such as 
+  # Deployment or ReplicaSet may be better suited to your 
+  # stateless needs.
+metadata:
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: nginx # has to match .spec.template.metadata.labels
+  serviceName: "nginx"
+  replicas: 3 # default is 1
+  # Pod Identity
+  # StatefulSet Pods have a unique identity that is comprised of 
+  # an ordinal, a stable network identity, and stable storage. 
+  # The identity sticks to the Pod, regardless of which node it's (re)scheduled on.
+  #
+  # Ordinal Index
+  # ---------------
+  # For a StatefulSet with N replicas, each Pod in the StatefulSet
+  # will be assigned an integer ordinal, from 0 up through N-1, 
+  # that is unique over the Set.
+  #
+  # Stable Network ID
+  # -------------------
+  # Each Pod in a StatefulSet derives its hostname from the 
+  # name of the StatefulSet and the ordinal of the Pod. The 
+  # pattern for the constructed hostname is $(statefulset name)-$(ordinal). 
+  # The example above will create three Pods named web-0,web-1,web-2.
+  # A StatefulSet can use a Headless Service to control the domain of its Pods. 
+  # The domain managed by this Service takes the form:
+  # $(service name).$(namespace).svc.cluster.local, where "cluster.local" is the cluster domain. 
+  #As each Pod is created, it gets a matching DNS subdomain, 
+  # taking the form: $(podname).$(governing service domain), 
+  # where the governing service is defined by the serviceName field on the StatefulSet.
+  # 
+  # As mentioned in the limitations section, you are responsible 
+  # for creating the Headless Service responsible for the network 
+  # identity of the pods.
+  #
+  # Pod Name Label
+  # ------------------
+  # When the StatefulSet controller creates a Pod, 
+  # it adds a label, statefulset.kubernetes.io/pod-name, 
+  # that is set to the name of the Pod. This label allows you to 
+  # attach a Service to a specific Pod in the StatefulSet.
+  updateStrategy:
+    type: RollingUpdate # Updating StatefulSets
+      # You can update a StatefulSet by making changes to its Pod 
+      # specification, which includes its container images and 
+      # volumes. You can also update the object's resource requests
+      # and limits, labels, and annotations. To update a StatefulSet, 
+      # you can use kubectl, the Kubernetes API, or the GKE Workloads
+      # menu in Google Cloud Platform Console.
+      #
+      # To decide how to handle updates, StatefulSets use a update 
+      # strategy defined in spec: updateStrategy. There are two 
+      # strategies, OnDelete and RollingUpdate:
+      # 
+      #   * OnDelete: does not automatically delete and recreate Pods
+      #       when the object's configuration is changed. Instead, 
+      #       you must manually delete the old Pods to cause the 
+      #       controller to create updated Pods.
+      #   * RollingUpdate: automatically deletes and recreates Pods
+      #       when the object's configuration is changed. New Pods 
+      #       must be in Running and Ready states before their predecessors are deleted. With this strategy, changing the Pod specification automatically triggers a rollout. This is the default update strategy for StatefulSets.
+      # StatefulSets update Pods in reverse ordinal order. You can 
+      # monitor update rollouts by running the following command:
+      # kubectl rollout status statefulset [STATEFULSET_NAME]
+  template:
+    metadata:
+      labels:
+        app: nginx # # has to match .spec.selector.matchLabels
+        # Pod template's label selector The Pod template 
+        # (spec: template) indicates that its Pods are labelled 
+        # app: nginx.
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: nginx
+        image: k8s.gcr.io/nginx-slim:0.8
+        ports:
+        - containerPort: 80
+          name: web # The Pod specification uses the web port opened by the Service.
+        volumeMounts:
+        - name: www
+          mountPath: /usr/share/nginx/html #  template: spec: volumeMounts 
+          # specifies a mountPath, which is named www. The mountPath 
+          # is the path within the container at which a storage volume 
+          # should be mounted.
+  volumeClaimTemplates:
+  - metadata:
+      name: www
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      # storageClassName: "my-storage-class" # If no StorageClass is specified, 
+      # then the default StorageClass will be used. 
+      resources:
+        requests:
+          storage: 1Gi # The StatefulSet provisions a PersistentVolumeClaim, 
+          # www, with 1GB of provisioned storage.

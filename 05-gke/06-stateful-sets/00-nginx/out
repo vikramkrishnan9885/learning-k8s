@@ -1,0 +1,13 @@
+[2019-07-10 11:14:45] NAME     LOCATION       MASTER_VERSION  MASTER_IP       MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-10 11:14:45] nginxss  us-central1-b  1.12.8-gke.10   104.154.40.110  n1-standard-1  1.12.8-gke.10  3          RUNNING
+[2019-07-10 11:14:55] service/nginx created
+[2019-07-10 11:14:56] statefulset.apps/web created
+vikram@vikram-Inspiron-7370:~/Dropbox/New-Inspiron-Ubuntu/Other/learning-k8s/05-gke/06-stateful-sets/00-nginx$ kubectl get svc
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.0.0.1     <none>        443/TCP   106s
+nginx        ClusterIP   None         <none>        80/TCP    55s
+vikram@vikram-Inspiron-7370:~/Dropbox/New-Inspiron-Ubuntu/Other/learning-k8s/05-gke/06-stateful-sets/00-nginx$ kubectl get pods
+NAME    READY   STATUS    RESTARTS   AGE
+web-0   1/1     Running   0          66s
+web-1   1/1     Running   0          46s
+web-2   1/1     Running   0          19s
