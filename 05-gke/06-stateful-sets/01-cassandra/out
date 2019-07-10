@@ -1,0 +1,46 @@
+[2019-07-10 12:13:16] NAME       LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-10 12:13:16] cassandra  us-central1-b  1.12.8-gke.10   35.202.103.74  n1-standard-1  1.12.8-gke.10  3          RUNNING
+[2019-07-10 12:13:26] service/cassandra created
+[2019-07-10 12:13:29] NAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
+[2019-07-10 12:13:29] cassandra   ClusterIP   None         <none>        9042/TCP   4s
+[2019-07-10 12:13:31] service/cassandra-lb created
+[2019-07-10 12:18:33] NAME           TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)          AGE
+[2019-07-10 12:18:33] cassandra-lb   LoadBalancer   10.12.3.233   35.188.207.48   9042:31390/TCP   5m2s
+[2019-07-10 12:18:37] statefulset.apps/cassandra created
+[2019-07-10 12:18:38] storageclass.storage.k8s.io/fast created
+[2019-07-10 12:23:47] NAME        DESIRED   CURRENT   AGE
+[2019-07-10 12:23:47] cassandra   3         1         5m9s
+[2019-07-10 12:23:48] NAME          READY   STATUS    RESTARTS   AGE
+[2019-07-10 12:23:48] cassandra-0   0/1     Pending   0          5m11s
+[2019-07-10 12:37:15] NAME       LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-10 12:37:15] cassandra  us-central1-b  1.12.8-gke.10   35.239.94.101  n1-standard-1  1.12.8-gke.10  3          RUNNING
+[2019-07-10 12:37:33] service/cassandra created
+[2019-07-10 12:37:36] NAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
+[2019-07-10 12:37:36] cassandra   ClusterIP   None         <none>        9042/TCP   4s
+[2019-07-10 12:37:40] statefulset.apps/cassandra created
+[2019-07-10 12:37:41] storageclass.storage.k8s.io/fast created
+[2019-07-10 12:42:43] NAME        DESIRED   CURRENT   AGE
+[2019-07-10 12:42:43] cassandra   3         1         5m3s
+[2019-07-10 12:42:45] NAME          READY   STATUS    RESTARTS   AGE
+[2019-07-10 12:42:45] cassandra-0   0/1     Pending   0          5m4s
+[2019-07-10 12:57:27] NAME       LOCATION       MASTER_VERSION  MASTER_IP     MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+[2019-07-10 12:57:27] cassandra  us-central1-b  1.12.8-gke.10   35.232.79.11  n1-standard-1  1.12.8-gke.10  3          RUNNING
+[2019-07-10 12:57:35] service/cassandra created
+[2019-07-10 12:57:38] NAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
+[2019-07-10 12:57:38] cassandra   ClusterIP   None         <none>        9042/TCP   3s
+[2019-07-10 12:57:41] service/cassandra-lb created
+[2019-07-10 13:02:47] NAME           TYPE           CLUSTER-IP   EXTERNAL-IP     PORT(S)          AGE
+[2019-07-10 13:02:47] cassandra-lb   LoadBalancer   10.12.1.26   35.188.207.48   9042:30138/TCP   5m6s
+[2019-07-10 13:03:02] statefulset.apps/cassandra created
+[2019-07-10 13:13:07] NAME        DESIRED   CURRENT   AGE
+[2019-07-10 13:13:07] cassandra   3         2         10m
+[2019-07-10 13:13:09] NAME          READY   STATUS    RESTARTS   AGE
+[2019-07-10 13:13:09] cassandra-0   1/1     Running   0          10m
+[2019-07-10 13:13:09] cassandra-1   0/1     Pending   0          9m14s
+[2019-07-10 13:13:17] Datacenter: DC1-K8Demo
+[2019-07-10 13:13:17] ======================
+[2019-07-10 13:13:17] Status=Up/Down
+[2019-07-10 13:13:17] |/ State=Normal/Leaving/Joining/Moving
+[2019-07-10 13:13:17] --  Address   Load       Tokens       Owns (effective)  Host ID                               Rack
+[2019-07-10 13:13:17] UN  10.8.0.5  99.6 KiB   32           100.0%            07851dbe-3105-42b7-ac8a-9769e5c8cea3  Rack1-K8Demo
+[2019-07-10 13:13:17] 
