@@ -12,9 +12,9 @@ wget https://kubernetes.io/examples/configmap/game-env-file.properties -O config
 
 # The env-file `game-env-file.properties` looks like below
 cat configure-pod-container/configmap/game-env-file.properties
-enemies=aliens
-lives=3
-allowed="true"
+# enemies=aliens
+# lives=3
+# allowed="true"
 
 kubectl create configmap game-config-env-file \
        --from-env-file=configure-pod-container/configmap/game-env-file.properties
